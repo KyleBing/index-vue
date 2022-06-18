@@ -1,6 +1,5 @@
-@import "variables";
-@import "reset.css";
-@import "utility";
+@import "plugin";
+@import "reset";
 
 $root-size: 14;
 
@@ -30,20 +29,6 @@ body{
   padding: $gap;
 }
 
-
-/* COPYRIGHT */
-.copyright{
-  padding: 1rem;
-  text-align: center;
-  font-size: .8rem;
-  color: white;
-  a{
-    display: inline-block;
-    &:hover{
-      color: $magenta;
-    }
-  }
-}
 
 
 .section{
@@ -134,8 +119,6 @@ body{
     }
   }
 }
-
-
 
 @import "parts/parts";
 @import "animation";

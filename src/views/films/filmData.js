@@ -1,6 +1,6 @@
-const FILMS= [
+export default [
     {
-        cover: 'see.jpg',
+        cover: require('./covers/see.jpg'),
         wordTheme: 'black',
         name: '看见',
         nameEn: 'See',
@@ -18,7 +18,7 @@ const FILMS= [
         comment: '赞，拍摄，剪辑，故事，背景都很棒，近距离拍摄主角打斗很棒。'
     },
     {
-        cover: 'the-next-three-days.jpg',
+        cover: require('./covers/the-next-three-days.jpg'),
         wordTheme: 'black',
         name: '危情三日',
         nameEn: 'The Next Three Days',
@@ -35,7 +35,7 @@ const FILMS= [
         comment: '最喜欢的电影之一，里面的情感深深触动我'
     },
     {
-        cover: 'knives-out.jpg',
+        cover: require('./covers/knives-out.jpg'),
         wordTheme: 'black',
         name: '利刃出鞘',
         nameEn: 'Knives Out',
@@ -52,7 +52,7 @@ const FILMS= [
         comment: '刚开始人物比较多，需要消化一下，越看越精神，剧情NB。好看！'
     },
     {
-        cover: 'the-time-travelers-wife.jpg',
+        cover: require('./covers/the-time-travelers-wife.jpg'),
         wordTheme: 'white',
         name: '时间旅行者的妻子',
         nameEn: "The Time Traveler's Wife",
@@ -69,7 +69,7 @@ const FILMS= [
         comment: '看过很久很久了，最喜欢的电影之一，电影制作好。'
     },
     {
-        cover: 'predestination.jpg',
+        cover: require('./covers/predestination.jpg'),
         wordTheme: 'black',
         name: '前目的地',
         nameEn: "Predestination",
@@ -86,7 +86,7 @@ const FILMS= [
         comment: '悬疑，比较喜欢'
     },
     {
-        cover: 'inception.jpg',
+        cover: require('./covers/inception.jpg'),
         wordTheme: 'black',
         name: '盗梦空间',
         nameEn: "Inception",
@@ -103,7 +103,7 @@ const FILMS= [
         comment: '电影里程碑，诺兰！光看海报就热血沸腾'
     },
     {
-        cover: 'interstellar.jpg',
+        cover: require('./covers/interstellar.jpg'),
         wordTheme: 'white',
         name: '星际穿越',
         nameEn: "Interstellar",
@@ -120,8 +120,3 @@ const FILMS= [
         comment: '让你切实的感受一下什么是相对论'
     },
 ]
-
-
-export default {
-    FILMS
-}
