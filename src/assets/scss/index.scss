@@ -1,0 +1,146 @@
+@import "variables";
+@import "reset.css";
+@import "utility";
+
+$root-size: 14;
+
+$gap: 30px;
+$gap-mobile: 10px;
+
+
+@function size($value: 3){
+  @return #{$value/14}rem
+}
+
+[v-cloak]{
+  display: none;
+}
+
+html{
+  font-size: 14px;
+}
+
+body{
+  //background: url("../img/bg_paper.png") repeat;
+  //background: linear-gradient(to bottom, #e6ebe6, #f6f7f9);
+  background: linear-gradient(to bottom, #c8d8c8, #ffb353);
+}
+
+.container{
+  padding: $gap;
+}
+
+
+/* COPYRIGHT */
+.copyright{
+  padding: 1rem;
+  text-align: center;
+  font-size: .8rem;
+  color: white;
+  a{
+    display: inline-block;
+    &:hover{
+      color: $magenta;
+    }
+  }
+}
+
+
+.section{
+  position: relative;
+  margin-bottom: $gap;
+  background-color: transparentize(white, 0.2);
+  @include border-radius($radius);
+  padding: $gap;
+  overflow: hidden;
+  &.no-padding{
+    padding: 0;
+  }
+  .section-header{
+    z-index: 10;
+    @include transition(color 0.5s);
+    position: absolute;
+    top: $gap / 2 ;
+    left: $gap / 2;
+    color: $text-desc;
+    .title{
+      //font-weight: bold;
+      font-size: $fz-m;
+    }
+  }
+  .section-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border: 1px solid transparent;
+  }
+
+  &:hover{
+    .section-header{
+      @include transition(color 0.5s);
+      color: $text-title;
+    }
+    &.gray{
+      .section-header{
+        color: $text-dark-title
+      }
+    }
+  }
+  &.gray{
+    background: linear-gradient(to top left, #888, #aaa);
+    .section-header{
+      color: $text-dark-content
+    }
+  }
+  &.gradient{
+    background: linear-gradient(to bottom, #e6ebe6, #f6f7f9);
+  }
+}
+
+
+.row{
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  .col{
+    flex-grow: 1;
+    flex-shrink: 0;
+    &+.col{
+      margin-left: $gap;
+    }
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .container{
+    padding: $gap-mobile;
+  }
+  .section{
+    margin-bottom: $gap-mobile;
+    padding: 20px;
+    .section-content{
+      min-height: 100px;
+    }
+  }
+  .row{
+    flex-flow: column nowrap !important;
+    .col{
+      &+.col{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
+@import "parts/parts";
+@import "animation";
+
+@import "dark";
+
+
+

@@ -1,0 +1,96 @@
+.card-image{
+  background-color: white;
+  @include border-radius($radius);
+  padding: 5px;
+  overflow: hidden;
+  @include box-shadow(1px 1px 3px rgba(0,0,0,0.1));
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card-apple{
+  margin-top: 10px;
+  height: 150px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  .link-item{
+    @include border-radius($radius);
+    width: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    img{
+      display: block;
+      height: 60px;
+    }
+    h3{
+      margin-top: 12px;
+      font-weight: normal;
+      font-size: $fz-sm;
+      text-align: center;
+    }
+    &:hover{
+      background-color: transparentize(black, 0.90);
+    }
+  }
+}
+
+.thumb-up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  @extend .btn-like;
+  img{
+    display: block;
+    width: 25px
+  }
+  .count{
+    font-size: $fz-sm;
+    margin-top: 3px;
+    text-align: center;
+  }
+}
+
+.apple-item{
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .card-apple{
+    margin-top: 20px;
+    justify-content: center;
+    height: 120px;
+    .link-item{
+      padding: 0 20px;
+      width: auto;
+      img{
+        height: 40px;
+      }
+    }
+  }
+  .thumb-up{
+    margin-top: 3px;
+    @extend .btn-like;
+    img{
+      display: block;
+      width: 15px
+    }
+    .count{
+      font-size: $fz-tiny;
+      margin-top: 3px;
+      text-align: center;
+    }
+  }
+}
+
+

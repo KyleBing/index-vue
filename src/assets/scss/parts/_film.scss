@@ -1,0 +1,116 @@
+.card-film{
+  display: flex;
+  align-items: center;
+  height: 500px;
+  position: relative;
+
+
+  .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .intro{
+    text-shadow: 1px 1px 1px black;
+    padding: 30px;
+    z-index: 10;
+    right: 150px;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    @include border-radius($radius);
+    //@include backdrop-filter(saturate(180%) blur(5px));
+    //@include backdrop-filter(blur(5px));
+    .title{
+      color: white;
+      margin-bottom: $gap;
+      font-size: $fz-huge;
+      align-items: center;
+      .name{
+        font-weight: bold;
+      }
+      .name-en{
+        font-size: $fz-big;
+        color: $text-desc;
+        font-weight: normal;
+      }
+    }
+    dl{
+      margin-bottom: 5px;
+      display: flex;
+      font-size: $fz-film;
+      justify-content: flex-start;
+      align-items: flex-start;
+      dt{
+        color: $text-dark-title;
+        letter-spacing: 2px;
+        flex-shrink: 0;
+        width: 4rem;
+        margin-right: 15px;
+      }
+      dd{
+        width: 400px;
+        word-break: break-all;
+        color: $text-dark-content;
+        a{
+          margin-right: 10px;
+          text-decoration: underline;
+          &:hover{
+            color: $green;
+          }
+        }
+      }
+    }
+
+  }
+  &.white{
+    .intro{
+      text-shadow: 1px 1px 1px white;
+      .title{
+        color: $text-title;
+      }
+      dl{
+        dt{
+          color: $text-title;
+        }
+        dd{
+          color: $text-content;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .card-film {
+    .intro {
+      padding: 20px;
+      right: 0;
+      position: relative;
+      .title{
+        font-size: $fz-big;
+        .name{}
+        .name-en{
+          font-size: $fz-m;
+        }
+      }
+
+      dl {
+        font-size: $fz-sm;
+        dt {
+        }
+
+        dd {
+          width: auto;
+        }
+      }
+
+    }
+  }
+}

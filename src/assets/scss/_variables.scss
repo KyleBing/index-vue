@@ -1,0 +1,65 @@
+@import "./../../lib/css/variables";
+
+$radius: 15px;
+
+// Colors
+$green          : #4CD964;
+$cyan           : #5AC8FA;
+$blue           : #007AFF;
+$purple         : #5856D6;
+$magenta        : #FF2D70;
+$red            : #FF3B30;
+$orange         : #FF9500;
+$yellow         : #FFCC00;
+$gray           : #8E8E93;
+
+$text-title: #333;
+$text-content: #666;
+$text-desc: #999;
+
+$text-dark-title: white;
+$text-dark-content: transparentize(white, 0.3);
+$text-dark-desc: transparentize(white, 0.6);
+
+
+$bg-body:  #F9F9F9;
+$bg-color: #F4F1EF;
+
+$intro-title-color: #9B9B9B;
+$intro-text-color:  #505257;
+
+$item-title-color:    #4A4A4A;
+$item-content-color:  #999999;
+$item-border-color:   #eae8e5;
+
+$width-lg: 1200px;
+$width-md: 900px;
+$width-sm: 600px;
+
+$fz-huge : 36px;
+$fz-big  : 24px;
+$fz-film : 16px;
+$fz-m    : 14px;
+$fz-sm   : 12px;
+$fz-tiny : 11px;
+
+
+$gradient-cool: #50E3C2, #53A0FD, #B4EC51;
+$gradient-warm: #FAC661, #FB9B36, #FFDA34;
+
+
+$profile-head-border: #3BABFB;
+$profile-border-color: #dddde2;
+
+// 类别分组
+$label-array: (
+  "latest"   :$magenta,
+  "most"     :$green,
+  "tool"     :$cyan,
+  "work"     :$blue,
+  "proj"     :$green,
+  "page"     :$yellow,
+  "test"     :$orange,
+  "api"      :$red,
+  "template" :$magenta,
+  "other"    :$purple);

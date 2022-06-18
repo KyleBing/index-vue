@@ -1,0 +1,130 @@
+.card-projects{
+
+}
+.project-title{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  h2{
+    flex-shrink: 0;
+    flex-grow: 0;
+    @include border-radius(0.3rem);
+    @extend .unselectable;
+    font-size: $fz-m;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+$cols-md: 8;
+
+.project-group{
+  margin-bottom: 2rem;
+}
+
+.project-list{}
+.project-list-item{
+  @include border-radius(2px);
+  //margin-bottom: 5px;
+  padding: 3px 5px;
+  border-bottom: 1px solid $item-border-color;
+  &:last-child{
+    border-bottom: none;
+  }
+  @include transition(box-shadow .3s, border-color .3s, transform .3s);
+
+  &:hover{
+    @include transition(box-shadow .3s, border-color .3s, transform .3s);
+  }
+
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  .icon{
+    width: 80px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      //-webkit-filter: contrast(180%);
+      display: block;
+      width: 40px;
+    }
+  }
+  .detail{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: center;
+    flex-grow: 1;
+    .title{
+      margin-right: $gap;
+      font-weight: normal;
+      font-size: $fz-m;
+      color: $item-title-color;
+    }
+    .description{
+      margin-right: $gap;
+      font-size: $fz-sm;
+      color: $item-content-color
+    }
+    .link{
+      text-decoration: underline;
+      margin-right: $gap;
+      font-size: $fz-sm;
+      color: $item-content-color
+    }
+  }
+}
+
+@each $name,$color in $label-array {
+  .project-#{$name} {
+    .project-title{
+      h2{
+        color: $color;
+        //background: -webkit-linear-gradient(top, lighten($color, 5%), $color);
+        //background: linear-gradient(top, lighten($color, 5%), $color);
+      }
+    }
+    .project-list-item{
+      &:hover{
+        border-color: $color;
+        background-color: $color;
+        @include box-shadow(0.6rem 0.6rem 1.5rem transparentize($color, 0.2));
+        @include transform(translateY(size(-5)));
+        .title{
+          color: white;
+        }
+        .description{
+          color: $text-dark-content;
+        }
+        .link{
+          color: $text-dark-content;
+        }
+      }
+      &:active{
+        @include transform(translateY(size(3)));
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1280px) {
+  .project-list{
+    .project-list-item{
+      padding: 5px 3px;
+      .title{
+        font-size: $fz-m;
+      }
+      .description{
+        display: none;
+      }
+      .link{
+        display: none;
+      }
+    }
+  }
+}
