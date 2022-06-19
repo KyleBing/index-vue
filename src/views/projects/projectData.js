@@ -6,10 +6,7 @@ export default  [
         list: [
             {title: '日记'        , icon: '',isPublic: true , description: '纯文本日记项目，一目了然，已开源' , path: '/diary'}                           ,
             {title: '我的后台'      , icon: '',isPublic: true , description: '后台：日记、码表、QR'      , path: '/manager'}                         ,
-            {title: '联系我'       , icon: '',isPublic: true , description: 'kylebing@163.com' , path: 'mailto:kylebing@163.com'}         ,
             // {title: 'README' , icon: '',isPublic: true , description: '一些文档说明'           , path: '/readme'}                          ,
-            {title: 'CSDN'      , icon: '',isPublic: true , description: '技术博客主页'           , path: 'https://kylebing.blog.csdn.net/'} ,
-            {title: 'GitHub'    , icon: '',isPublic: true , description: 'GitHub 主页'        , path: 'https://github.com/KyleBing'}     ,
         ],
     },
     {

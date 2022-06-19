@@ -163,7 +163,7 @@ class WSMessage{
 
 .card-apple{
     margin-top: 10px;
-    height: 150px;
+    height: 180px;
     color: white;
     display: flex;
     justify-content: center;

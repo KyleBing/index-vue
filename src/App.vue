@@ -9,6 +9,11 @@
                 <div class="col"><card-profile/></div>
             </div>
 
+            <div class="row">
+                <div class="col"><card-diary/></div>
+                <div class="col"></div>
+            </div>
+
             <card-project/>
 
         </div>
@@ -24,9 +29,10 @@ import CardFilm from "@/views/films/CardFilm";
 import CardProfile from "@/views/profile/CardProfile";
 import CardApple from "@/views/apple/CardApple";
 import CardProject from "@/views/projects/CardProject";
+import CardDiary from "@/views/diary/CardDiary";
 
 export default {
-    components: {CardProject, CardApple, CardProfile, CardFilm, Copyright},
+    components: {CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
 }
 </script>
 
