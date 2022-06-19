@@ -5,8 +5,8 @@
             <card-film/>
 
             <div class="row">
-                <div class="col"><card-profile/></div>
                 <div class="col"><card-apple/></div>
+                <div class="col"><card-profile/></div>
             </div>
 
             <card-project/>
