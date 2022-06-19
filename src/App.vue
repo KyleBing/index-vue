@@ -9,10 +9,10 @@
                 <div class="col"><card-profile/></div>
             </div>
 
-            <div class="row">
+<!--            <div class="row">
                 <div class="col"><card-diary/></div>
-                <div class="col"></div>
-            </div>
+                <div class="col"><card-backend/></div>
+            </div>-->
 
             <card-project/>
 
@@ -30,9 +30,10 @@ import CardProfile from "@/views/profile/CardProfile";
 import CardApple from "@/views/apple/CardApple";
 import CardProject from "@/views/projects/CardProject";
 import CardDiary from "@/views/diary/CardDiary";
+import CardBackend from "@/views/diary/CardBackend";
 
 export default {
-    components: {CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
+    components: {CardBackend, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
 }
 </script>
 

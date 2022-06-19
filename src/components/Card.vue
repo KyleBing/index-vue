@@ -5,6 +5,7 @@
         </div>
         <div class="section-content">
             <slot></slot>
+            <div v-if="isDeveloping" class="is-developing"><img src="./icon/developing.svg" alt="developing"> </div>
         </div>
     </div>
 </template>
@@ -20,6 +21,10 @@ export default {
             type: Boolean,
             default: false
         },
+        isDeveloping: { // 提示信息：正在开发中
+            type: Boolean,
+            default : false
+        }
     }
 }
 </script>
@@ -93,6 +98,13 @@ export default {
         .section-content {
             min-height: 100px;
         }
+    }
+}
+
+.is-developing{
+    img{
+        display: block;
+        height: 80px;
     }
 }
 
