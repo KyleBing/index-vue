@@ -1,5 +1,5 @@
 <template>
-    <Card class="mb-0">
+    <Card class="projects mb-0">
         <div class="projects-content">
             <div :class="['project-group', `project-${projGroup.value}`]" v-for="projGroup in PROJECTS.filter(item => item.isPublic || IS_LOCAL)" :key="projGroup.value">
                 <div class="project-title">

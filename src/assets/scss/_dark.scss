@@ -28,9 +28,7 @@ $dark-text-desc: lighten(black, 55%);
     background-color: $dark-bg-body;
   }
 
-  .profile{
-    background: linear-gradient(to top left, #444, #666);
-  }
+
 
 
   // PROJECTS
@@ -71,9 +69,9 @@ $dark-text-desc: lighten(black, 55%);
         color: $dark-text-title;
       }
       .intro-content{
-        color: $dark-text-title;
+        color: $dark-text-title !important;
         a{
-          color: $dark-text-title;
+          color: $dark-text-title !important;
         }
       }
     }
@@ -98,6 +96,26 @@ $dark-text-desc: lighten(black, 55%);
   .section{
     &.gray{
       background: linear-gradient(to top left, #444, #666);
+    }
+  }
+
+  .profile{
+    background: linear-gradient(to top left, #444, #666);
+  }
+
+  .projects{
+    background: linear-gradient(to top left, #444, #666);
+    .project-list-item{
+      border-color: $dark-border;
+
+      .detail{
+        .title{
+          color: $dark-text-title;
+        }
+        .description, .link{
+          color: $dark-text-desc;
+        }
+      }
     }
   }
 
