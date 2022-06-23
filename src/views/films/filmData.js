@@ -144,4 +144,22 @@ export default [
         doubanLink: 'https://movie.douban.com/subject/6538866/',
         comment: '赛车就是爽，帅！带你了解勒芒24小时耐力赛'
     },
+    {
+        cover: require('./covers/spider-man-into-the-spider-verse.jpg'),
+        wordTheme: 'black',
+        position: 'right',
+        name: '蜘蛛侠：平行宇宙',
+        nameEn: "Spider-Man: Into the Spider-Verse",
+        type: '电影',
+        tags: ['动画'],
+        duration: '116 分钟',
+        premiere: '2018-12-14',
+        downloadLink: [
+            {name: '电影港 1080p', downloadLink: 'https://www.dygang.cc/dmq/20181228/41908.htm'},
+        ],
+        language: '英语',
+        actors: ['沙梅克·摩尔' , '杰克·约翰逊' , '海莉·斯坦菲尔德' , '马赫沙拉·阿里' , '布莱恩·泰里·亨利'],
+        doubanLink: 'https://movie.douban.com/subject/26374197/',
+        comment: '相当爽的一部蜘蛛侠电影，大赞！独特的动画电影画风。'
+    },
 ]

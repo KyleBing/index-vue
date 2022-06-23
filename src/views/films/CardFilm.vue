@@ -39,14 +39,16 @@ export default {
     data(){
         return {
             // FILM
-            showingFilmId: 7,
+            showingFilmId: 0,
             film: null,
         }
     },
     mounted() {
-        // this.showingFilmId = new Date().getDay()
-        if (this.showingFilmId > filmData.length){
+        let minuteTail = new Date().getMinutes()%10
+        if (minuteTail > filmData.length + 1){ // leak
             this.showingFilmId = Math.floor(Math.random() * filmData.length)
+        } else {
+            this.showingFilmId = minuteTail
         }
         this.film = filmData[this.showingFilmId]
     }
@@ -96,7 +98,7 @@ export default {
             }
             .name-en{
                 font-size: $fz-big;
-                color: $text-desc;
+                color: $text-film-en;
                 font-weight: normal;
             }
         }
@@ -136,6 +138,9 @@ export default {
             text-shadow: 1px 1px 1px white;
             .title{
                 color: $text-title;
+                .name-en{
+                    color: $text-desc;
+                }
             }
             dl{
                 dt{

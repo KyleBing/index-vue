@@ -42,7 +42,7 @@ export default {
         }
     },
     mounted() {
-        this.randomPicId = Math.floor(Math.random() * this.picCount) + 1
+        this.randomPicId = new Date().getDay()
     },
     methods: {
         changeAvatar(){
