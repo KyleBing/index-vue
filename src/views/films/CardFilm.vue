@@ -45,7 +45,7 @@ export default {
     },
     mounted() {
         let minuteTail = new Date().getMinutes()%10
-        if (minuteTail > filmData.length + 1){ // leak
+        if (minuteTail >= filmData.length){ // leak
             this.showingFilmId = Math.floor(Math.random() * filmData.length)
         } else {
             this.showingFilmId = minuteTail
