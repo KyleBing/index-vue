@@ -16,7 +16,7 @@
             <dl><dt>时长</dt><dd>{{film.duration}}</dd></dl>
             <dl><dt>上映</dt><dd>{{film.premiere}}</dd></dl>
             <dl><dt>语言</dt><dd>{{film.language}}</dd></dl>
-            <dl><dt>主演</dt><dd>{{film.actors.join(' / ')}}</dd></dl>
+<!--            <dl><dt>主演</dt><dd>{{film.actors.join(' / ')}}</dd></dl>-->
             <dl v-if="film.downloadLink.length > 0">
                 <dt>下载</dt>
                 <dd>
