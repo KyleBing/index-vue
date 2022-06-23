@@ -4,7 +4,7 @@
           :class="[ 'no-padding', 'gray', 'card-film', {'white': film.wordTheme === 'white'}]"
           v-if="film">
         <img :src="film.cover" alt="cover" class="cover">
-        <div class="intro">
+        <div :class="['intro', film.position]">
             <div class="title">
                 <h2 class="name">{{film.name}} </h2>
                 <div class="name-en">{{film.nameEn}}</div>
@@ -39,12 +39,12 @@ export default {
     data(){
         return {
             // FILM
-            showingFilmId: 0,
+            showingFilmId: 7,
             film: null,
         }
     },
     mounted() {
-        this.showingFilmId = new Date().getDay()
+        // this.showingFilmId = new Date().getDay()
         if (this.showingFilmId > filmData.length){
             this.showingFilmId = Math.floor(Math.random() * filmData.length)
         }
@@ -125,6 +125,9 @@ export default {
                     }
                 }
             }
+        }
+        &.left{
+            left: 150px
         }
 
     }

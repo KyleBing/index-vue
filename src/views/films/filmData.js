@@ -2,6 +2,7 @@ export default [
     {
         cover: require('./covers/see.jpg'),
         wordTheme: 'black',
+        position: 'right',
         name: '看见',
         nameEn: 'See',
         type: '电视剧',
@@ -20,6 +21,7 @@ export default [
     {
         cover: require('./covers/the-next-three-days.jpg'),
         wordTheme: 'black',
+        position: 'right',
         name: '危情三日',
         nameEn: 'The Next Three Days',
         type: '电影',
@@ -37,6 +39,7 @@ export default [
     {
         cover: require('./covers/knives-out.jpg'),
         wordTheme: 'black',
+        position: 'right',
         name: '利刃出鞘',
         nameEn: 'Knives Out',
         type: '电影',
@@ -54,6 +57,7 @@ export default [
     {
         cover: require('./covers/the-time-travelers-wife.jpg'),
         wordTheme: 'white',
+        position: 'right',
         name: '时间旅行者的妻子',
         nameEn: "The Time Traveler's Wife",
         type: '电影',
@@ -71,6 +75,7 @@ export default [
     {
         cover: require('./covers/predestination.jpg'),
         wordTheme: 'black',
+        position: 'right',
         name: '前目的地',
         nameEn: "Predestination",
         type: '电影',
@@ -88,6 +93,7 @@ export default [
     {
         cover: require('./covers/inception.jpg'),
         wordTheme: 'black',
+        position: 'right',
         name: '盗梦空间',
         nameEn: "Inception",
         type: '电影',
@@ -105,6 +111,7 @@ export default [
     {
         cover: require('./covers/interstellar.jpg'),
         wordTheme: 'white',
+        position: 'right',
         name: '星际穿越',
         nameEn: "Interstellar",
         type: '电影',
@@ -118,5 +125,23 @@ export default [
         actors: ['马修·麦康纳' , '安妮·海瑟薇' , '杰西卡·查斯坦' , '麦肯吉·弗依' , '卡西·阿弗莱克'],
         doubanLink: 'https://movie.douban.com/subject/1889243/',
         comment: '让你切实的感受一下什么是相对论'
+    },
+    {
+        cover: require('./covers/ford-v-ferrari.jpg'),
+        wordTheme: 'white',
+        position: 'left',
+        name: '极速车王',
+        nameEn: "Ford v Ferrari",
+        type: '电影',
+        tags: ['传记', '运动'],
+        duration: '152 分钟',
+        premiere: '2019-11-15',
+        downloadLink: [
+            {name: '电影港 1080p', downloadLink: 'https://www.dygang.tv/ys/20191231/43987.htm'},
+        ],
+        language: '英语',
+        actors: ['马特·达蒙' , '克里斯蒂安·贝尔' , '乔什·卢卡斯' , '乔·博恩瑟' , '崔西·莱茨'],
+        doubanLink: 'https://movie.douban.com/subject/6538866/',
+        comment: '赛车就是爽，帅！带你了解勒芒24小时耐力赛'
     },
 ]
