@@ -1,5 +1,6 @@
 export default [
     {
+        id: 1,
         cover: require('./covers/see.jpg'),
         wordTheme: 'black',
         position: 'right',
@@ -19,6 +20,7 @@ export default [
         comment: '赞，拍摄，剪辑，故事，背景都很棒，近距离拍摄主角打斗很棒。'
     },
     {
+        id: 2,
         cover: require('./covers/the-next-three-days.jpg'),
         wordTheme: 'black',
         position: 'right',
@@ -37,6 +39,7 @@ export default [
         comment: '最喜欢的电影之一，里面的情感深深触动我'
     },
     {
+        id: 3,
         cover: require('./covers/knives-out.jpg'),
         wordTheme: 'black',
         position: 'right',
@@ -55,6 +58,7 @@ export default [
         comment: '刚开始人物比较多，需要消化一下，越看越精神，剧情NB。好看！'
     },
     {
+        id: 4,
         cover: require('./covers/the-time-travelers-wife.jpg'),
         wordTheme: 'white',
         position: 'right',
@@ -73,6 +77,7 @@ export default [
         comment: '看过很久很久了，最喜欢的电影之一，电影制作好。'
     },
     {
+        id: 5,
         cover: require('./covers/predestination.jpg'),
         wordTheme: 'black',
         position: 'right',
@@ -91,6 +96,7 @@ export default [
         comment: '悬疑，比较喜欢'
     },
     {
+        id: 6,
         cover: require('./covers/inception.jpg'),
         wordTheme: 'black',
         position: 'right',
@@ -109,6 +115,7 @@ export default [
         comment: '电影里程碑，诺兰！光看海报就热血沸腾'
     },
     {
+        id: 7,
         cover: require('./covers/interstellar.jpg'),
         wordTheme: 'white',
         position: 'right',
@@ -127,6 +134,7 @@ export default [
         comment: '让你切实的感受一下什么是相对论'
     },
     {
+        id: 8,
         cover: require('./covers/ford-v-ferrari.jpg'),
         wordTheme: 'white',
         position: 'left',
@@ -145,6 +153,7 @@ export default [
         comment: '赛车就是爽，帅！带你了解勒芒24小时耐力赛'
     },
     {
+        id: 9,
         cover: require('./covers/spider-man-into-the-spider-verse.jpg'),
         wordTheme: 'black',
         position: 'right',

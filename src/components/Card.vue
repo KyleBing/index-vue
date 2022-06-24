@@ -2,6 +2,7 @@
     <div :class="['section', {'no-padding': noPadding}]">
         <div class="section-header">
             <div class="title">{{ title }}</div>
+            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>
         </div>
         <div class="section-content">
             <slot></slot>
@@ -15,6 +16,9 @@ export default {
     name: "Card",
     props: {
         title: {
+            type: String
+        },
+        pageLink: {
             type: String
         },
         noPadding: {
@@ -47,11 +51,21 @@ export default {
         @include transition(color 0.5s);
         position: absolute;
         top: $gap / 2 ;
-        left: $gap / 2;
+        left: 0;
+        right: 0;
         color: $text-desc;
         .title{
+            position: absolute;
+            left: $gap / 2;
             //font-weight: bold;
             font-size: $fz-m;
+        }
+        .share-link{
+            position: absolute;
+            right: $gap / 2;
+            &:hover{
+                color: $magenta;
+            }
         }
     }
     .section-content{

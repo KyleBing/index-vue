@@ -148,7 +148,7 @@ class WSMessage{
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/scss/plugin";
+@import "../../../assets/scss/plugin";
 .card-image{
     background-color: white;
     @include border-radius($radius);

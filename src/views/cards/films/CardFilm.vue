@@ -1,5 +1,6 @@
 <template>
     <Card title="好剧推荐"
+          :pageLink="pageLink"
           :no-padding="true"
           :class="[ 'no-padding', 'gray', 'card-film', {'white': film.wordTheme === 'white'}]"
           v-if="film">
@@ -30,33 +31,20 @@
 </template>
 
 <script>
-import filmData from "./filmData";
 import Card from "@/components/Card";
 
 export default {
     name: "CardFilm",
     components: {Card},
-    data(){
-        return {
-            // FILM
-            showingFilmId: 0,
-            film: null,
-        }
+    props: {
+        film: null,
+        pageLink: '' // 页面链接
     },
-    mounted() {
-        let minuteTail = new Date().getMinutes()%10
-        if (minuteTail >= filmData.length){ // leak
-            this.showingFilmId = Math.floor(Math.random() * filmData.length)
-        } else {
-            this.showingFilmId = minuteTail
-        }
-        this.film = filmData[this.showingFilmId]
-    }
 }
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/scss/plugin";
+@import "../../../assets/scss/plugin";
 
 .card-film{
     display: flex;
