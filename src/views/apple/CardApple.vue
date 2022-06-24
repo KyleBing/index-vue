@@ -86,7 +86,7 @@ export default {
                 })
         },
         thumbsUp(thumbsUpKey){
-            this.sendMessage(thumbsUpKey)
+            // this.sendMessage(thumbsUpKey)
         },
 
         sendMessage(key){
