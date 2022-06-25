@@ -61,6 +61,7 @@ export default {
             font-size: $fz-m;
         }
         .share-link{
+            color: $text-desc;
             position: absolute;
             right: $gap / 2;
             &:hover{

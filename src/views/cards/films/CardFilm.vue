@@ -2,7 +2,7 @@
     <Card title="好剧推荐"
           :pageLink="pageLink"
           :no-padding="true"
-          :class="[ 'no-padding', 'gray', 'card-film', {'white': film.wordTheme === 'white'}]"
+          :class="[ 'no-padding', 'gray', 'card-film', {'white': film.wordTheme === 'white'},{'hover-color': hoverColor}]"
           v-if="film">
         <img :src="film.cover" alt="cover" class="cover">
         <div :class="['intro', film.position]">
@@ -38,7 +38,8 @@ export default {
     components: {Card},
     props: {
         film: null,
-        pageLink: '' // 页面链接
+        pageLink: '', // 页面链接
+        hoverColor: false, // 是否鼠标悬停时显示颜色
     },
 }
 </script>
@@ -53,6 +54,14 @@ export default {
     position: relative;
 
 
+    &.hover-color{
+        @include transition(all, 0.5s);
+        filter: saturate(0%);
+        &:hover {
+            @include transition(all, 0.5s);
+            filter: saturate(100%);
+        }
+    }
     .cover{
         position: absolute;
         top: 0;

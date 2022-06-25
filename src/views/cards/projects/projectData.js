@@ -46,7 +46,7 @@ export default  [
         isPublic: true,
         list:  [
             {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-manage'},
-            {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/tools/base642file'},
+            {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
             {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
             {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
             {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},

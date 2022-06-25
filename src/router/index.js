@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import app from "@/App";
 import Film from "@/views/film/Film";
 import Index from "@/views/Index";
 

@@ -1,7 +1,7 @@
 <template>
     <div class="film-list">
 <!--        <div class="page-title">好剧推荐</div>-->
-        <CardFilm :film="film" v-for="film in films" :key="film.id"></CardFilm>
+        <CardFilm :hoverColor="true" :film="film" v-for="film in films" :key="film.id"></CardFilm>
         <div @click="$router.back()" class="back">← back</div>
     </div>
 </template>
@@ -34,6 +34,12 @@ export default {
 .back{
     text-align: center;
     @extend .btn-like
+}
+
+@media (max-width: 1280px) {
+    .film-list{
+        padding: 10px;
+    }
 }
 
 </style>
