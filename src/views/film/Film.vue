@@ -1,7 +1,7 @@
 <template>
     <div class="film-list">
 <!--        <div class="page-title">好剧推荐</div>-->
-        <CardFilm :hoverColor="true" :film="film" v-for="film in films" :key="film.id"></CardFilm>
+        <CardFilm :hoverColor="false" :film="film" v-for="film in films" :key="film.id"></CardFilm>
         <div @click="$router.back()" class="back">← back</div>
     </div>
 </template>
