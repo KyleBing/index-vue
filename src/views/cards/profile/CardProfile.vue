@@ -42,7 +42,7 @@ export default {
         }
     },
     mounted() {
-        this.randomPicId = new Date().getDay()
+        this.randomPicId = new Date().getDay() + 1
     },
     methods: {
         changeAvatar(){
