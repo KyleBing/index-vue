@@ -16,6 +16,7 @@ export default  [
         value: 'latest',
         isPublic: true,
         list: [
+            {title: '全屏时钟', isPublic: true, description: '全屏电子时钟', path: 'clock'},
             {title: 'Vue例子', isPublic: true, description: 'element 例子', path: '/e/'},
             {title: '图片图标快速查看器', isPublic: true, description: 'DropZone', path: '/tools/drop-and-show'},
             {title: '挪车告示', isPublic: true, description: '贴在车上的二维码页面', path: '/qr'},
