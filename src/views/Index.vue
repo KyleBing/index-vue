@@ -2,19 +2,25 @@
     <div class="index">
         <div class="container" v-cloak>
 
-            <card-film :film="film" page-link="film"/>
 
             <div class="row">
                 <div class="col"><card-apple/></div>
                 <div class="col"><card-profile/></div>
             </div>
 
-            <!--            <div class="row">
-                            <div class="col"><card-diary/></div>
-                            <div class="col"><card-backend/></div>
-                        </div>-->
+            <div class="row">
+                <div class="col"><card-clock/></div>
+                <div class="col"><card-image-viewer/></div>
+            </div>
+
+            <div class="row">
+                <div class="col"><card-diary/></div>
+                <div class="col"><card-backend/></div>
+            </div>
 
             <card-project/>
+
+            <card-film :film="film" page-link="film"/>
 
         </div>
         <copyright/>
@@ -30,9 +36,13 @@ import CardProject from "@/views/cards/projects/CardProject";
 import CardDiary from "@/views/cards/diary/CardDiary";
 import CardBackend from "@/views/cards/diary/CardBackend";
 import filmData from "@/views/cards/films/filmData";
+import CardClock from "@/views/cards/clock/CardClock";
+import CardImageViewer from "@/views/cards/others/CardImageViewer";
 export default {
     name: 'Index',
-    components: {CardBackend, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
+    components: {
+        CardImageViewer,
+        CardClock, CardBackend, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
     data(){
         return {
             // FILM

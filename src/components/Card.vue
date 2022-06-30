@@ -55,13 +55,13 @@ export default {
         right: 0;
         color: $text-desc;
         .title{
+            letter-spacing: 0.5px;
             position: absolute;
             left: $gap / 2;
             //font-weight: bold;
             font-size: $fz-m;
         }
         .share-link{
-            color: $text-desc;
             position: absolute;
             right: $gap / 2;
             &:hover{
@@ -87,6 +87,36 @@ export default {
             .section-header{
                 color: $text-dark-title
             }
+        }
+    }
+    &.black{
+        background: black;
+        .section-header{
+            color: $text-dark-content
+        }
+    }
+    &.blue{
+        background: $gradient-blue;
+        .section-header{
+            color: $text-dark-content
+        }
+    }
+    &.red{
+        background: $gradient-red;
+        .section-header{
+            color: $text-dark-content
+        }
+    }
+    &.green{
+        background: $gradient-green;
+        .section-header{
+            color: $text-dark-content
+        }
+    }
+    &.purple{
+        background: $gradient-purple;
+        .section-header{
+            color: $text-dark-content
         }
     }
     &.gray{

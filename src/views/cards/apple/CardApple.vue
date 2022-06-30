@@ -1,5 +1,5 @@
 <template>
-    <Card class="gray" title="苹果常用参数">
+    <Card class="blue" title="苹果常用参数">
         <div class="card-apple">
 
             <div class="apple-item">

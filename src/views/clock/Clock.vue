@@ -105,7 +105,7 @@ export default {
         }
     },
     unmounted() {
-        onkeyup = null
+        onkeydown = null
         if (this.intervalHandle){
             clearInterval(this.intervalHandle)
         }
