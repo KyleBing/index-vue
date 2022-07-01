@@ -39,14 +39,21 @@
             <dl><dt>H - <span class="tip">Hide</span></dt><dd>操作面板 显示/隐藏</dd></dl>
             <dl><dt>↑</dt><dd>字体 +</dd></dl>
             <dl><dt>↓</dt><dd>字体 -</dd></dl>
-            <dl><dt>←</dt><dd>颜色变换 -</dd></dl>
-            <dl><dt>→</dt><dd>颜色变换 -</dd></dl>
+
             <dl><dt>C - <span class="tip">Color</span></dt><dd>颜色变换</dd></dl>
             <dl><dt>D - <span class="tip">Date</span></dt><dd>日期 显示/隐藏</dd></dl>
             <dl><dt>S - <span class="tip">Second</span></dt><dd>秒数 显示/隐藏</dd></dl>
+            <dl><dt>G - <span class="tip">Glass</span></dt><dd>玻璃遮罩 显示/隐藏</dd></dl>
+            <dl><dt>←</dt><dd>毛玻璃效果减小</dd></dl>
+            <dl><dt>→</dt><dd>毛玻璃效果增大 -</dd></dl>
+            <dl><dt>F - <span class="tip">FullScreen</span></dt><dd>全屏切换</dd></dl>
 
         </div>
     </div>
+
+    <div class="glass-blur"
+         v-if="config.isShowGlassBlur"
+         :style="`backdrop-filter: blur(${config.blur}px);-webkit-backdrop-filter: blur(${config.blur}px);`"></div>
 </template>
 
 <script>
@@ -95,7 +102,9 @@ export default {
                 isShowDate: true, // 显示日期
                 isShowToolPanel: true, // 显示工具栏
                 fontSize: 180,
-                colorIndex: 0
+                colorIndex: 0,
+                isShowGlassBlur: false, // 是否显示玻璃遮罩
+                blur: 10, // 毛玻璃程度
             },
 
             colors: COLORS,
@@ -111,13 +120,14 @@ export default {
             switch (event.key){
                 case 'ArrowDown': this.fontSizeDown();break
                 case 'ArrowUp': this.fontSizeUp();break
-                case 'ArrowLeft': this.switchColor();break
-                case 'ArrowRight': this.switchColor();break
+                case 'ArrowLeft': this.blurMinus();break
+                case 'ArrowRight': this.blurPlus();break
                 case 'c': this.switchColor();break // color
                 case 'd': this.toggleDate();break // date
                 case 's': this.toggleSecond();break // second
                 case 'f': this.switchFullScreen();break // full screen
                 case 'h': this.toggleToolPanel();break // tool panel
+                case 'g': this.toggleGlass();break // tool panel
             }
         }
     },
@@ -158,12 +168,28 @@ export default {
             this.config.isShowToolPanel = !this.config.isShowToolPanel
             this.saveConfig()
         },
+        toggleGlass(){
+            this.config.isShowGlassBlur = !this.config.isShowGlassBlur
+            this.saveConfig()
+        },
         toggleSecond(){
             this.config.isShowSecond = !this.config.isShowSecond
             this.saveConfig()
         },
         toggleDate(){
             this.config.isShowDate = !this.config.isShowDate
+            this.saveConfig()
+        },
+
+        // BLUR
+        blurMinus(){
+            if (this.config.blur >= 1){
+                this.config.blur = this.config.blur - 1
+            }
+            this.saveConfig()
+        },
+        blurPlus(){
+            this.config.blur = this.config.blur + 1
             this.saveConfig()
         },
 
@@ -343,6 +369,21 @@ export default {
         }
 
     }
+}
+
+.glass-blur{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparentize(white, 0.9);
+    @include backdrop-filter(blur(15px) saturate(180%));
+    //@include transition(all 0.5s);
 }
 
 </style>
