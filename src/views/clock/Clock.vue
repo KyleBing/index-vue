@@ -45,7 +45,7 @@
             <dl><dt>S - <span class="tip">Second</span></dt><dd>秒数 显示/隐藏</dd></dl>
             <dl><dt>G - <span class="tip">Glass</span></dt><dd>玻璃遮罩 显示/隐藏</dd></dl>
             <dl><dt>←</dt><dd>毛玻璃效果减小</dd></dl>
-            <dl><dt>→</dt><dd>毛玻璃效果增大 -</dd></dl>
+            <dl><dt>→</dt><dd>毛玻璃效果增大</dd></dl>
             <dl><dt>F - <span class="tip">FullScreen</span></dt><dd>全屏切换</dd></dl>
 
         </div>
