@@ -381,7 +381,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparentize(white, 0.9);
     @include backdrop-filter(blur(15px) saturate(180%));
     //@include transition(all 0.5s);
 }
