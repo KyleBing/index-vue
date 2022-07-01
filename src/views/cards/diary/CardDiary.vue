@@ -1,5 +1,10 @@
 <template>
-    <CardImage title="日记" class="gray" :no-padding="true" :cover="cover">
+    <CardImage title="日记" class="gray" :no-padding="true"
+               :cover="cover"
+               :logo="logo"
+               page-link="../diary"
+    >
+        <div class="logo"></div>
     </CardImage>
 </template>
 
@@ -11,9 +16,10 @@ export default {
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./diary.png')
+            cover: require('./card-img-diary.png'),
+            logo: require('./logo-diary.png')
         }
-    }
+    },
 }
 </script>
 

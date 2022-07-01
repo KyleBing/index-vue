@@ -1,8 +1,8 @@
 <template>
-    <div :class="['section', {'no-padding': noPadding}]">
+    <div :class="['section', {'no-padding': noPadding}, {'link': pageLink}]" @click="toRoute">
         <div class="section-header">
             <div class="title">{{ title }}</div>
-            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>
+<!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
         <div class="section-content">
             <slot></slot>
@@ -29,6 +29,13 @@ export default {
             type: Boolean,
             default : false
         }
+    },
+    methods: {
+        toRoute(){
+            if (this.pageLink){
+                this.$router.push(this.pageLink)
+            }
+        }
     }
 }
 </script>
@@ -45,6 +52,9 @@ export default {
     overflow: hidden;
     &.no-padding{
         padding: 0;
+    }
+    &.link{
+        @extend .btn-like
     }
     .section-header{
         z-index: 10;

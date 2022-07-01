@@ -2,27 +2,26 @@
     <div class="index">
         <div class="container" v-cloak>
 
+            <kyle-row>
+                <kyle-col><card-apple/></kyle-col>
+                <kyle-col><card-profile/></kyle-col>
+            </kyle-row>
 
-            <div class="row">
-                <div class="col"><card-apple/></div>
-                <div class="col"><card-profile/></div>
-            </div>
+            <kyle-row>
+                <kyle-col :span="12"><card-clock/></kyle-col>
+                <kyle-col :span="12"><card-image-viewer/></kyle-col>
+            </kyle-row>
 
-            <div class="row">
-                <div class="col"><card-clock/></div>
-                <div class="col"><card-image-viewer/></div>
-            </div>
-
-            <div class="row">
-                <div class="col"><card-diary/></div>
-                <div class="col"><card-backend/></div>
-            </div>
+            <kyle-row>
+                <kyle-col :span="12"><card-diary/></kyle-col>
+                <kyle-col :span="12"><card-backend/></kyle-col>
+            </kyle-row>
 
             <card-project/>
 
             <card-film :film="film" page-link="film"/>
-
         </div>
+
         <copyright/>
     </div>
 </template>
@@ -38,9 +37,14 @@ import CardBackend from "@/views/cards/diary/CardBackend";
 import filmData from "@/views/cards/films/filmData";
 import CardClock from "@/views/cards/clock/CardClock";
 import CardImageViewer from "@/views/cards/others/CardImageViewer";
+import KyleRow from "@/components/KyleRow";
+import KyleCol from "@/components/KyleCol";
+import {mapMutations} from "vuex";
 export default {
     name: 'Index',
     components: {
+        KyleCol,
+        KyleRow,
         CardImageViewer,
         CardClock, CardBackend, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
     data(){
@@ -58,6 +62,21 @@ export default {
             showingFilmId = minuteTail
         }
         this.film = filmData[showingFilmId]
+        this.addScrollEvent()
+    },
+    unmounted() {
+        this.removeScrollEvent()
+    },
+    methods: {
+        ...mapMutations(['SET_SCROLL_TOP']),
+        addScrollEvent(){
+            onscroll = () => {
+                this.SET_SCROLL_TOP(document.documentElement.scrollTop)
+            }
+        },
+        removeScrollEvent(){
+            onscroll = null
+        }
     }
 }
 </script>

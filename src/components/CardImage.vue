@@ -1,25 +1,39 @@
 <template>
-    <div :class="['section', {'no-padding': noPadding}]">
+    <div :class="['section', {'no-padding': noPadding}, {'link': pageLink}]" @click="toRoute">
         <div class="section-header">
             <div class="title">{{ title }}</div>
-            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>
+<!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
         <div class="section-content">
-            <img :src="cover" alt="cover" class="cover">
+            <img :src="cover" alt="cover" class="cover" :style="`top: ${offsetTop}px`">
+            <div class="logo">
+                <img v-if="logo" :src="logo" alt="logo">
+                <div class="title">{{ logoTitle }}</div>
+            </div>
             <slot></slot>
         </div>
     </div>
 </template>
 
 <script>
+import {mapState} from "vuex";
+
 export default {
     name: "CardImage",
     props: {
         title: {
             type: String
         },
+        // 背景图
         cover: {
-            type: Object
+            type: String
+        },
+        // logo
+        logo: {
+            type: String
+        },
+        logoTitle: {
+            type: String
         },
         pageLink: {
             type: String
@@ -28,7 +42,23 @@ export default {
             type: Boolean,
             default: false
         },
-
+    },
+    computed:{
+        ...mapState(['scrollTop']),
+        offsetTop(){
+            return -(this.scrollTop / innerHeight) * 200
+        }
+    },
+    methods: {
+        toRoute(){
+            if (this.pageLink){
+                if (/^\.\..*$/.test(this.pageLink)){
+                    location = this.pageLink
+                } else {
+                    this.$router.push(this.pageLink)
+                }
+            }
+        }
     }
 }
 </script>
@@ -36,15 +66,6 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/plugin";
 
-.cover{
-    display: block;
-    height: 200px;
-    //position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    top: 0;
-}
 
 .section{
     position: relative;
@@ -56,6 +77,10 @@ export default {
     &.no-padding{
         padding: 0;
     }
+    &.link{
+        @extend .btn-like
+    }
+
     .section-header{
         z-index: 10;
         @include transition(color 0.5s);
@@ -80,12 +105,39 @@ export default {
         }
     }
     .section-content{
+        height: 210px;
         width: 100%;
+        overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         min-height: 150px;
         border: 1px solid transparent;
+        .cover{
+            @include transition(all 1s ease-in-out);
+            position: absolute;
+            display: block;
+            width: 100%;
+            //position: absolute;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            z-index: 10;
+            margin-right: 190px;
+            img{
+                display: block;
+                width: 70px;
+            }
+            .title{
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
     }
 
     &:hover{
