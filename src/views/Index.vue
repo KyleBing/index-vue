@@ -33,20 +33,21 @@ import CardProfile from "@/views/cards/profile/CardProfile";
 import CardApple from "@/views/cards/apple/CardApple";
 import CardProject from "@/views/cards/projects/CardProject";
 import CardDiary from "@/views/cards/diary/CardDiary";
-import CardBackend from "@/views/cards/diary/CardBackend";
 import filmData from "@/views/cards/films/filmData";
 import CardClock from "@/views/cards/clock/CardClock";
 import CardImageViewer from "@/views/cards/others/CardImageViewer";
 import KyleRow from "@/components/KyleRow";
 import KyleCol from "@/components/KyleCol";
 import {mapMutations} from "vuex";
+import CardBackend from "@/views/cards/others/CardBackend";
 export default {
     name: 'Index',
     components: {
+        CardBackend,
         KyleCol,
         KyleRow,
         CardImageViewer,
-        CardClock, CardBackend, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
+        CardClock, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
     data(){
         return {
             // FILM
