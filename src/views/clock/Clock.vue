@@ -29,6 +29,22 @@
             <div class="operation-item" @click="toggleDate">日期</div>
             <div class="operation-item" @click="fontSizeUp">↑</div>
             <div class="operation-item" @click="fontSizeDown">↓</div>
+            <div class="operation-item" @click="showHelpInfo">帮助</div>
+        </div>
+    </div>
+
+    <div class="help-info" @click="isShowHelp = !isShowHelp" v-if="isShowHelp">
+        <div class="info">
+            <h3>快捷键</h3>
+            <dl><dt>H - <span class="tip">Hide</span></dt><dd>操作面板 显示/隐藏</dd></dl>
+            <dl><dt>↑</dt><dd>字体 +</dd></dl>
+            <dl><dt>↓</dt><dd>字体 -</dd></dl>
+            <dl><dt>←</dt><dd>颜色变换 -</dd></dl>
+            <dl><dt>→</dt><dd>颜色变换 -</dd></dl>
+            <dl><dt>C - <span class="tip">Color</span></dt><dd>颜色变换</dd></dl>
+            <dl><dt>D - <span class="tip">Date</span></dt><dd>日期 显示/隐藏</dd></dl>
+            <dl><dt>S - <span class="tip">Second</span></dt><dd>秒数 显示/隐藏</dd></dl>
+
         </div>
     </div>
 </template>
@@ -51,6 +67,7 @@ export default {
     data(){
         return {
             isFullScreen: false,
+            isShowHelp: false,  // show help
             intervalHandle: null,
 
             hours: 0,
@@ -114,7 +131,9 @@ export default {
         ...mapState(['insets']),
     },
     methods: {
-
+        showHelpInfo(){
+            this.isShowHelp = true
+        },
         // 切换颜色
         switchColor(){
             if (this.config.colorIndex >= COLORS.length - 1){
@@ -277,6 +296,52 @@ export default {
             background-color: transparentize(white, 0.8);
             color: $orange;
         }
+    }
+}
+
+.help-info{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparentize(white, 0.9);
+    @include backdrop-filter(blur(15px) saturate(180%));
+    @include transition(all 0.5s);
+    .info{
+        font-size: $fz-m;
+        color: white;
+        @include border-radius(15px);
+        padding: 30px;
+        background-color: transparentize(black, 0.5);
+        text-shadow: 1px 1px 0 transparentize(black, 0.7);
+        h3{
+            text-align: center;
+            font-size: $fz-big;
+            margin-bottom: 30px;
+        }
+        dl{
+            padding: 5px 10px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            dt{
+                font-weight: bold;
+                .tip{
+                    font-weight: normal;
+
+                }
+
+            }
+            dd{
+
+            }
+        }
+
     }
 }
 
