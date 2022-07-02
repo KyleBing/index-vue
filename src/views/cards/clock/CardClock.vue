@@ -1,5 +1,8 @@
 <template>
-    <Card class="black" title="全屏时钟" page-link="clock">
+    <Card class="black"
+          title="全屏时钟"
+          page-link="clock"
+    >
         <div class="clock"
              :style="`
              color: ${colors[config.colorIndex]}`"

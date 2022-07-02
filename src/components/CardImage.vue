@@ -1,7 +1,7 @@
 <template>
     <div :class="['section', {'no-padding': noPadding}, {'link': pageLink}]" @click="toRoute">
         <div class="section-header">
-            <div class="title">{{ title }}</div>
+            <div v-if="isShowTitle" class="title">{{ title }}</div>
 <!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
         <div class="section-content">
@@ -42,6 +42,10 @@ export default {
             type: Boolean,
             default: false
         },
+        isShowTitle: {
+            type: Boolean,
+            default : true
+        }
     },
     computed:{
         ...mapState(['scrollTop']),
