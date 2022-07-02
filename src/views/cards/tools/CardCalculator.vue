@@ -2,7 +2,7 @@
     <CardImage title="我的后台"
                class=""
                :no-padding="true"
-               :cover="cover"
+               :cover="cover || ''"
                :logo="logo"
                page-link="../manager"
     >
@@ -14,12 +14,14 @@
 import Card from "@/components/Card";
 import CardImage from "@/components/CardImage";
 export default {
-    name: "CardBackend",
+    name: "CardCalculator",
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./card-img-backend.png'),
-            logo: require('./logo-backend.png')
+            // cover: require('./card-img-backend.png'),
+            // logo: require('./logo-backend.png')
+            cover: '',
+            logo: ''
         }
     },
 }

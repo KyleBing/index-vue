@@ -3,23 +3,26 @@
         <div class="container" v-cloak>
 
             <kyle-row>
-                <kyle-col><card-apple/></kyle-col>
-                <kyle-col><card-profile/></kyle-col>
+                <kyle-col :span="8"><card-apple/></kyle-col>
+                <kyle-col :span="16"><card-profile/></kyle-col>
             </kyle-row>
 
             <kyle-row>
-                <kyle-col :span="12"><card-clock/></kyle-col>
-                <kyle-col :span="12"><card-image-viewer/></kyle-col>
+                <kyle-col :span="6"><card-clock/></kyle-col>
+                <kyle-col :span="6"><card-diary/></kyle-col>
+                <kyle-col :span="6"><card-backend/></kyle-col>
+                <kyle-col :span="6"><card-image-viewer/></kyle-col>
             </kyle-row>
 
             <kyle-row>
-                <kyle-col :span="12"><card-diary/></kyle-col>
-                <kyle-col :span="12"><card-backend/></kyle-col>
+                <kyle-col :span="12">
+
+                </kyle-col>
+                <kyle-col :span="12">
+                    <card-project/>
+                </kyle-col>
             </kyle-row>
 
-            <card-project/>
-
-            <card-film :film="film" page-link="film"/>
         </div>
 
         <copyright/>
@@ -40,9 +43,11 @@ import KyleRow from "@/components/KyleRow";
 import KyleCol from "@/components/KyleCol";
 import {mapMutations} from "vuex";
 import CardBackend from "@/views/cards/others/CardBackend";
+import CardCalculator from "@/views/cards/tools/CardCalculator";
 export default {
     name: 'Index',
     components: {
+        CardCalculator,
         CardBackend,
         KyleCol,
         KyleRow,

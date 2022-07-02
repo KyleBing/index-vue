@@ -45,7 +45,6 @@ export default {
 
 .section{
     position: relative;
-    margin-bottom: $gap;
     background-color: transparentize(white, 0.2);
     @include border-radius($radius);
     padding: $gap;
@@ -84,7 +83,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 150px;
+        min-height: 140px;
         border: 1px solid transparent;
     }
 

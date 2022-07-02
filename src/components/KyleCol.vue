@@ -14,12 +14,23 @@ export default {
             type: Number
         }
     },
+    data(){
+        return {
+            innerWidth: innerWidth,
+            innerHeight: innerHeight
+        }
+    },
     name: "KyleCol"
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@use "sass:math";
+@import "../assets/scss/plugin";
+
+
 .col{
+    padding: math.div($gap, 2);
     flex-grow: 1;
     flex-shrink: 0;
 }

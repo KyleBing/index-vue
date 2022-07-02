@@ -37,9 +37,6 @@ body{
   .col{
     flex-grow: 1;
     flex-shrink: 0;
-    &+.col{
-      margin-left: $gap;
-    }
   }
 }
 
@@ -52,9 +49,6 @@ body{
   .row{
     flex-flow: column nowrap !important;
     .col{
-      &+.col{
-        margin-left: 0;
-      }
     }
   }
 }

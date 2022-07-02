@@ -46,7 +46,7 @@ export default {
     computed:{
         ...mapState(['scrollTop']),
         offsetTop(){
-            return -(this.scrollTop / innerHeight) * 200
+            return -(this.scrollTop / innerHeight) * 100
         }
     },
     methods: {
@@ -69,7 +69,6 @@ export default {
 
 .section{
     position: relative;
-    margin-bottom: $gap;
     background-color: transparentize(white, 0.2);
     @include border-radius($radius);
     padding: $gap;
@@ -80,7 +79,6 @@ export default {
     &.link{
         @extend .btn-like
     }
-
     .section-header{
         z-index: 10;
         @include transition(color 0.5s);
@@ -105,13 +103,12 @@ export default {
         }
     }
     .section-content{
-        height: 210px;
+        height: 180px;
         width: 100%;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        min-height: 150px;
         border: 1px solid transparent;
         .cover{
             @include transition(all 1s ease-in-out);
@@ -126,14 +123,14 @@ export default {
             align-items: center;
             flex-flow: column nowrap;
             z-index: 10;
-            margin-right: 190px;
+            margin-right: 100px;
             img{
                 display: block;
-                width: 70px;
+                width: 50px;
             }
             .title{
                 color: white;
-                font-size: 20px;
+                font-size: $fz-film;
                 font-weight: bold;
                 text-align: center;
             }
