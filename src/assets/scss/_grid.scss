@@ -1,0 +1,7 @@
+@use "sass:math";
+@for $item from 1 through 24 {
+  .col-#{$item}{
+    width: math.div($item / 24) + '%';
+  }
+}
+

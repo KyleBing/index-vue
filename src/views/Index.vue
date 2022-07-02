@@ -15,9 +15,9 @@
             </kyle-row>
 
             <kyle-row>
-                <kyle-col :span="12">
+<!--                <kyle-col :span="12">-->
 
-                </kyle-col>
+<!--                </kyle-col>-->
                 <kyle-col :span="12">
                     <card-project/>
                 </kyle-col>

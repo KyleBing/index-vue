@@ -123,7 +123,7 @@ export default {
             align-items: center;
             flex-flow: column nowrap;
             z-index: 10;
-            margin-right: 100px;
+            margin-right: 80px;
             img{
                 display: block;
                 width: 50px;
@@ -196,9 +196,7 @@ export default {
 
 @media (max-width: 1280px) {
     .section {
-        margin-bottom: $gap-mobile;
-        padding: 20px;
-
+        padding: $gap-mobile;
         .section-content {
             min-height: 100px;
         }

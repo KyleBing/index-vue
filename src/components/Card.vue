@@ -146,9 +146,7 @@ export default {
 
 @media (max-width: 1280px) {
     .section {
-        margin-bottom: $gap-mobile;
-        padding: 20px;
-
+        padding: $gap-mobile;
         .section-content {
             min-height: 100px;
         }

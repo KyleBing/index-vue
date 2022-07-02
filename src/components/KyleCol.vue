@@ -1,5 +1,5 @@
 <template>
-    <div v-if="innerWidth > innerHeight" class="col" :style="`width: ${span/24*100}%`">
+    <div v-if="innerWidth > innerHeight" :class="['col', `col-span`]" >
         <slot></slot>
     </div>
     <div v-else class="col">
