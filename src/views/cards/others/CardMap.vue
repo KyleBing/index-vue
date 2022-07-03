@@ -1,11 +1,10 @@
 <template>
-    <CardImage title="图片批量查看器"
-               class="gray"
+    <CardImage title="地图工具"
+               class=""
                :no-padding="true"
                :cover="cover"
-               :logo="null"
-               logo-title="图片查看器"
-               page-link="../tools/drop-and-show"
+               :logo="logo"
+               page-link="../tools/map"
     >
         <div class="logo"></div>
     </CardImage>
@@ -15,12 +14,12 @@
 import Card from "@/components/Card";
 import CardImage from "@/components/CardImage";
 export default {
-    name: "CardImageViewer",
+    name: "CardMap",
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./../imgs/card-img-imgs.png'),
-            logo: require('../../icon-list/logo-diary.png')
+            cover: require('./../imgs/card-img-map.png'),
+            logo: require('../../icon-list/logo-map.png')
         }
     },
 }
@@ -28,9 +27,6 @@ export default {
 
 <style scoped lang="scss">
 @import "src/assets/scss/plugin";
-img{
-    height: 200px;
-    display: block;
-}
+
 
 </style>

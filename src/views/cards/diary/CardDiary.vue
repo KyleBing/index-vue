@@ -3,6 +3,7 @@
                :no-padding="true"
                :cover="cover"
                :logo="logo"
+               :is-animated="true"
                page-link="../diary"
     >
         <div class="logo"></div>
@@ -17,8 +18,8 @@ export default {
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./card-img-diary.png'),
-            logo: require('./logo-diary.png')
+            cover: require('./../imgs/card-img-diary.png'),
+            logo: require('../../icon-list/logo-diary.png')
         }
     },
 }

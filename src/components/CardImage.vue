@@ -5,7 +5,12 @@
 <!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
         <div class="section-content">
-            <img :src="cover" alt="cover" class="cover" :style="`top: ${offsetTop}px`">
+
+            <div class="cover"
+                 :class="['cover']"
+                 :style="`top: ${isAnimated ? offsetTop : 0}px`">
+                <img :src="cover" alt="cover">
+            </div>
             <div class="logo">
                 <img v-if="logo" :src="logo" alt="logo">
                 <div class="title">{{ logoTitle }}</div>
@@ -38,6 +43,10 @@ export default {
         pageLink: {
             type: String
         },
+        isAnimated: { // 是否启用图片动画
+            type: Boolean,
+            default: false
+        },
         noPadding: {
             type: Boolean,
             default: false
@@ -50,7 +59,7 @@ export default {
     computed:{
         ...mapState(['scrollTop']),
         offsetTop(){
-            return -(this.scrollTop / innerHeight) * 100
+            return -(this.scrollTop / innerHeight) * 100 + 50
         }
     },
     methods: {
@@ -96,7 +105,7 @@ export default {
             position: absolute;
             left: $gap / 2;
             //font-weight: bold;
-            font-size: $fz-m;
+            font-size: $fz-sm;
         }
         .share-link{
             position: absolute;
@@ -119,7 +128,9 @@ export default {
             position: absolute;
             display: block;
             width: 100%;
-            //position: absolute;
+            img{
+                width: 100%;
+            }
         }
         .logo{
             display: flex;

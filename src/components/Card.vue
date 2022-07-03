@@ -72,7 +72,7 @@ export default {
             position: absolute;
             left: $gap / 2;
             //font-weight: bold;
-            font-size: $fz-m;
+            font-size: $fz-sm;
         }
         .share-link{
             position: absolute;

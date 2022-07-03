@@ -13,26 +13,26 @@
 }
 
 @for $item from 1 through 24 {
-  @media(width > $grid-md) {
+  @media(min-width: $grid-md) {
     .col-lg-#{$item} {
-      width: math.div($item, 24) * 100 * 100%;
+      width: math.div($item, 24) * 100%;
     }
   }
-  @media ($grid-sm < width <= $grid-md) {
+  @media (min-width: $grid-sm) and (max-width: $grid-md) {
     .col-md-#{$item} {
-      width: math.div($item, 24) * 100 * 100%;
+      width: math.div($item, 24) * 100%;
     }
   }
 
-  @media ($grid-xs < width <= $grid-sm) {
+  @media (min-width: $grid-xs) and (max-width: $grid-sm) {
     .col-sm-#{$item} {
-      width: math.div($item, 24) * 100 * 100%;
+      width: math.div($item, 24) * 100%;
     }
   }
 
-  @media (width <= $grid-xs) {
+  @media(max-width: $grid-xs) {
     .col-xs-#{$item} {
-      width: math.div($item, 24) * 100 * 100%;
+      width: math.div($item, 24) * 100%;
     }
   }
 }

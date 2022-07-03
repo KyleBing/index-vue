@@ -18,8 +18,8 @@ export default {
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./card-img-backend.png'),
-            logo: require('./logo-backend.png')
+            cover: require('./../imgs/card-img-backend.png'),
+            logo: require('../../icon-list/logo-backend.png')
         }
     },
 }
