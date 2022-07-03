@@ -2,26 +2,23 @@
     <div class="index">
         <div class="container" v-cloak>
 
-            <kyle-row>
-                <kyle-col :span="8"><card-apple/></kyle-col>
-                <kyle-col :span="16"><card-profile/></kyle-col>
-            </kyle-row>
+            <div class="row">
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-8"><card-apple/></div>
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-16"><card-profile/></div>
+            </div>
 
-            <kyle-row>
-                <kyle-col :span="6"><card-clock/></kyle-col>
-                <kyle-col :span="6"><card-diary/></kyle-col>
-                <kyle-col :span="6"><card-backend/></kyle-col>
-                <kyle-col :span="6"><card-image-viewer/></kyle-col>
-            </kyle-row>
+            <div class="row">
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-6"><card-clock/></div>
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-6"><card-diary/></div>
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-6"><card-backend/></div>
+                <div class="col col-xs-24 col-sm-12 col-md-12 col-lg-6"><card-image-viewer/></div>
+            </div>
 
-            <kyle-row>
-<!--                <kyle-col :span="12">-->
-
-<!--                </kyle-col>-->
-                <kyle-col :span="12">
+            <div class="row">
+                <div class="col col-lg-24">
                     <card-project/>
-                </kyle-col>
-            </kyle-row>
+                </div>
+            </div>
 
         </div>
 
@@ -39,8 +36,6 @@ import CardDiary from "@/views/cards/diary/CardDiary";
 import filmData from "@/views/cards/films/filmData";
 import CardClock from "@/views/cards/clock/CardClock";
 import CardImageViewer from "@/views/cards/others/CardImageViewer";
-import KyleRow from "@/components/KyleRow";
-import KyleCol from "@/components/KyleCol";
 import {mapMutations} from "vuex";
 import CardBackend from "@/views/cards/others/CardBackend";
 import CardCalculator from "@/views/cards/tools/CardCalculator";
@@ -49,8 +44,6 @@ export default {
     components: {
         CardCalculator,
         CardBackend,
-        KyleCol,
-        KyleRow,
         CardImageViewer,
         CardClock, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
     data(){

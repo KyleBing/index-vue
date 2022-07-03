@@ -1,7 +1,42 @@
 @use "sass:math";
+.row{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.col{
+  padding: math.div($gap, 2);
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 @for $item from 1 through 24 {
-  .col-#{$item}{
-    width: math.div($item / 24) + '%';
+  @media(width > $grid-md) {
+    .col-lg-#{$item} {
+      width: math.div($item, 24) * 100 * 100%;
+    }
+  }
+  @media ($grid-sm < width <= $grid-md) {
+    .col-md-#{$item} {
+      width: math.div($item, 24) * 100 * 100%;
+    }
+  }
+
+  @media ($grid-xs < width <= $grid-sm) {
+    .col-sm-#{$item} {
+      width: math.div($item, 24) * 100 * 100%;
+    }
+  }
+
+  @media (width <= $grid-xs) {
+    .col-xs-#{$item} {
+      width: math.div($item, 24) * 100 * 100%;
+    }
   }
 }
+
+
+
 

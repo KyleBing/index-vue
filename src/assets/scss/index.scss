@@ -1,12 +1,6 @@
 @import "plugin";
 @import "reset";
 
-$root-size: 14;
-
-
-@function size($value: 3){
-  @return #{$value/14}rem
-}
 
 [v-cloak]{
   display: none;
@@ -26,33 +20,13 @@ body{
   padding: $gap;
 }
 
-
-
-
-.row{
-  width: 100%;
-  align-items: stretch;
-  display: flex;
-  flex-flow: row nowrap;
-  .col{
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-}
-
-
 @media (max-width: 1280px) {
   .container{
     padding: $gap-mobile;
   }
-
-  .row{
-    flex-flow: column nowrap !important;
-    .col{
-    }
-  }
 }
 
+@import "grid";
 @import "animation";
 
 @import "dark";
