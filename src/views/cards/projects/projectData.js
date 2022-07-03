@@ -1,33 +1,17 @@
 export default  [
     {
-        title: '我的',
+        title: '我做的',
         value: 'most',
         isPublic: true,
         list: [
-            {title: '日记' ,     icon: '' ,       isPublic: true ,                        description: '纯文本日记项目，一目了然，已开源' , path: '/diary'} ,
-            {title: '我的后台' , icon: '' ,       isPublic: true ,                        description: '后台：日记、码表、QR' ,             path: '/manager'} ,
-            {title: '像素画' ,   isPublic: true , description: 'Divoom 像素画' ,          path: '/me/gif'} ,
             {title: 'README' ,   icon: '' ,       isPublic: true ,                        description: '一些文档说明' ,                     path: '/readme'} ,
-            {title: 'VPS' ,      isPublic: true , description: 'BandwagonHost 主机信息' , path: '/tools/vps'} ,
-        ],
-    },
-    {
-        title: '我做的',
-        value: 'latest',
-        isPublic: true,
-        list: [
-            {title: '全屏时钟', isPublic: true, description: '全屏电子时钟', path: './#/clock'},
             {title: 'Vue例子', isPublic: true, description: 'element 例子', path: '/e/'},
-            {title: '图片图标快速查看器', isPublic: true, description: 'DropZone', path: '/tools/drop-and-show'},
             {title: '挪车告示', isPublic: true, description: '贴在车上的二维码页面', path: '/qr'},
             {title: '挪车告示', isPublic: false, description: '贴在车上的二维码页面', path: '/qr?hash=kylebing'},
             // {title: '九号邀请码', isPublic: true, description: '九号电动车购车邀请码', path: '/ninebot'},
             // {title: 'QR', isPublic: false, description: '二维码信息预览', path: '/qr?hash=tina'},
             {title: '计算器', isPublic: true, description: '简易算式', path: '/tools/calculator'},
             {title: '码表助手', isPublic: true, description: '码表助手 web 版', path: '/tools/wubi-dict-editor-web'},
-            {title: '地图工具', isPublic: true, description: '济南骑行路线推荐', path: '/tools/map'},
-            {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
-
         ],
     },
     {

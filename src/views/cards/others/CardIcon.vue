@@ -1,6 +1,6 @@
 <template>
     <div class="card-icon" @click="toRoute">
-        <div class="icon">
+        <div :class="['icon', {'no-padding': isNoPadding}]">
             <img :src="icon" alt="icon">
         </div>
         <div class="name">{{ name }}</div>
@@ -15,6 +15,10 @@ export default {
         pageLink: {
             type: String
         },
+        isNoPadding: {
+            type: Boolean,
+            default: false
+        }
     },
     name: "CardIcon",
     methods: {
@@ -44,8 +48,12 @@ export default {
     .icon{
         background-color: transparentize(white, 0.5);
         @include border-radius($radius);
+        overflow: hidden;
         height: 60px;
         width: 60px;
+        &.no-padding{
+            padding: 0;
+        }
         padding: 10px;
         img{
             width: 100%;

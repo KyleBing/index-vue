@@ -2,6 +2,7 @@
     <div class="icon-list">
         <card-icon v-for="item in icons" :key="item.name"
                    :icon="item.icon" :name="item.name"
+                   :is-no-padding="item.noPadding"
                    :page-link="item.pageLink"
         ></card-icon>
     </div>
@@ -15,11 +16,13 @@ export default {
     data(){
         return {
             icons: [
-                {name: '地图工具',pageLink: '../tools/map/', icon: require('./logo-map.png')},
-                {name: '图片查看器',pageLink: '../tools/drop-and-show', icon: require('./logo-diary.png')},
-                {name: '后台',pageLink: '../manager', icon: require('./logo-backend.png')},
-                {name: '跟打器',pageLink: '../tools/typepad', icon: require('./logo-typepad.png')},
-                {name: 'VPS',pageLink: '../tools/vps', icon: require('./logo-vps.png')},
+                {name: '地图工具', noPadding: false, pageLink: '../tools/map/', icon: require('./logo-map.png')},
+                {name: '图片查看器', noPadding: false, pageLink: '../tools/drop-and-show', icon: require('./logo-image-viewer.png')},
+                {name: '后台', noPadding: false, pageLink: '../manager', icon: require('./logo-backend.png')},
+                {name: '跟打器', noPadding: false, pageLink: '../tools/typepad', icon: require('./logo-typepad.png')},
+                {name: 'VPS', noPadding: false, pageLink: '../tools/vps', icon: require('./logo-vps.png')},
+                {name: 'Element', noPadding: false, pageLink: '../e', icon: require('./logo-ele.png')},
+                {name: '像素画', noPadding: true, pageLink: '../me/gif', icon: require('./logo-gif.gif')},
             ],
         }
     }
