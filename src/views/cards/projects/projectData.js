@@ -4,14 +4,7 @@ export default  [
         value: 'most',
         isPublic: true,
         list: [
-            {title: 'README' ,   icon: '' ,       isPublic: true ,                        description: '一些文档说明' ,                     path: '/readme'} ,
-            {title: 'Vue例子', isPublic: true, description: 'element 例子', path: '/e/'},
             {title: '挪车告示', isPublic: true, description: '贴在车上的二维码页面', path: '/qr'},
-            {title: '挪车告示', isPublic: false, description: '贴在车上的二维码页面', path: '/qr?hash=kylebing'},
-            // {title: '九号邀请码', isPublic: true, description: '九号电动车购车邀请码', path: '/ninebot'},
-            // {title: 'QR', isPublic: false, description: '二维码信息预览', path: '/qr?hash=tina'},
-            {title: '计算器', isPublic: true, description: '简易算式', path: '/tools/calculator'},
-            {title: '码表助手', isPublic: true, description: '码表助手 web 版', path: '/tools/wubi-dict-editor-web'},
         ],
     },
     {

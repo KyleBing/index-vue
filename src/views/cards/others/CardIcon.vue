@@ -47,14 +47,14 @@ export default {
     height: 100px;
     .icon{
         background-color: transparentize(white, 0.5);
-        @include border-radius($radius);
+        @include border-radius(13px);
         overflow: hidden;
         height: 60px;
         width: 60px;
         &.no-padding{
             padding: 0;
         }
-        padding: 10px;
+        padding: 6px;
         img{
             width: 100%;
             height: 100%;

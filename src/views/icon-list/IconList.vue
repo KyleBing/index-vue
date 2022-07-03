@@ -21,8 +21,11 @@ export default {
                 {name: '后台', noPadding: false, pageLink: '../manager', icon: require('./logo-backend.png')},
                 {name: '跟打器', noPadding: false, pageLink: '../tools/typepad', icon: require('./logo-typepad.png')},
                 {name: 'VPS', noPadding: false, pageLink: '../tools/vps', icon: require('./logo-vps.png')},
-                {name: 'Element', noPadding: false, pageLink: '../e', icon: require('./logo-ele.png')},
+                {name: 'Vue 例子', noPadding: false, pageLink: '../e', icon: require('./logo-ele.png')},
                 {name: '像素画', noPadding: true, pageLink: '../me/gif', icon: require('./logo-gif.gif')},
+                {name: '五笔助手', noPadding: true, pageLink: '../tools/wubi-dict-editor-web', icon: require('./logo-wubi-editor.png')},
+                {name: '计算器', noPadding: true, pageLink: '../tools/calculator', icon: require('./logo-calculator.png')},
+                {name: 'README', noPadding: false, pageLink: '../readme', icon: require('./logo-doc.png')},
             ],
         }
     }
