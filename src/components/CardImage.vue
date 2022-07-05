@@ -170,25 +170,25 @@ export default {
         }
     }
     &.blue{
-        background: $gradient-blue;
+        background: $gradient-bg-blue;
         .section-header{
             color: $text-dark-content
         }
     }
     &.red{
-        background: $gradient-red;
+        background: $gradient-bg-red;
         .section-header{
             color: $text-dark-content
         }
     }
     &.green{
-        background: $gradient-green;
+        background: $gradient-bg-green;
         .section-header{
             color: $text-dark-content
         }
     }
     &.purple{
-        background: $gradient-purple;
+        background: $gradient-bg-purple;
         .section-header{
             color: $text-dark-content
         }

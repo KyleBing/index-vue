@@ -25,6 +25,8 @@ export default {
                 {name: '像素画', noPadding: true, pageLink: '../me/gif', icon: require('./logo-gif.gif')},
                 {name: '五笔助手', noPadding: true, pageLink: '../tools/wubi-dict-editor-web', icon: require('./logo-wubi-editor.png')},
                 {name: '计算器', noPadding: true, pageLink: '../tools/calculator', icon: require('./logo-calculator.png')},
+                {name: '标点处理', noPadding: false, pageLink: '../tools/words', icon: require('./logo-words.png')},
+                {name: '音乐解码', noPadding: false, pageLink: '../tools/unlock-music', icon: require('./logo-unlock-music.png')},
                 {name: 'README', noPadding: false, pageLink: '../readme', icon: require('./logo-doc.png')},
             ],
         }
