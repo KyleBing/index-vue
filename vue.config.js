@@ -7,14 +7,14 @@ module.exports = defineConfig({
   productionSourceMap: false, // 不产出 .map 文件
 
   outputDir: '../index',
-  // devServer: {
-  //   proxy: {
-  //     '/portal/thumbs-up/all': {
-  //       target: 'https://kylebing.cn/portal/thumbs-up/all',
-  //       changeOrigin: true
-  //     },
-  //   }
-  // },
+/*  devServer: {
+    proxy: {
+      '../../portal/thumbs-up/all': {
+        target: 'https://kylebing.cn/portal/thumbs-up/all',
+        changeOrigin: true
+      },
+    }
+  },*/
 
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production'){

@@ -23,6 +23,8 @@
                 </div>
             </div>
 
+            <card-film :film="film" page-link="film"/>
+
         </div>
 
         <copyright/>
