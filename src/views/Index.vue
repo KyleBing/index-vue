@@ -23,7 +23,12 @@
                 </div>
             </div>
 
-            <card-film :film="film" page-link="film"/>
+            <div class="row">
+                <div class="col col-lg-24">
+                    <card-film :film="film" page-link="film"/>
+                </div>
+            </div>
+
 
         </div>
 

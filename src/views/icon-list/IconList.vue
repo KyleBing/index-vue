@@ -4,7 +4,7 @@
                    :icon="item.icon" :name="item.name"
                    :is-no-padding="item.noPadding"
                    :page-link="item.pageLink"
-        ></card-icon>
+        />
     </div>
 </template>
 
@@ -27,6 +27,7 @@ export default {
                 {name: '计算器', noPadding: true, pageLink: '../tools/calculator', icon: require('./logo-calculator.png')},
                 {name: '标点处理', noPadding: false, pageLink: '../tools/words', icon: require('./logo-words.png')},
                 {name: '音乐解码', noPadding: false, pageLink: '../tools/unlock-music', icon: require('./logo-unlock-music.png')},
+                {name: '电影推荐', noPadding: false, pageLink: 'film', icon: require('./logo-film.png')},
                 {name: 'README', noPadding: false, pageLink: '../readme', icon: require('./logo-doc.png')},
             ],
         }
