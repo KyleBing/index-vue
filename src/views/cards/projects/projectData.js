@@ -24,9 +24,9 @@ export default  [
         isPublic: true,
         list:  [
             {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-manage'},
-            {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
+            // {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
             // {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
-            {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
+            // {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
             {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},
             {title: '苹果产品图', isPublic: true, description: '产品尺寸示意图，各角度', path: '/tools/apple'},
             // {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
