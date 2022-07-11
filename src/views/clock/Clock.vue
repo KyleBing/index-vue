@@ -53,7 +53,7 @@
 
     <div class="glass-blur"
          v-if="config.isShowGlassBlur"
-         :style="`backdrop-filter: blur(${config.blur}px);-webkit-backdrop-filter: blur(${config.blur}px);`"></div>
+         :style="`backdrop-filter: blur(${config.blur}px saturate(180%)) !important;-webkit-backdrop-filter: blur(${config.blur}px saturate(180%))!important;`"></div>
 </template>
 
 <script>
@@ -117,6 +117,7 @@ export default {
         this.dateProcess()
         this.intervalHandle = setInterval(this.dateProcess, 1000)
         onkeydown = event => {
+            console.log(event.key)
             switch (event.key){
                 case 'ArrowDown': this.fontSizeDown();break
                 case 'ArrowUp': this.fontSizeUp();break
@@ -280,117 +281,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../assets/scss/plugin";
-
-.clock{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    .time{
-        font-weight: bold;
-        font-size: 20rem;
-        //font-family: "Courier";
-        //font-family: "DS-Digital";
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-flow: row nowrap;
-        .second{
-            font-size: 60px;
-            padding-bottom: 50px;
-        }
-    }
-    .separator{
-        padding: 0 30px;
-    }
-
-    .date{
-        font-weight: 200;
-        font-size: 2rem;
-    }
-
-}
-
-.operations{
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    .operation-item{
-        text-align: center;
-        padding: 3px 20px;
-        @extend .btn-like;
-        @include border-radius(50px);
-        @extend .unselectable;
-        &:hover{
-            background-color: transparentize(white, 0.8);
-            color: $orange;
-        }
-    }
-}
-
-.help-info{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparentize(white, 0.9);
-    @include backdrop-filter(blur(15px) saturate(180%));
-    @include transition(all 0.5s);
-    .info{
-        font-size: $fz-m;
-        color: white;
-        @include border-radius(15px);
-        padding: 30px;
-        background-color: transparentize(black, 0.5);
-        text-shadow: 1px 1px 0 transparentize(black, 0.7);
-        h3{
-            text-align: center;
-            font-size: $fz-big;
-            margin-bottom: 30px;
-        }
-        dl{
-            padding: 5px 10px;
-            width: 300px;
-            display: flex;
-            justify-content: space-between;
-            dt{
-                font-weight: bold;
-                .tip{
-                    font-weight: normal;
-
-                }
-
-            }
-            dd{
-
-            }
-        }
-
-    }
-}
-
-.glass-blur{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include backdrop-filter(blur(15px) saturate(180%));
-    //@include transition(all 0.5s);
-}
-
+@import "clock";
 </style>
