@@ -135,55 +135,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../../assets/scss/plugin";
-
-.clock{
-    //background-color: black;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    .time{
-        font-weight: bold;
-        font-size: 20rem;
-        //font-family: "Courier";
-        //font-family: "DS-Digital";
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-flow: row nowrap;
-        .second{
-            font-size: 60px;
-            padding-bottom: 50px;
-        }
-    }
-    .separator{
-        padding: 0 30px;
-    }
-
-    .date{
-        font-weight: 200;
-        font-size: 2rem;
-    }
-
-}
-
-.operations{
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    .operation-item{
-        text-align: center;
-        padding: 3px 20px;
-        @extend .btn-like;
-        @include border-radius(50px);
-        @extend .unselectable;
-        &:hover{
-            background-color: transparentize(white, 0.8);
-            color: $orange;
-        }
-    }
-}
+@import "card-clock";
 </style>

@@ -10,11 +10,10 @@
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
+  font-family: "JetBrains Mono";
   .time{
     font-weight: bold;
     font-size: 20rem;
-    font-family: "JetBrains Mono";
-    //font-family: "DS-Digital";
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -29,7 +28,6 @@
   }
 
   .date{
-    font-family: "JetBrains Mono";
     font-weight: 200;
     font-size: 2rem;
   }
