@@ -130,6 +130,14 @@ export default {
                 case 'g': this.toggleGlass();break // tool panel
             }
         }
+        setTimeout(() => {
+            if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
+                let hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?478d99033369c24a114bbc84a4cdc066";
+                let s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            }
+        }, 1000)
     },
     unmounted() {
         onkeydown = null
