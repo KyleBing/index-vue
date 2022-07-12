@@ -52,8 +52,9 @@
     </div>
 
     <div class="glass-blur"
-         v-if="config.isShowGlassBlur"
-         :style="`backdrop-filter: blur(${config.blur}px saturate(180%)) !important;-webkit-backdrop-filter: blur(${config.blur}px saturate(180%))!important;`"></div>
+         v-show="config.isShowGlassBlur"
+         :style="`backdrop-filter: blur(${config.blur}px) saturate(180%) !important;-webkit-backdrop-filter: blur(${config.blur})px saturate(180%)!important;`"
+         />
 </template>
 
 <script>
