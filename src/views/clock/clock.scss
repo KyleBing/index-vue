@@ -111,3 +111,7 @@
   @include backdrop-filter(blur(15px) saturate(180%));
   //@include transition(all 0.5s);
 }
+
+.hide-pointer{
+  cursor: none;
+}

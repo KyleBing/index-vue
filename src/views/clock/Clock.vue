@@ -1,5 +1,6 @@
 <template>
-    <div class="clock"
+    <div
+        :class="['clock', {'hide-pointer': !config.isShowToolPanel}]"
          :style="`
              height: ${insets.height}px;
              color: ${colors[config.colorIndex]}`"
@@ -120,16 +121,17 @@ export default {
         onkeydown = event => {
             console.log(event.key)
             switch (event.key){
-                case 'ArrowDown': this.fontSizeDown();break
-                case 'ArrowUp': this.fontSizeUp();break
-                case 'ArrowLeft': this.blurMinus();break
-                case 'ArrowRight': this.blurPlus();break
-                case 'c': this.switchColor();break // color
-                case 'd': this.toggleDate();break // date
-                case 's': this.toggleSecond();break // second
-                case 'f': this.switchFullScreen();break // full screen
-                case 'h': this.toggleToolPanel();break // tool panel
-                case 'g': this.toggleGlass();break // tool panel
+                case 'ArrowDown'  : this.fontSizeDown()     ; break
+                case 'ArrowUp'    : this.fontSizeUp()       ; break
+                case 'ArrowLeft'  : this.blurMinus()        ; break
+                case 'ArrowRight' : this.blurPlus()         ; break
+                case 'c'          : this.switchColor()      ; break // color
+                case 'd'          : this.toggleDate()       ; break // date
+                case 's'          : this.toggleSecond()     ; break // second
+                case 'f'          : this.switchFullScreen() ; break // full screen
+                case 'h'          : this.toggleToolPanel()  ; break // tool panel
+                case 'g'          : this.toggleGlass()      ; break // tool panel
+
             }
         }
         setTimeout(() => {
