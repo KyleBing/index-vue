@@ -40,7 +40,7 @@ export default {
 <style scoped  lang="scss">
 @import "./../../assets/scss/plugin";
 .icon-list{
-    padding: 20px 0;
+    padding: 30px 20px;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;

@@ -1,5 +1,5 @@
 <template>
-    <CardImage title="日记" class="gray"
+    <CardImage title="日记" class=""
                :no-padding="true"
                :cover="cover"
                :logo="logo"
