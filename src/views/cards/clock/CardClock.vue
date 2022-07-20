@@ -5,7 +5,7 @@
     >
         <div class="clock"
              :style="`
-             color: ${colors[config.colorIndex]}`"
+             color: ${colors[clockColorIndex]}`"
         >
             <div class="time" :style="`font-size: ${config.fontSize}px`">
                 <div class="hour">{{ hours }}</div>
@@ -76,12 +76,15 @@ export default {
                 colorIndex: 0
             },
 
+            clockColorIndex: 0,
+
             colors: COLORS,
             // 时间字体大小
             fontSizeStep: 10,
         }
     },
     mounted() {
+        this.getConfig()
         this.dateProcess()
         this.intervalHandle = setInterval(this.dateProcess, 1000)
     },
@@ -95,6 +98,13 @@ export default {
         ...mapState(['insets']),
     },
     methods: {
+        getConfig(){
+            let configString = localStorage.getItem(this.storageName)
+            if (configString){
+                const config = JSON.parse(configString)
+                this.clockColorIndex = config.colorIndex
+            }
+        },
         dateProcess() {
             let date = new Date()
             this.year = date.getFullYear()
