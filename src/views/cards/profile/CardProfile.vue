@@ -1,5 +1,5 @@
 <template>
-    <Card title="我的" class="profile">
+    <Card title="" class="profile">
         <!--PROFILE-->
         <div class="profile-content">
             <div class="head-container">
@@ -7,11 +7,31 @@
                     <img :src="AVATAR_ARRAY[randomPicId-1]" alt="HeadPic">
                 </div>
                 <div class="social-links">
-                    <a class="social-link" target="_blank" href="https://space.bilibili.com/12729637"><img src="./icon/bilibili.svg" alt="bilibili"></a>
-                    <a class="social-link" target="_blank" href="https://weibo.com/u/5446375965"><img src="./icon/weibo.svg" alt="weibo"></a>
-                    <a class="social-link" target="_blank" href="mailto:kylebing@163.com"><img src="./icon/email.svg" alt="email"></a>
-                    <a class="social-link" target="_blank" href="https://github.com/KyleBing"><img src="./icon/github.svg" alt="github"></a>
-                    <a class="social-link" target="_blank" href="https://kylebing.blog.csdn.net/"><img src="./icon/csdn.svg" alt="CSDN"></a>
+                    <a class="social-link"
+                       target="_blank"
+                       href="https://space.bilibili.com/12729637">
+                        <img src="./icon/bilibili.svg" alt="bilibili">
+                    </a>
+                    <a class="social-link"
+                       target="_blank"
+                       href="https://weibo.com/u/5446375965">
+                        <img src="./icon/weibo.svg" alt="weibo">
+                    </a>
+                    <a class="social-link"
+                       target="_blank"
+                       href="mailto:kylebing@163.com">
+                        <img src="./icon/email.svg" alt="email">
+                    </a>
+                    <a class="social-link"
+                       target="_blank"
+                       href="https://github.com/KyleBing">
+                        <img src="./icon/github.svg" alt="github">
+                    </a>
+                    <a class="social-link"
+                       target="_blank"
+                       href="https://kylebing.blog.csdn.net/">
+                        <img src="./icon/csdn.svg" alt="CSDN">
+                    </a>
                 </div>
             </div>
             <div class="intro">
@@ -35,14 +55,14 @@ export default {
     components: {Card},
     data(){
         return{
-            picCount: 14, // 头像数量
+            picCount: 15, // 头像数量
             randomPicId: 1, //
             PROFILE: PROFILE,
             AVATAR_ARRAY: AVATAR_ARRAY
         }
     },
     mounted() {
-        this.randomPicId = new Date().getDay() + 1
+        this.changeAvatar()
     },
     methods: {
         changeAvatar(){

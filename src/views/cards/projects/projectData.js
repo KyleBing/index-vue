@@ -167,7 +167,7 @@ export default  [
         ],
     },
     {
-        title: '其它',
+        title: '搬瓦工服务器',
         value: 'other',
         isPublic: true,
         list:  [

@@ -1,20 +1,15 @@
 <template>
-    <Card class="black"
-          title="全屏时钟"
-          page-link="clock"
-    >
+    <Card class="black" title="" page-link="clock">
         <div class="clock"
-             :style="`
-             color: ${colors[clockColorIndex]}`"
-        >
+             :style="`color: ${colors[clockColorIndex]}`">
             <div class="time" :style="`font-size: ${config.fontSize}px`">
                 <div class="hour">{{ hours }}</div>
                 <div class="separator" :style="`padding: 0 ${config.fontSize * 0.1}px`">:</div>
                 <div class="minute">{{ minutes }}</div>
                 <div class="second"
                      :style="`
-                     font-size: ${config.fontSize * 0.3}px;
-                     padding-bottom: ${config.fontSize * 0.2}px`"
+                         font-size: ${config.fontSize * 0.3}px;
+                         padding-bottom: ${config.fontSize * 0.2}px`"
                      v-if="config.isShowSecond"
                 >
                     <span :style="`padding-left: ${config.fontSize * 0.05}px`">:</span>

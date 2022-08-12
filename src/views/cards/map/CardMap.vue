@@ -1,6 +1,8 @@
 <template>
-    <CardImage title="地图工具"
+    <CardImage title=""
                class=""
+               logo-title="地图工具"
+               logo-title-color="#6c6c6c"
                :no-padding="true"
                :cover="cover"
                :logo="logo"
@@ -18,7 +20,7 @@ export default {
     components: {CardImage, Card},
     data(){
         return {
-            cover: require('./../imgs/card-img-map.png'),
+            cover: require('./map-bg.jpg'),
             logo: require('../../icon-list/logo-map.png')
         }
     },
@@ -26,7 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/assets/scss/plugin";
+@import "../../../assets/scss/plugin";
 
 
 </style>

@@ -1,5 +1,5 @@
 let avatarArray = []
-for (let i=1; i<= 14;i++){
+for (let i=1; i<= 15;i++){
     avatarArray.push(require('./avatars/me' + i + '.jpg'))
 }
 

@@ -48,7 +48,7 @@ export default {
     .icon{
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
-        background-color: transparentize(white, 0.5);
+        background-color: transparentize(white, 0.3);
         @include border-radius(13px);
         overflow: hidden;
         height: 60px;
@@ -63,6 +63,7 @@ export default {
         }
     }
     .name{
+        color: $text-title;
         margin-top: 10px;
         text-align: center;
         font-size: $fz-sm;

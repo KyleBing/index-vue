@@ -16,7 +16,7 @@ export default {
     padding: 1rem;
     text-align: center;
     font-size: .8rem;
-    color: white;
+    color: $text-title;
     a{
         display: inline-block;
         &:hover{

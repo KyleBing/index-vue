@@ -1,7 +1,5 @@
 <template>
     <div class="film-list">
-<!--        <div class="page-title">好剧推荐</div>-->
-
         <div class="row">
             <div class="col col-lg-24" v-for="film in films" :key="film.id">
                 <CardFilm :hoverColor="false" :film="film"/>

@@ -7,9 +7,6 @@
                 </div>
                 <div class="project-list">
                     <a :href="proj.path" class="project-list-item" v-for="proj in projGroup.list" :key="proj.title">
-                        <!--                    <div class="icon">-->
-                        <!--                        <img :src="proj.icon" alt="icon">-->
-                        <!--                    </div>-->
                         <div class="detail">
                             <h3 class="title">{{ proj.title }}</h3>
                             <p class="description">{{ proj.description }}</p>
@@ -126,12 +123,14 @@ $cols-md: 8;
         align-items: center;
         flex-grow: 1;
         .title{
+            width: 10rem;
             margin-right: $gap;
             font-weight: normal;
             font-size: $fz-m;
             color: $item-title-color;
         }
         .description{
+            width: 20rem;
             margin-right: $gap;
             font-size: $fz-sm;
             color: $item-content-color

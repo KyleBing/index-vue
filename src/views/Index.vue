@@ -1,25 +1,17 @@
 <template>
     <div class="index">
         <div class="container" v-cloak>
-
             <div class="row">
-                <div class="col col-xs-24 col-sm-24 col-md-8 col-lg-8"><card-apple/></div>
-                <div class="col col-xs-24 col-sm-24 col-md-16 col-lg-16"><card-profile/></div>
-            </div>
-
-            <div class="row">
-                <div class="col col-xs-24 col-sm-12 col-md-8 col-lg-6"><card-clock/></div>
-                <div class="col col-xs-24 col-sm-12 col-md-8 col-lg-6"><card-diary/></div>
-<!--                <div class="col col-xs-24 col-sm-12 col-md-8 col-lg-6"><card-backend/></div>-->
-<!--                <div class="col col-xs-24 col-sm-12 col-md-8 col-lg-6"><card-image-viewer/></div>-->
-                <div class="col col-xs-24 col-sm-12 col-md-8 col-lg-6"><card-map/></div>
-            </div>
-
-            <icon-list/>
-
-            <div class="row">
-                <div class="col col-lg-24">
-                    <card-project/>
+                <div class="col col-lg-8 col-sm-8 col-xs-24">
+                    <div class="col col-xs-24"><card-apple/></div>
+                    <div class="col col-xs-24"><icon-list/></div>
+                    <div class="col col-xs-24"><card-clock/></div>
+                    <div class="col col-xs-24"><card-diary/></div>
+                    <div class="col col-xs-24"><card-map/></div>
+                </div>
+                <div class="col col-lg-16 col-sm-16 col-xs-24">
+                    <div class="col col-xs-24"><card-profile/></div>
+                    <div class="col col-xs-24"><card-project/></div>
                 </div>
             </div>
 
@@ -49,7 +41,7 @@ import CardImageViewer from "@/views/cards/others/CardImageViewer";
 import {mapMutations} from "vuex";
 import CardBackend from "@/views/cards/others/CardBackend";
 import CardCalculator from "@/views/cards/tools/CardCalculator";
-import CardMap from "@/views/cards/others/CardMap";
+import CardMap from "@/views/cards/map/CardMap";
 import CardIcon from "@/views/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
 export default {

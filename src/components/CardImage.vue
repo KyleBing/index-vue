@@ -13,7 +13,7 @@
             </div>
             <div class="logo">
                 <img v-if="logo" :src="logo" alt="logo">
-                <div class="title">{{ logoTitle }}</div>
+                <div class="title" :style="`color: ${logoTitleColor}`">{{ logoTitle }}</div>
             </div>
             <slot></slot>
         </div>
@@ -29,6 +29,7 @@ export default {
         title: {
             type: String
         },
+
         // 背景图
         cover: {
             type: String
@@ -39,6 +40,10 @@ export default {
         },
         logoTitle: {
             type: String
+        },
+        logoTitleColor: {
+            type: String,
+            default: 'white'
         },
         pageLink: {
             type: String
@@ -59,7 +64,7 @@ export default {
     computed:{
         ...mapState(['scrollTop']),
         offsetTop(){
-            return -(this.scrollTop / innerHeight) * 100 + 50
+            return -(this.scrollTop / innerHeight) * 100 + 100
         }
     },
     methods: {
@@ -86,6 +91,7 @@ export default {
     @include border-radius($radius);
     padding: $gap;
     overflow: hidden;
+    transition: all 0.3s;
     &.no-padding{
         padding: 0;
     }
@@ -146,7 +152,6 @@ export default {
             .title{
                 color: white;
                 font-size: $fz-film;
-                font-weight: bold;
                 text-align: center;
             }
         }

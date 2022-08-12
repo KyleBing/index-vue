@@ -1,8 +1,10 @@
 <template>
-    <CardImage title="日记" class=""
+    <CardImage title="" class="gray"
                :no-padding="true"
                :cover="cover"
                :logo="logo"
+               logo-title="标题日记"
+               logo-title-color="#ffcc02"
                :is-animated="true"
                page-link="../diary"
     >

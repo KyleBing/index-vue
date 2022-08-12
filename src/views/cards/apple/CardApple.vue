@@ -1,7 +1,6 @@
 <template>
-    <Card class="blue" title="苹果常用参数">
+    <Card class="blue" title="">
         <div class="card-apple">
-
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="https://kylebing.cn/tools/ipad">
                     <img src="./icons/links/iapd.png" alt="ipad">
