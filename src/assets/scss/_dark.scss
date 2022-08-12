@@ -12,7 +12,7 @@ $dark-bg-profile: lighten(black, 25%);
 
 
 $dark-text-title: lighten(black, 75%);
-$dark-text-desc: lighten(black, 55%);
+$dark-text-desc: lighten(black, 65%);
 
 @media (prefers-color-scheme: dark) {
   html{
@@ -114,6 +114,48 @@ $dark-text-desc: lighten(black, 55%);
         }
         .description, .link{
           color: $dark-text-desc;
+        }
+      }
+    }
+  }
+
+
+  // Card icon
+  .card-icon{
+    .icon{
+    }
+    .name{
+      color: $dark-text-desc !important;
+    }
+    &:hover{
+      .icon{
+        @include box-shadow(12px 25px 5px transparentize(white, 0.9), -2px 20px 5px transparentize(white, 0.9));
+      }
+    }
+  }
+
+  // Project list
+  .projects{
+    .projects-content{
+      .project-list{
+        .project-list-item{
+          border-color: $dark-border;
+          .detail{
+            .title{
+              color: $dark-text-title
+            }
+            .description{
+              color: $dark-text-desc ;
+            }
+            .link{
+              color: $dark-text-desc ;
+            }
+          }
+          &:hover{
+            .detail .title{
+              color: white;
+            }
+          }
         }
       }
     }
