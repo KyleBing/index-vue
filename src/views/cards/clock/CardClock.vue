@@ -67,7 +67,7 @@ export default {
                 isShowSecond: true, // 显示秒数
                 isShowDate: true, // 显示日期
                 isShowToolPanel: true, // 显示工具栏
-                fontSize: 80,
+                fontSize: 50,
                 colorIndex: 0
             },
 
