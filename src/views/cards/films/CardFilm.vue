@@ -52,6 +52,8 @@ export default {
     align-items: center;
     height: 500px;
     position: relative;
+    width: 100%;
+    overflow: hidden;
 
 
     &.hover-color{
@@ -167,6 +169,7 @@ export default {
             dl {
                 font-size: $fz-sm;
                 dt {
+                    width: auto;
                 }
 
                 dd {
@@ -174,7 +177,11 @@ export default {
                 }
             }
 
+            &.left{
+                left: 0
+            }
         }
+    //    TODO: film card 文字过长撑破界面
     }
 }
 
