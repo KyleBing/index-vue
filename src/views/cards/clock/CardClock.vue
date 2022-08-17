@@ -40,6 +40,12 @@ export default {
     name: "CardClock",
     components: {Card},
     data(){
+        let fontSize
+        if (innerWidth > 420){
+            fontSize = 80
+        } else {
+            fontSize = 50
+        }
         return {
             intervalHandle: null,
 
@@ -67,7 +73,7 @@ export default {
                 isShowSecond: true, // 显示秒数
                 isShowDate: true, // 显示日期
                 isShowToolPanel: true, // 显示工具栏
-                fontSize: 50,
+                fontSize: fontSize,
                 colorIndex: 0
             },
 
