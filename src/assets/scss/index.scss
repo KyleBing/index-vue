@@ -22,9 +22,16 @@ body{
   padding: $gap;
 }
 
+.col-xs-24{
+  margin-bottom: $gap;
+}
+
 @media (max-width: 1280px) {
   .container{
-    padding: $gap-mobile;
+    padding: 0;
+  }
+  .col-xs-24{
+    margin-bottom: $gap-mobile;
   }
 }
 

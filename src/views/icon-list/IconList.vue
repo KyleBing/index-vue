@@ -46,5 +46,11 @@ export default {
     flex-flow: row wrap;
 }
 
+@media (max-width: 1280px) {
+    .icon-list{
+        padding: 0;
+    }
+}
+
 
 </style>
