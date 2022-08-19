@@ -150,8 +150,9 @@ export default {
                 width: 50px;
             }
             .title{
+                margin-top: 10px;
                 color: white;
-                font-size: $fz-film;
+                font-size: $fz-m;
                 text-align: center;
             }
         }

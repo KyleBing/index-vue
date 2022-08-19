@@ -3,11 +3,15 @@
         <div :class="['icon', {'no-padding': isNoPadding}]">
             <img :src="icon" alt="icon">
         </div>
+        <div class="indicator-new" v-if="isNew">
+            <img alt="black-berry-new-message-icon" :src="iconNewMsg">
+        </div>
         <div class="name">{{ name }}</div>
     </div>
 </template>
 
 <script>
+let blackberryNewMessageIcon = require('./blackberry-new.svg')
 export default {
     props: {
         icon: '',
@@ -16,6 +20,10 @@ export default {
             type: String
         },
         isNoPadding: {
+            type: Boolean,
+            default: false
+        },
+        isNew:{
             type: Boolean,
             default: false
         }
@@ -31,12 +39,19 @@ export default {
                 }
             }
         }
+    },
+    data(){
+        return {
+            iconNewMsg: blackberryNewMessageIcon
+        }
     }
 }
 </script>
 
 <style lang="scss">
 @import "./../../../assets/scss/plugin";
+
+$indicator-width: 20px;
 .card-icon{
     @extend .btn-like;
     display: flex;
@@ -45,6 +60,14 @@ export default {
     align-items: center;
     width: 80px;
     height: 100px;
+    position: relative;
+    .indicator-new{
+        position: absolute;
+        width: $indicator-width;
+        height: $indicator-width;
+        top: 0;
+        right: 0;
+    }
     .icon{
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
