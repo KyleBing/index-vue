@@ -1,6 +1,6 @@
 <template>
     <div class="copyright">
-        <p>Copyright © 2022 <a href="mailto:kylebing@163.com">KyleBing</a>. All rights reserved.</p>
+        <p>Copyright © 2022 <a href="mailto:kylebing@163.com">KyleBing</a>. <a href="https://beian.miit.gov.cn">ICP鲁 1298347 号</a> All rights reserved.</p>
     </div>
 </template>
 
