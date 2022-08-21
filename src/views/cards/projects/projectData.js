@@ -32,13 +32,12 @@ export default  [
             // {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
             // {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
             {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
-            {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/characters'},
+            {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
             {title: '想买的东西', isPublic: false, description: '想要买的东西', path: '/tools/wanted-list'},
             {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
             // {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
             // {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
             // {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
-            // {title: '贴吧签到', isPublic: true, description: '百度贴吧自动签到', path: 'tieba'},
             // {title: 'MarkDown', isPublic: true, description: 'MarkDown 语法说明', path: '/tools/markdown'},
             // {title: 'Apps', isPublic: true, description: '一些有用的小程序', path: '/tools/apps'},
             // {title: '比例计算', isPublic: true, description: '屏幕比例计算', path: '/tools/ratio'},
@@ -78,7 +77,6 @@ export default  [
         isPublic: false,
         list:  [
             {title: '饥荒', isPublic: true, description: '饥荒游戏物品数据', path: '/dontstarve/?type=query&table=characters'},
-            // {title: '二维码', isPublic: true, description: '二维码生成', path: '/tools/qr/?text=http://kylebing.cn'},
         ],
     },
     {

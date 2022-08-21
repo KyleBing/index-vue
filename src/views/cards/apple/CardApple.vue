@@ -2,7 +2,7 @@
     <Card class="blue" title="">
         <div class="card-apple">
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/ipad">
+                <a class="link-item" target="_blank" href="../tools/ipad">
                     <img src="./icons/links/iapd.png" alt="ipad">
                     <h3>iPad</h3>
                 </a>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/iphone">
+                <a class="link-item" target="_blank" href="../tools/iphone">
                     <img src="./icons/links/iphone.png" alt="phone">
                     <h3>iPhone</h3>
                 </a>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/apple-chip">
+                <a class="link-item" target="_blank" href="../tools/apple-chip">
                     <img src="./icons/links/chip.png" alt="chip">
                     <h3>处理器</h3>
                 </a>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="https://kylebing.cn/tools/airpods">
+                <a class="link-item" target="_blank" href="../tools/airpods">
                     <img src="./icons/links/AirPods@3x.png" alt="airpods">
                     <h3>AirPods</h3>
                 </a>
