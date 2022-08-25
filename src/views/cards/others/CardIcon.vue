@@ -1,6 +1,6 @@
 <template>
     <div class="card-icon" @click="toRoute">
-        <div :class="['icon', {'no-padding': isNoPadding}]">
+        <div :class="['icon', {'no-padding': isNoPadding}, {black: isBgBlack}]">
             <img :src="icon" alt="icon">
         </div>
         <div class="indicator-new" v-if="isNew">
@@ -24,6 +24,10 @@ export default {
             default: false
         },
         isNew:{
+            type: Boolean,
+            default: false
+        },
+        isBgBlack: {
             type: Boolean,
             default: false
         }
@@ -61,6 +65,8 @@ $indicator-width: 20px;
     width: 80px;
     height: 100px;
     position: relative;
+
+
     .indicator-new{
         position: absolute;
         width: $indicator-width;
@@ -71,13 +77,18 @@ $indicator-width: 20px;
     .icon{
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
-        background-color: transparentize(white, 0.3);
+        background-color: white;
         @include border-radius(13px);
         overflow: hidden;
         height: 60px;
         width: 60px;
+        @include box-shadow(12px 15px 3px transparentize(black, 0.95));
+
         &.no-padding{
             padding: 0;
+        }
+        &.black{
+            background-color: $text-title;
         }
         padding: 6px;
         img{

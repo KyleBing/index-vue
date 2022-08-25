@@ -48,12 +48,12 @@ export default {
 @import "../../../assets/scss/plugin";
 
 .card-film{
+
     display: flex;
     align-items: center;
     height: 500px;
     position: relative;
     width: 100%;
-    overflow: hidden;
 
 
     &.hover-color{

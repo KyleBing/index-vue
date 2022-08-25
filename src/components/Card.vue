@@ -48,7 +48,9 @@ export default {
 @import "../assets/scss/plugin";
 
 .section{
+    //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
     position: relative;
+    border: 1px solid $item-border-color;
     background-color: transparentize(white, 0.2);
     @include border-radius($radius);
     padding: $gap;
