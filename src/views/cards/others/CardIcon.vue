@@ -122,5 +122,22 @@ $indicator-width: 20px;
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .card-icon{
+        .icon{
+            @include box-shadow(5px 5px 3px transparentize(black, 0.7));
+        }
+        &:hover {
+            .icon {
+                background-color: white;
+                @include box-shadow(12px 30px 5px transparentize(black, 0.5), -2px 20px 5px transparentize(black, 0.5));
+            }
+            .name{
+                color: white;
+            }
+        }
+    }
+}
+
 
 </style>

@@ -50,12 +50,6 @@ export default {
                         { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../e/#/base64/base64-text' ,     icon: require('./logo-base64.png') ,       name: 'Base64工具' , } ,
                     ]
                 },
-                {
-                    title: '其它',
-                    icons: [
-
-                    ]
-                }
             ],
         }
     }
@@ -97,6 +91,14 @@ export default {
 @media (max-width: 1280px) {
     .icon-list{
         padding: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .icon-list-header{
+        .title{
+            background-image: $gradient-bg-body;
+        }
     }
 }
 </style>

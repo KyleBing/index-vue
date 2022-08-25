@@ -159,6 +159,12 @@ export default {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .section{
+        border-color: $dark-border;
+    }
+}
+
 .is-developing{
     img{
         display: block;

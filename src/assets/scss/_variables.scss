@@ -74,3 +74,19 @@ $label-array: (
 
 $gap: 20px;
 $gap-mobile: 10px;
+
+
+
+
+$dark-bg: lighten(black, 30%);
+$dark-bg-html: lighten(black, 10%);
+$dark-bg-body: lighten(black, 18%);
+$dark-border: lighten(black, 30%);
+
+$dark-item-bg: lighten(black, 24%);
+$dark-item-border: lighten(black, 24%);
+
+$dark-bg-profile: lighten(black, 25%);
+
+$dark-text-title: lighten(black, 75%);
+$dark-text-desc: lighten(black, 65%);
