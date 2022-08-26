@@ -82,7 +82,7 @@ $indicator-width: 20px;
         overflow: hidden;
         height: 60px;
         width: 60px;
-        @include box-shadow(12px 15px 3px transparentize(black, 0.95));
+        //@include box-shadow(12px 15px 3px transparentize(black, 0.95));
 
         &.no-padding{
             padding: 0;
@@ -125,7 +125,7 @@ $indicator-width: 20px;
 @media (prefers-color-scheme: dark) {
     .card-icon{
         .icon{
-            @include box-shadow(5px 5px 3px transparentize(black, 0.7));
+            //@include box-shadow(5px 5px 3px transparentize(black, 0.7));
         }
         &:hover {
             .icon {
