@@ -87,9 +87,8 @@ $cols-md: 8;
 
 .project-list{}
 .project-list-item{
-    @include border-radius(2px);
-    //margin-bottom: 5px;
-    padding: 3px 5px;
+    @include border-radius(5px);
+    padding: 3px 12px;
     border-bottom: 1px solid $item-border-color;
     &:last-child{
         border-bottom: none;
