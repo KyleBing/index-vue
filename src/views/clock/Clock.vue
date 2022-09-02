@@ -45,6 +45,7 @@
             <dl><dt>D - <span class="tip">Date</span></dt><dd>日期 显示/隐藏</dd></dl>
             <dl><dt>S - <span class="tip">Second</span></dt><dd>秒数 显示/隐藏</dd></dl>
             <dl><dt>G - <span class="tip">Glass</span></dt><dd>玻璃遮罩 显示/隐藏</dd></dl>
+            <dl><dt>Q - <span class="tip">Quit</span></dt><dd>关闭</dd></dl>
             <dl><dt>←</dt><dd>毛玻璃效果减小</dd></dl>
             <dl><dt>→</dt><dd>毛玻璃效果增大</dd></dl>
             <dl><dt>F - <span class="tip">FullScreen</span></dt><dd>全屏切换</dd></dl>
@@ -54,7 +55,7 @@
 
     <div class="glass-blur"
          v-show="config.isShowGlassBlur"
-         :style="`backdrop-filter: blur(${config.blur}px) saturate(180%) !important;-webkit-backdrop-filter: blur(${config.blur})px saturate(180%)!important;`"
+         :style="`backdrop-filter: blur(${config.blur}px) saturate(180%) !important;-webkit-backdrop-filter: blur(${config.blur})px saturate(180%)!important; cursor: none`"
          />
 </template>
 
@@ -131,6 +132,7 @@ export default {
                 case 'f'          : this.switchFullScreen() ; break // full screen
                 case 'h'          : this.toggleToolPanel()  ; break // tool panel
                 case 'g'          : this.toggleGlass()      ; break // tool panel
+                case 'q'          : this.$router.push('/')  ; break // tool panel
 
             }
         }
