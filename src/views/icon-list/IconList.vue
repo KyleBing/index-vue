@@ -28,7 +28,6 @@ export default {
                     title: '我的',
                     icons: [
                         { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./logo-diary.png') ,        name: '日记' ,     } ,
-                        { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'film' ,                          icon: require('./logo-film.png') ,         name: '电影推荐' ,     } ,
                         { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./logo-backend.png') ,      name: '后台' ,       } ,
                         { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./logo-doc.png') ,          name: 'README' ,   } ,
                         { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../me/gif' ,                     icon: require('./logo-gif.gif') ,          name: '像素画' ,      } ,

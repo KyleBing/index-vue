@@ -13,7 +13,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/scss/plugin";
 .copyright{
-    padding: 1rem;
+    padding: 1rem 1rem 2rem ;
     text-align: center;
     font-size: .8rem;
     color: $text-title;

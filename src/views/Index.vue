@@ -14,28 +14,17 @@
                     <div class="col-xs-24"><card-project/></div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col col-lg-24">
-                    <card-film :film="film" page-link="film"/>
-                </div>
-            </div>
-
-
         </div>
-
         <copyright/>
     </div>
 </template>
 
 <script>
 import Copyright from "@/views/Copyright";
-import CardFilm from "@/views/cards/films/CardFilm";
 import CardProfile from "@/views/cards/profile/CardProfile";
 import CardApple from "@/views/cards/apple/CardApple";
 import CardProject from "@/views/cards/projects/CardProject";
 import CardDiary from "@/views/cards/diary/CardDiary";
-import filmData from "@/views/cards/films/filmData";
 import CardClock from "@/views/cards/clock/CardClock";
 import CardImageViewer from "@/views/cards/others/CardImageViewer";
 import {mapMutations} from "vuex";
@@ -53,22 +42,9 @@ export default {
         CardCalculator,
         CardBackend,
         CardImageViewer,
-        CardClock, CardDiary, CardProject, CardApple, CardProfile, CardFilm, Copyright},
-    data(){
-        return {
-            // FILM
-            film: null,
-        }
-    },
+        CardClock, CardDiary, CardProject, CardApple, CardProfile, Copyright},
+    data(){},
     mounted() {
-        let minuteTail = new Date().getMinutes()%10
-        let showingFilmId
-        if (minuteTail >= filmData.length){ // leak
-            showingFilmId = Math.floor(Math.random() * filmData.length)
-        } else {
-            showingFilmId = minuteTail
-        }
-        this.film = filmData[showingFilmId]
         this.addScrollEvent()
     },
     unmounted() {
