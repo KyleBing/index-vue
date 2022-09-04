@@ -3,7 +3,7 @@
         <div class="card-apple">
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/ipad">
-                    <img src="./icons/links/iapd.png" alt="ipad">
+                    <img src="./icons/links/ipad_white@2x.png" alt="ipad">
                     <h3>iPad</h3>
                 </a>
                 <div class="thumb-up" @click="thumbsUp('ipad')">
@@ -13,7 +13,7 @@
             </div>
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/iphone">
-                    <img src="./icons/links/iphone.png" alt="phone">
+                    <img src="./icons/links/iphone_white@2x.png" alt="phone">
                     <h3>iPhone</h3>
                 </a>
                 <div class="thumb-up" @click="thumbsUp('iphone')">
@@ -21,24 +21,25 @@
                     <div class="count">{{thumbsUpMap.get('iphone')}}</div>
                 </div>
             </div>
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/apple-chip">
-                    <img src="./icons/links/chip.png" alt="chip">
-                    <h3>处理器</h3>
-                </a>
-                <div class="thumb-up" @click="thumbsUp('apple-chip')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('apple-chip')}}</div>
-                </div>
-            </div>
+
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/airpods">
-                    <img src="./icons/links/AirPods@3x.png" alt="airpods">
+                    <img src="./icons/links/airpods_white@2x.png" alt="airpods">
                     <h3>AirPods</h3>
                 </a>
                 <div class="thumb-up" @click="thumbsUp('airpods')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
                     <div class="count">{{thumbsUpMap.get('airpods')}}</div>
+                </div>
+            </div>
+            <div class="apple-item">
+                <a class="link-item" target="_blank" href="../tools/apple-chip">
+                    <img src="./icons/links/chip_white@2x.png" alt="chip">
+                    <h3>处理器</h3>
+                </a>
+                <div class="thumb-up" @click="thumbsUp('apple-chip')">
+                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
+                    <div class="count">{{thumbsUpMap.get('apple-chip')}}</div>
                 </div>
             </div>
         </div>
