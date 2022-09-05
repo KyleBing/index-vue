@@ -11,6 +11,7 @@
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-xs-24">
                     <div class="col-xs-24"><card-profile/></div>
+                    <div class="col-xs-24"><card-self/></div>
                     <div class="col-xs-24"><card-project/></div>
                 </div>
             </div>
@@ -33,9 +34,11 @@ import CardCalculator from "@/views/cards/tools/CardCalculator";
 import CardMap from "@/views/cards/map/CardMap";
 import CardIcon from "@/views/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
+import CardSelf from "@/views/cards/profile/CardSelf";
 export default {
     name: 'Index',
     components: {
+        CardSelf,
         IconList,
         CardIcon,
         CardMap,
