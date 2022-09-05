@@ -1,6 +1,16 @@
 <template>
     <div class="copyright">
-        <p>Copyright © 2022 <a href="mailto:kylebing@163.com">KyleBing</a> All rights reserved. <a href="https://beian.miit.gov.cn">鲁ICP备2022028139号-1</a></p>
+        <p>
+            <span>Copyright © 2022 </span>
+            <a href="mailto:kylebing@163.com">KyleBing</a>
+            <span>All rights reserved. </span>
+        </p>
+        <p><a href="https://beian.miit.gov.cn">鲁ICP备2022028139号-1</a></p>
+        <p>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37011202001794">
+                <img class="police-icon" src="../assets/img/policeIcon.png" alt="PoliceIcon">鲁公网安备 37011202001794号
+            </a>
+        </p>
     </div>
 </template>
 
@@ -17,11 +27,25 @@ export default {
     text-align: center;
     font-size: .8rem;
     color: $text-title;
+    p{
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     a{
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
         &:hover{
             color: $magenta;
         }
+    }
+    .police-icon{
+        margin-right: 3px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
     }
 }
 
