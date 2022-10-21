@@ -1,7 +1,7 @@
 <template>
     <div class="copyright">
         <p>
-            <span>Copyright © 2022 </span>
+            <span>Copyright © 2016-2022 </span>
             <a href="mailto:kylebing@163.com">KyleBing</a>
             <span>All rights reserved. </span>
         </p>
