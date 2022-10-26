@@ -47,7 +47,7 @@
 
 <script>
 import PROFILE from "./profileData";
-import AVATAR_ARRAY from "./avatarData";
+import avatarData from "./avatarData";
 import Card from "@/components/Card";
 
 export default {
@@ -55,10 +55,10 @@ export default {
     components: {Card},
     data(){
         return{
-            picCount: 15, // 头像数量
+            picCount: avatarData.picCount, // 头像数量
             randomPicId: 1, //
             PROFILE: PROFILE,
-            AVATAR_ARRAY: AVATAR_ARRAY
+            AVATAR_ARRAY: avatarData.avatarArray
         }
     },
     mounted() {

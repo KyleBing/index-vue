@@ -1,6 +1,9 @@
 let avatarArray = []
-for (let i=1; i<= 15;i++){
+const picCount = 6
+for (let i=1; i<= picCount;i++){
     avatarArray.push(require('./avatars/me' + i + '.jpg'))
 }
 
-export default avatarArray
+export default {
+    avatarArray, picCount
+}
