@@ -21,7 +21,7 @@ export default {
     data(){
         return {
             cover: require('./../imgs/card-img-diary.png'),
-            logo: require('../../icon-list/logo-diary.png')
+            logo: require('../../icon-list/icons/logo-diary.png')
         }
     },
 }

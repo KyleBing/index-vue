@@ -21,7 +21,7 @@ export default {
     data(){
         return {
             cover: require('./map-bg.jpg'),
-            logo: require('../../icon-list/logo-map.png')
+            logo: require('../../icon-list/icons/logo-map.png')
         }
     },
 }

@@ -13,6 +13,6 @@ export default [
                                 <a target='_blank' href='https://movie.douban.com/subject/3541415/'>《盗梦空间》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/20278505/'>《前目的地》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/6538866/'>《极速车王》。</a>`},
-    {title: "爱好", content: "看电影、拍剪视频、摩托车、码自己的东西、K歌、游泳、摄影、游戏。"},
+    {title: "爱好", content: "看电影、拍剪视频、摩托车、王者、Xbox、码自己的东西、K歌、游泳。"},
     {title: "格言", content: "永远相信，美好的事情即将发生。"}
 ]
