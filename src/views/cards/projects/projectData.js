@@ -23,7 +23,7 @@ export default  [
         value: 'tool',
         isPublic: true,
         list:  [
-            {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-manage'},
+            {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-department'},
             {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},
             {title: '苹果产品图', isPublic: true, description: '产品尺寸示意图，各角度', path: '/tools/apple'},
             // {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
