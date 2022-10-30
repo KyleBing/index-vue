@@ -4,7 +4,7 @@
         <div class="profile-content">
             <div class="head-container">
                 <div class="head flipInX animated" @click="changeAvatar">
-                    <img :src="AVATAR_ARRAY[randomPicId-1]" alt="HeadPic">
+                    <img :src="AVATAR_ARRAY[currentAvatarIndex]" alt="HeadPic">
                 </div>
                 <div class="social-links">
                     <a class="social-link"
@@ -56,17 +56,23 @@ export default {
     data(){
         return{
             picCount: avatarData.picCount, // 头像数量
-            randomPicId: 1, //
+            currentAvatarIndex: 1, // 初始 avatar Index
             PROFILE: PROFILE,
             AVATAR_ARRAY: avatarData.avatarArray
         }
     },
     mounted() {
-        this.changeAvatar()
+        // 给初始 index 一个随机值
+        this.currentAvatarIndex = Math.floor(Math.random() * this.picCount)
     },
     methods: {
         changeAvatar(){
-            this.randomPicId = Math.floor(Math.random() * this.picCount) + 1
+            let nextIndex = this.currentAvatarIndex + 1
+            if (nextIndex >= this.picCount){
+                this.currentAvatarIndex = 0
+            } else {
+                this.currentAvatarIndex = nextIndex
+            }
         }
     }
 }
