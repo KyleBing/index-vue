@@ -147,6 +147,7 @@ $cols-md: 8;
     .project-#{$name} {
         .project-title{
             h2{
+                font-weight: bold;
                 color: $color;
                 //background: -webkit-linear-gradient(top, lighten($color, 5%), $color);
                 //background: linear-gradient(top, lighten($color, 5%), $color);

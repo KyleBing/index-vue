@@ -140,10 +140,12 @@ export default  [
         ],
     },
     {
-        title: '搬瓦工服务器',
+        title: 'WAY TO FLY',
         value: 'other',
         isPublic: true,
         list:  [
-            {title: 'Bandwagon VPS', isPublic: true, description: '6.38% 优惠券： BWH3HYATVBJW', path: 'https://bwh88.net/cart.php?aff=10480'}, ]
+            {title: 'JUST MY SOCKS', isPublic: true, description: 'WAY TO FLY', path: 'https://justmysocks.net/members/aff.php?aff=23464'},
+            {title: 'Bandwagon VPS', isPublic: true, description: '6.38% 优惠券： BWH3HYATVBJW', path: 'https://bwh88.net/cart.php?aff=10480'},
+        ]
     },
 ]
