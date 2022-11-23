@@ -69,7 +69,8 @@ export default {
     },
     methods: {// 点赞功能
         getInitThumbsUpCount(){
-            axios.get('../../portal/thumbs-up/all')
+            axios
+                .get('../../portal/thumbs-up/all')
                 .then(res => {
                     if (res.data && res.data.data){
                         console.log(res.data.data)

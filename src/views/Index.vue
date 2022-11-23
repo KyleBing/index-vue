@@ -11,7 +11,7 @@
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-xs-24">
                     <div class="col-xs-24"><card-profile/></div>
-<!--                    <div class="col-xs-24"><card-self/></div>-->
+                    <div class="col-xs-24"><card-self/></div>
                     <div class="col-xs-24"><card-project/></div>
                 </div>
             </div>
@@ -46,7 +46,11 @@ export default {
         CardBackend,
         CardImageViewer,
         CardClock, CardDiary, CardProject, CardApple, CardProfile, Copyright},
-    data(){},
+    data(){
+        return {
+
+        }
+    },
     mounted() {
         this.addScrollEvent()
     },
