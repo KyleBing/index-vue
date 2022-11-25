@@ -75,13 +75,13 @@ export default {
                     if (res.data && res.data.data){
                         console.log(res.data.data)
                         // {
-                        //   "up_key": "airpods",
-                        //     "up_count": 8,
+                        //   "name": "airpods",
+                        //     "count": 8,
                         //     "link_address": null,
                         //     "date_init": "2022-05-26T08:50:05.000Z"
                         // }
                         res.data.data.forEach(item => {
-                            this.thumbsUpMap.set(item.up_key, item.up_count)
+                            this.thumbsUpMap.set(item.name, item.count)
                         })
                     }
                 })
