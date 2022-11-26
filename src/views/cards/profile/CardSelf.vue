@@ -25,7 +25,7 @@ export default {
                 到 18 年中去北京找朋友，在他那待了几个月，本来是想找份工作的，也没找到，倒是把北京的景区都逛了个遍，也不负此行。
                 19 年初来到济南，算是我人生的第三章，此时才真正开始慢慢啃 js 知识，不再在工作上接手 UI 设计相关的东西，主战前端。最初是用的 jQuery 来做一些表单提交等，在初创公司的那段日子比较忙碌，虽休息时间不多，但我们公司当时同事之间氛围非常好，玩的都跟朋友一样。
                 期间学习了 git 和 github 的使用，github 打开了一个新世界的大门，通过 github 接触到了<a target="_blank" href="https://github.com/996icu/996.ICU">996icu</a> 这个项目，也才切实感受到文字的力量如此强大，才知晓每天 8 小时工作的规定是先前国外工人运动的产物。
-                用 vue 做的第一个项目是 <a target="_blank" href="https://kylebing.cn/diary">《标题日记》</a>，自己的第一个开源项目，也是我投入精力比较大的项目，至今一直在更新。通过这个项目把 vue 相关的 vue router、 vuex 都了解了个差不多。
+                用 vue 做的第一个项目是 <a target="_blank" href="http://kylebing.cn/diary">《标题日记》</a>，自己的第一个开源项目，也是我投入精力比较大的项目，至今一直在更新。通过这个项目把 vue 相关的 vue router、 vuex 都了解了个差不多。
                 对五笔的爱好引领我实现了几个比较有用的项目。
                 为了实现能在 macOS 系统上练习五笔的目的，使用 requirejs 开发了 <a target="_blank" href="https://github.com/KyleBing/typepad">《玫枫跟打器》</a>这个 web 端的五笔跟打器；
                 为了解决 Rime 输入法词条添加困难的问题，学习 electron 并开发了 <a target="_blank" href="https://github.com/KyleBing/wubi-dict-editor">《五笔码表助手》</a>这个工具。

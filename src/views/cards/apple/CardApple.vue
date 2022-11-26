@@ -21,7 +21,7 @@
                     <div class="count">{{thumbsUpMap.get('iphone')}}</div>
                 </div>
             </div>
-
+Ó
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/airpods">
                     <img src="./icons/links/airpods_white@2x.png" alt="airpods">
