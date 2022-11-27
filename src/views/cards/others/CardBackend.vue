@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "src/assets/scss/plugin";
+@import "src/scss/plugin";
 
 
 </style>

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/plugin";
+@import "../scss/plugin";
 .copyright{
     padding: 1rem 1rem 2rem ;
     text-align: center;

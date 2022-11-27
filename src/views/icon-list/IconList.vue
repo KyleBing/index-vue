@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style scoped  lang="scss">
-@import "./../../assets/scss/plugin";
+@import "../../scss/plugin";
 .icon-list-group{
     padding: 30px 20px;
 }

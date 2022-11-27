@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../../assets/scss/plugin";
+@import "../../../scss/plugin";
 
 .study-road {
     padding: 20px 0;

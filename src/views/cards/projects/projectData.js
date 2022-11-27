@@ -33,7 +33,7 @@ export default  [
             // {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
             {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
             {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
-            {title: '想买的东西', isPublic: false, description: '想要买的东西', path: '/tools/wanted-list'},
+            {title: '想买的东西', isPublic: false, description: '想要买的东西', path: './#/wanted-list'},
             {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
             // {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
             // {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},

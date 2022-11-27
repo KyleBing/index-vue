@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/scss/plugin";
+@import "../scss/plugin";
 
 .section{
     //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
