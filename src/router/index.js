@@ -6,23 +6,17 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => {
-            return require('@/views/Index')
-        }
+        component: () => import('@/views/Index')
     },
     {
         path: '/clock',
         name: 'Clock',
-        component: () => {
-            return require('@/views/clock/Clock')
-        }
+        component: () => import('@/views/clock/Clock')
     },
     {
         path: '/wanted-list',
         name: 'WantedList',
-        component: () => {
-            return require('@/views/wanted-list/WantedList')
-        }
+        component: () => import('@/views/wanted-list/WantedList')
     },
 ]
 
