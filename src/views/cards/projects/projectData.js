@@ -1,13 +1,5 @@
 export default  [
     {
-        title: 'Mine',
-        value: 'most',
-        isPublic: true,
-        list: [
-            {title: '挪车告示', isPublic: true, description: '贴在车上的二维码页面', path: '/qr'},
-        ],
-    },
-    {
         title: 'Github',
         value: 'latest',
         isPublic: true,
@@ -26,15 +18,14 @@ export default  [
             {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-department'},
             {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},
             {title: '苹果产品图', isPublic: true, description: '产品尺寸示意图，各角度', path: '/tools/apple'},
+            {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
+            {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
+            {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
             // {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
             // {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
             // {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
             // {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
             // {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
-            {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
-            {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
-            {title: '想买的东西', isPublic: false, description: '想要买的东西', path: './#/wanted-list'},
-            {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
             // {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
             // {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
             // {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
@@ -96,7 +87,10 @@ export default  [
         value: 'work',
         isPublic: false,
         list: [
-            {title: '嵌入式', isPublic: true, description: '嵌入式主机动环监测系统', path: '/work/em1000'},
+            {title: '嵌入式 FULL', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/em1000/full/#/'},
+            {title: 'Windows 动环 FULL', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/full/#/'},
+            {title: 'Windows 动环 Area', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/area/#/'},
+            {title: 'Windows 动环 Room', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/room/#/'},
         ],
     },
     {
