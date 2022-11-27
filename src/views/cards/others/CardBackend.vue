@@ -19,7 +19,7 @@ export default {
     data(){
         return {
             cover: require('./../imgs/card-img-backend.png'),
-            logo: require('../../icon-list/icons/logo-backend.png')
+            logo: require('../../icon-list/icons/logo-qr.png')
         }
     },
 }

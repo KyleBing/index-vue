@@ -19,7 +19,7 @@ export default {
     data(){
         return {
             // cover: require('./card-img-backend.png'),
-            // logo: require('./logo-backend.png')
+            // logo: require('./logo-qr.png')
             cover: '',
             logo: ''
         }
