@@ -1,12 +1,15 @@
 <template>
     <div class="card-icon" @click="toRoute">
-        <div :class="['icon', {'no-padding': isNoPadding}, {black: isBgBlack}]">
-            <img :src="icon" alt="icon">
+        <div
+            :class="['icon', {'no-padding': iconInfo.noPadding}, {black: iconInfo.isBgBlack}]"
+            :style="iconBgStyle"
+        >
+            <img :src="iconInfo.icon" alt="icon">
         </div>
-        <div class="indicator-new" v-if="isNew">
+        <div class="indicator-new" v-if="iconInfo.isNew">
             <img alt="black-berry-new-message-icon" :src="iconNewMsg">
         </div>
-        <div class="name">{{ name }}</div>
+        <div class="name">{{ iconInfo.name }}</div>
     </div>
 </template>
 
@@ -14,23 +17,10 @@
 let blackberryNewMessageIcon = require('./blackberry-new.svg')
 export default {
     props: {
-        icon: '',
-        name: '',
-        pageLink: {
-            type: String
+        iconInfo: {
+            type: Object,
+            default: {}
         },
-        isNoPadding: {
-            type: Boolean,
-            default: false
-        },
-        isNew:{
-            type: Boolean,
-            default: false
-        },
-        isBgBlack: {
-            type: Boolean,
-            default: false
-        }
     },
     name: "CardIcon",
     methods: {
@@ -47,6 +37,15 @@ export default {
     data(){
         return {
             iconNewMsg: blackberryNewMessageIcon
+        }
+    },
+    computed: {
+        iconBgStyle(){
+            if (this.iconInfo.noPadding){
+                return `background-color: transparent`
+            } else {
+                return ''
+            }
         }
     }
 }
