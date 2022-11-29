@@ -49,4 +49,10 @@ export default {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .copyright{
+        color: $text-dark-desc
+    }
+}
+
 </style>
