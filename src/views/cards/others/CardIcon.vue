@@ -25,11 +25,11 @@ export default {
     name: "CardIcon",
     methods: {
         toRoute(){
-            if (this.pageLink){
-                if (/^\.\..*$/.test(this.pageLink)){
-                    location = this.pageLink
+            if (this.iconInfo.pageLink){
+                if (/^\.\..*$/.test(this.iconInfo.pageLink)){
+                    location = this.iconInfo.pageLink
                 } else {
-                    this.$router.push(this.pageLink)
+                    this.$router.push(this.iconInfo.pageLink)
                 }
             }
         }
