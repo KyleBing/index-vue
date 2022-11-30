@@ -26,7 +26,7 @@ export default {
     methods: {
         toRoute(){
             if (this.iconInfo.pageLink){
-                if (/^\.\..*$/.test(this.iconInfo.pageLink)){
+                if (/^(\.\.|http).*$/.test(this.iconInfo.pageLink)){
                     location = this.iconInfo.pageLink
                 } else {
                     this.$router.push(this.iconInfo.pageLink)
@@ -72,8 +72,11 @@ $indicator-width: 20px;
         height: $indicator-width;
         top: 0;
         right: 0;
+        @include border-radius(100px);
+        @include box-shadow(-1px 2px 3px transparentize(black, 0.8))
     }
     .icon{
+        flex-shrink: 0;
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
         background-color: white;

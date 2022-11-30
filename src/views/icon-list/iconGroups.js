@@ -2,6 +2,7 @@ export default [
     {
         title: '我的',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=gihkuyr9S6cKqJG04-OrAA&p=IhmKajIaSyPLiVA-tjQ_2gkchhHYBj5hw62DgUAIn91hy-rmhuXh4SAo6qIwasB0rrDoK0qhsKtfcAE-f-JtZL7V_-MrixJC188ER4qo-Qc&userid=79759260&app_version=8.8.80&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '会员分享' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
