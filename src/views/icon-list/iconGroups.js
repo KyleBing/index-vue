@@ -12,6 +12,7 @@ export default [
     {
         title: '工具',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../tools/name' ,                 icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
             { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/keyboard/' ,            icon: require('./icons/logo-keyboard.png') ,           name: '键盘测试' ,     } ,
