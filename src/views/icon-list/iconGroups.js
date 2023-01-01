@@ -2,7 +2,7 @@ export default [
     {
         title: '我的',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=9-0VFkuCvzO9qvE31OFQog&p=63CyV4pwx-OPW2et2cqTULWZuNiW9mK5dKguW9fOadV5hkSDmae-zCL6AnzNjvEBeeOCJ8Dqxmqhr5SOfsJ1It9LM7KKEubc3Z2TbszS520&userid=79759260&app_version=8.8.80&dlt=0846 ' ,                     icon: require('./icons/logo-netease-music.png') ,name: '7日黑胶' ,     } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=VTU76vcI5sgHwMb1kdcVdg&p=fmIah3SPr_nnzWSUq1W3LYlLjmbANrtgoM1JKhOqaPgEMt32ns0v2p7PZJqQ9zdhwOsG3-MGhqCX_FJT5YgHR713ikIPpV0bwlw9VOlStSo&userid=79759260&app_version=8.9.0&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '7日黑胶(1月)' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
