@@ -16,10 +16,10 @@ export default [
             { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/keyboard/' ,            icon: require('./icons/logo-keyboard.png') ,           name: '键盘测试' ,     } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,                name: '地图工具' ,     } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,                name: '地图工具' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/calculator' ,           icon: require('./icons/logo-calculator.png') ,         name: '计算器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/words' ,                icon: require('./icons/logo-symbol.png') ,             name: '标点处理' ,     } ,
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../tools/icons' ,                icon: require('./icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/icons' ,                icon: require('./icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/drop-and-show' ,        icon: require('./icons/logo-image-viewer.png') ,       name: '图片查看器' ,    } ,
             // { noPadding: false , isNew: false, isBgBlack: false , pageLink: '../tools/vps' ,                  icon: require('./icons/logo-vps.png') ,                name: 'VPS' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../e/#/base64/base64-text' ,     icon: require('./icons/logo-base64.png') ,             name: 'Base64工具' , } ,
@@ -28,5 +28,25 @@ export default [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../download' ,                   icon: require('./icons/logo-download.png') ,           name: '常用下载' ,     } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/unlock-music' ,         icon: require('./icons/logo-unlock-music.png') ,       name: '音乐解码' ,     } ,
         ]
+    },
+    {
+        title: '有趣的网站',
+        icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://www.v2ex.com/?r=kylebing' ,                                                   icon: require('./icons/logo-web-v2ex.png') ,                         name: 'V2EX' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://www.shejipi.com/' ,                                                           icon: require('./icons/logo-web-pi.png') ,                           name: '设计癖' ,           } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://www.chiphell.com/' ,                                                          icon: require('./icons/logo-web-chiphell.png') ,                     name: 'chiphell' ,      } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://iamthecu.be/' ,                                                               icon: require('./icons/logo-web-cube.png') ,                         name: '魔方' ,            } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://neave.com/' ,                                                                 icon: require('./icons/logo-web-neave.png') ,                        name: 'Neave' ,         } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://cabbi.bo/enough/' ,                                                            icon: require('./icons/logo-web-cabbi.png') ,                        name: 'Cabbi' ,         } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://chrismckenzie.com/' ,                                                         icon: require('./icons/logo-web-chrismckenzie.png') ,                name: '小方块' ,           } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://www.omfgdogs.com/' ,                                                          icon: require('./icons/logo-web-dogs.png') ,                         name: '欢乐小狗狗' ,         } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://patorjk.com/software/taag/#p=testall&f=Avatar&t=Kyle%20Bing' ,                 icon: require('./icons/logo-web-text-character.png') ,               name: '字符字符' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://ps.gaoding.com/#/' ,                                                          icon: require('./icons/logo-web-ps.png') ,                           name: '在线PS' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://how-i-experience-web-today.com/' ,                                            icon: require('./icons/logo-web-webtoday.png') ,                     name: '今天的互联网' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://www.airpano.org.cn/360photo/china-1000island/' ,                               icon: require('./icons/logo-web-360-view.png') ,                     name: '360中国千岛' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://izzyburton.co.uk/' ,                                                          icon: require('./icons/logo-web-artist-ib.png') ,                     name: '艺术家IB' ,          } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://zoomquilt.org/' ,                                                          icon: require('./icons/logo-web-pic-zoom.png') ,                     name: '不断放大图片' ,          } ,
+        ]
+
     },
 ]
