@@ -27,7 +27,7 @@ export default {
         toRoute(){
             if (this.iconInfo.pageLink){
                 if (/^(\.\.|http).*$/.test(this.iconInfo.pageLink)){
-                    location = this.iconInfo.pageLink
+                    window.open(this.iconInfo.pageLink, '_blank')
                 } else {
                     this.$router.push(this.iconInfo.pageLink)
                 }

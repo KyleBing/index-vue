@@ -138,6 +138,7 @@ export default  [
         value: 'other',
         isPublic: true,
         list:  [
+            {title: '泡泡云', isPublic: true, description: 'a window on the GFW', path: 'https://ppy.buzz/auth/register?code=TfPH'},
             {title: 'SS-LINKS', isPublic: true, description: 'a window on the GFW', path: 'https://i.ss01.net/#/register?code=hHIX8iuK'},
             {title: 'Bandwagon VPS', isPublic: true, description: '6.38% 优惠券： BWH3HYATVBJW', path: 'https://bwh88.net/cart.php?aff=10480'},
         ]
