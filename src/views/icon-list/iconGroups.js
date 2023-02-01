@@ -33,6 +33,10 @@ export default [
     {
         title: '有趣的网站',
         icons: [
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2018',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2019',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.v2ex.com/?r=kylebing',                                   icon: require('./icons/logo-web-v2ex.png'),             name: 'V2EX',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.shejipi.com/',                                           icon: require('./icons/logo-web-pi.png'),               name: '设计癖',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.chiphell.com/',                                          icon: require('./icons/logo-web-chiphell.png'),         name: 'chiphell', },
@@ -51,12 +55,13 @@ export default [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://pointerpointer.com/',                                        icon: require('./icons/logo-web-pointer.png'),          name: '点哪指哪',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://bruno-simon.com/',                                           icon: require('./icons/logo-web-racecar.png'),          name: '小赛车',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://greatestgifsofalltime.tumblr.com/',                          icon: require('./icons/logo-web-gif.gif'),              name: '唯美gif',    },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://chinesenewyear.net/',                                        icon: require('./icons/logo-web-chinese-new-year.png'), name: '中国年',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://cineshader.com/',                                            icon: require('./icons/logo-web-3d.png'),               name: '一个3D场景',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://theuselessweb.com/',                                         icon: require('./icons/logo-web-useless-website.png'),  name: '一堆无用站点',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://tympanus.net/Development/RainEffect/index.html#slide-4',     icon: require('./icons/logo-web-raining-outside.png'),  name: '窗外下雨了',    },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.noisli.com/',                                            icon: require('./icons/logo-web-noisli.png'),           name: '白嗓音',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-noisli.png'),           name: '躲避游戏',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-noisli.png'),           name: '躲避游戏',      },
         ]
     },
 ]
