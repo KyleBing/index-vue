@@ -34,9 +34,9 @@ export default [
         title: '有趣的网站',
         icons: [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2018',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2019',      },
+            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
+            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2018',      },
+            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2019',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.v2ex.com/?r=kylebing',                                   icon: require('./icons/logo-web-v2ex.png'),             name: 'V2EX',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.shejipi.com/',                                           icon: require('./icons/logo-web-pi.png'),               name: '设计癖',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.chiphell.com/',                                          icon: require('./icons/logo-web-chiphell.png'),         name: 'chiphell', },
