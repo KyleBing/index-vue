@@ -13,6 +13,7 @@ export default [
         title: '工具',
         icons: [
             { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../tools/car-oil' ,              icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
+            { noPadding: false , isNew: true,  isBgBlack:  false,   pageLink: '../tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/name' ,                 icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
@@ -21,9 +22,8 @@ export default [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/calculator' ,           icon: require('./icons/logo-calculator.png') ,         name: '计算器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/words' ,                icon: require('./icons/logo-symbol.png') ,             name: '标点处理' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/icons' ,                icon: require('./icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/drop-and-show' ,        icon: require('./icons/logo-image-viewer.png') ,       name: '图片查看器' ,    } ,
             // { noPadding: false , isNew: false, isBgBlack: false , pageLink: '../tools/vps' ,                  icon: require('./icons/logo-vps.png') ,                name: 'VPS' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/drop-and-show' ,        icon: require('./icons/logo-image-viewer.png') ,       name: '图片查看器' ,    } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../e' ,                          icon: require('./icons/logo-ele.png') ,                name: 'Vue 例子'} ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/wubi-dict-editor-web' , icon: require('./icons/logo-wubi-editor.png') ,        name: '五笔助手' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../download' ,                   icon: require('./icons/logo-download.png') ,           name: '常用下载' ,     } ,
