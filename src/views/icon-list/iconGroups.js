@@ -10,11 +10,19 @@ export default [
         ]
     },
     {
+        title: 'Canvas',
+        icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-text-bg-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
+        ]
+    },
+    {
         title: '工具',
         icons: [
-            { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../tools/car-oil' ,              icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
-            { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
-            { noPadding: false , isNew: true,  isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/car-oil' ,              icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/name' ,                 icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/keyboard/' ,            icon: require('./icons/logo-keyboard.png') ,           name: '键盘测试' ,     } ,
@@ -60,8 +68,7 @@ export default [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://theuselessweb.com/',                                         icon: require('./icons/logo-web-useless-website.png'),  name: '一堆无用站点',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://tympanus.net/Development/RainEffect/index.html#slide-4',     icon: require('./icons/logo-web-raining-outside.png'),  name: '窗外下雨了',    },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.noisli.com/',                                            icon: require('./icons/logo-web-noisli.png'),           name: '白嗓音',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-noisli.png'),           name: '躲避游戏',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-noisli.png'),           name: '躲避游戏',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-game-avoid.png'),       name: '躲避游戏',      },
         ]
     },
 ]
