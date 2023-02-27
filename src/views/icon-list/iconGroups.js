@@ -14,7 +14,7 @@ export default [
         icons: [
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-text-bg-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
         ]
     },
     {
