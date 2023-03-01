@@ -1,5 +1,5 @@
 <template>
-    <div class="icon-list-group" v-for="(group, index) in iconGroups" :key="index">
+    <div class="icon-list-group" v-for="(group, index) in iconGroupList" :key="index">
         <div class="icon-list-header">
             <div class="title">{{ group.title }}</div>
         </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import iconGroups from "@/views/icon-list/iconGroups";
+import iconGroupList from "@/views/icon-list/iconGroupList.js";
 import CardIcon from "@/views/cards/others/CardIcon";
 
 export default {
@@ -25,7 +25,7 @@ export default {
     components: {CardIcon},
     data(){
         return {
-            iconGroups,
+            iconGroupList,
         }
     }
 }
