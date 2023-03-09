@@ -3,6 +3,7 @@ export default [
         title: '我的',
         icons: [
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../me/gif' ,                     icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     }
@@ -18,7 +19,7 @@ export default [
         ]
     },
     {
-        title: '网易云黑胶',
+        title: '网易云 7日黑胶',
         icons: [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=CaP0cC3Ls3T1co9URbTgLQ&p=W4Dpr9bU3dQx_Fce4ZdCa2efPMAjgLuB8mzayY51SEa8gLyle53tgMFoe7elJQsyBiWsxzudtcr3JHHu521m6bbAgcE7aNSrr0dfN3IDRkA&userid=79759260&app_version=8.9.30&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '3月完' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=XG_zS_50_j-DN-MTO9k9yA&p=p_E55KtdeJO5livvCYr0O0MVmIh2jJjC6hCeGii2oJbsch4o2sm8eUvEPzrLvf1QbpP_9B3Nz_vEHk0F_aHZidRNG8PC9VjwqL8u8IuPzto&userid=79759260&app_version=8.9.20&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '2月完' ,     } ,
@@ -33,7 +34,6 @@ export default [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/name' ,                 icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/keyboard/' ,            icon: require('./icons/logo-keyboard.png') ,           name: '键盘测试' ,     } ,
-            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,                name: '地图工具' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/calculator' ,           icon: require('./icons/logo-calculator.png') ,         name: '计算器' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/words' ,                icon: require('./icons/logo-symbol.png') ,             name: '标点处理' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/icons' ,                icon: require('./icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
