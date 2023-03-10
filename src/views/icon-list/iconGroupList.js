@@ -15,6 +15,7 @@ export default [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-loading-canvas' ,icon: require('./icons/logo-web-canvas-loading.png') ,name: '圆圈' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-heart-canvas/?hMin=0&hMax=360&countHeart=500&sizeMin=10&sizeMax=50&bgColor=%233d3d3d' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
         ]
     },
