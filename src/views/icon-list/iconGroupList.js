@@ -2,7 +2,7 @@ export default [
     {
         title: '我的',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
+            { noPadding: false ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
@@ -12,10 +12,10 @@ export default [
     {
         title: 'Canvas',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-loading-canvas' ,icon: require('./icons/logo-web-canvas-loading.png') ,name: '圆圈' ,     } ,
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-loading-canvas' ,icon: require('./icons/logo-web-canvas-loading.png') ,name: '圆圈' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
         ]
     },
     {
@@ -49,9 +49,9 @@ export default [
         title: '有趣的网站',
         icons: [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
-            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
-            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2018',      },
-            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2019',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2018',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2019',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.v2ex.com/?r=kylebing',                                   icon: require('./icons/logo-web-v2ex.png'),             name: 'V2EX',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.shejipi.com/',                                           icon: require('./icons/logo-web-pi.png'),               name: '设计癖',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.chiphell.com/',                                          icon: require('./icons/logo-web-chiphell.png'),         name: 'chiphell', },
