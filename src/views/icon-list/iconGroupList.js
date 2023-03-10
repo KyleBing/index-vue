@@ -2,7 +2,7 @@ export default [
     {
         title: '我的',
         icons: [
-            { noPadding: false ,  isNew: true,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: '../tools/map/' ,                 icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
