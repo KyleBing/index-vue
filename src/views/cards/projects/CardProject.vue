@@ -122,7 +122,7 @@ $cols-md: 8;
         align-items: center;
         flex-grow: 1;
         .title{
-            width: 10rem;
+            width: 18rem;
             margin-right: $gap;
             font-weight: normal;
             font-size: $fz-m;

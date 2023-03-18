@@ -11,6 +11,7 @@
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-md-24 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><card-recommend/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-project/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-self/></div>
                 </div>
@@ -35,9 +36,11 @@ import CardMap from "@/views/cards/map/CardMap";
 import CardIcon from "@/views/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
 import CardSelf from "@/views/cards/profile/CardSelf";
+import CardRecommend from "@/views/cards/recommend/CardRecommend";
 export default {
     name: 'Index',
     components: {
+        CardRecommend,
         CardSelf,
         IconList,
         CardIcon,

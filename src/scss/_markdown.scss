@@ -1,0 +1,174 @@
+$gap: 15px;
+
+.markdown{
+    line-height: 1.6;
+    color: $text-content;
+    font-size: 14px;
+    p{
+        line-height: 1.5;
+        margin-bottom: 5px;
+    }
+    img{
+        border: 1px solid $color-border;
+        max-width: 100%;
+        background-color: white;
+        @include border-radius(3px);
+    }
+
+    @for $item from 1 through 7 {
+        h#{$item}{
+            margin-top: (7-$item)*3px;
+            margin-bottom: (7-$item)*2px;
+            font-size: 10px + (7-$item)*1.5;
+        }
+    }
+
+    pre{
+        margin-bottom: $gap;
+        font-size: $fz-sm;
+        padding: $gap $gap + 5;
+        background-color: $bg-body;
+        code{
+            padding: 0;
+            font-family: "JetBrainsMonoDiary";
+            background-color: $bg-body;
+        }
+    }
+
+    code{
+        padding: 2px 5px;
+        font-size: 13.5px;
+        color: #333;
+        font-family: "JetBrainsMonoDiary";
+        background-color: $bg-body;
+        @include border-radius(2px);
+    }
+
+    table{
+        margin-bottom: $gap;
+        border: 1px solid $color-border;
+        tr{
+            th{
+                text-align: left;
+                min-width: 50px;
+                padding: 4px 10px;
+                border: 1px solid $color-border;
+                background-color: $bg-body;
+                &[align=left]{
+                    text-align: left;
+                }
+                &[align=right]{
+                    text-align: right;
+                }
+                &[align=center]{
+                    text-align: center;
+                }
+            }
+            td{
+                text-align: left;
+                border: 1px solid $color-border;
+                padding: 3px 10px;
+                &[align=left]{
+                    text-align: left;
+                }
+                &[align=right]{
+                    text-align: right;
+                }
+                &[align=center]{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    input[type=checkbox]{
+        display: inline-block;
+        -webkit-appearance: checkbox !important;
+    }
+
+    ol, ul{
+        margin-left: $gap;
+        margin-bottom: $gap;
+        li{
+            margin-left: 20px;
+            line-height: 1.5;
+            margin-bottom: 2px;
+        }
+    }
+    blockquote{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        border-left: 3px solid transparentize(black, 0.8);
+        padding-left: 18px;
+        background-color: #f5f5f5;
+        > *:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    a{
+        color: $orange;
+        text-decoration: underline;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .markdown{
+
+        @for $item from 1 through 7 {
+            h#{$item}{
+                color: darken(white, 10%);
+            }
+        }
+
+        color: $dark-text-title;
+        p{
+        }
+        img{
+            padding: 5px;
+            border-color: $dark-border;
+            background-color: $dark-bg-body;
+        }
+
+        pre{
+            background-color: $dark-bg-body;
+            code{
+                background-color: $dark-bg-body;
+            }
+        }
+        code{
+            color: $dark-text-title;
+            background-color: $dark-bg-body;
+        }
+        table{
+            border: 1px solid $dark-border;
+            tr{
+                th{
+                    border: 1px solid $dark-border;
+                    background-color: $dark-bg-body;
+                }
+                td{
+                    border: 1px solid $dark-border;
+                }
+            }
+        }
+
+        ul{
+            li{
+            }
+        }
+        ol{
+            li{
+            }
+        }
+        blockquote{
+            background-color: darken(white, 83%);
+            border-left: 3px solid darken(white, 60%);
+        }
+        a{
+            color: darken(white, 10%);
+        }
+    }
+}

@@ -40,14 +40,14 @@ export default  [
         ]
     },
 
-    {
+/*    {
         title: '页面',
         value: 'page',
         isPublic: false,
         list:  [
-            // {title: '招聘页面', isPublic: true, description: '滑雪场招聘页面', path: '/proj-page/alipay'},
+            {title: '招聘页面', isPublic: true, description: '滑雪场招聘页面', path: '/proj-page/alipay'},
         ],
-    },
+    },*/
     {
         title: 'API',
         value: 'api',
@@ -63,10 +63,10 @@ export default  [
         list:  [
             {title: 'SCSS Example', isPublic: true, description: 'SCSS测试例子', path: '/test/scss/'},
             {title: '鼠标滚轮测试', isPublic: true, description: 'window.onscroll 实现图片内容变化', path: '/test/scroll'},
-            {title: 'iOS 更新齿轮', isPublic: true, description: '旋转 iOS 设置图标', path: '/test/gear'},
+            // {title: 'iOS 更新齿轮', isPublic: true, description: '旋转 iOS 设置图标', path: '/test/gear'},
             {title: 'Websocket', isPublic: true, description: 'websocket 测试', path: '/test/websocket'},
             {title: '关闭页面提醒', isPublic: true, description: 'window onbeforeunload 事件', path: '/test/unload-event'},
-            {title: 'Animation', isPublic: false, description: 'css animation translate3D', path: '/test/animate'},
+            // {title: 'Animation', isPublic: false, description: 'css animation translate3D', path: '/test/animate'},
             {title: 'Full Calendar', isPublic: true, description: '日程排布工具', path: '/test/fullcalendar/'},
             {title: 'Service Worker', isPublic: true, description: 'CacheStorage 使网页可离线访问', path: '/test/service-worker/'},
             {title: '瀑布流', isPublic: true, description: '图片瀑布流', path: '/test/waterfall'},
@@ -91,6 +91,9 @@ export default  [
             {title: 'Windows 动环 FULL', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/full/#/'},
             {title: 'Windows 动环 Area', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/area/#/'},
             {title: 'Windows 动环 Room', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/room/#/'},
+            {title: 'Windows 动环 密集架', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/cabinet/#/'},
+            {title: 'Windows 动环 多房间区域', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/room-area/#/'},
+            {title: 'Windows 动环 天气监测', isPublic: true, description: '嵌入式主机动环监测系统', path: 'http://121.36.2.95/windows/weather/#/'},
         ],
     },
     {
@@ -139,7 +142,7 @@ export default  [
         isPublic: true,
         list:  [
             {title: '泡泡云', isPublic: true, description: 'a window on the GFW', path: 'https://ppy.buzz/auth/register?code=TfPH'},
-            {title: 'SS-LINKS', isPublic: true, description: 'a window on the GFW', path: 'https://i.ss01.net/#/register?code=hHIX8iuK'},
+            // {title: 'SS-LINKS', isPublic: true, description: 'a window on the GFW', path: 'https://i.ss01.net/#/register?code=hHIX8iuK'},
             {title: 'Bandwagon VPS', isPublic: true, description: '6.38% 优惠券： BWH3HYATVBJW', path: 'https://bwh88.net/cart.php?aff=10480'},
         ]
     },
