@@ -31,10 +31,12 @@ export default {
                 .then(res => {
                     if (res.status === 200){
                         this.diary = res.data.data
-                        if (this.diary.is_markdown === 1){
-                            this.contentHtml = marked.parse(this.diary.content)
-                        } else {
-                            this.contentHtml = this.getContentHtml(this.diary.content)
+                        if (this.diary){
+                            if (this.diary.is_markdown === 1){
+                                this.contentHtml = marked.parse(this.diary.content)
+                            } else {
+                                this.contentHtml = this.getContentHtml(this.diary.content)
+                            }
                         }
                     }
                 })
@@ -55,7 +57,6 @@ export default {
                 })
                 return contentHtml
             }
-
         },
     },
 }
