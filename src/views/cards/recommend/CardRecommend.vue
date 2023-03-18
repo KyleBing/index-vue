@@ -66,6 +66,7 @@ export default {
 @import "../../../scss/plugin";
 
 .recommend{
+    width: 100%;
     color: $text-content;
 }
 </style>
