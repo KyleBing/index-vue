@@ -57,7 +57,7 @@ export default {
         return{
             picCount: avatarData.picCount, // 头像数量
             currentAvatarIndex: 1, // 初始 avatar Index
-            PROFILE: PROFILE,
+            PROFILE,
             AVATAR_ARRAY: avatarData.avatarArray
         }
     },
