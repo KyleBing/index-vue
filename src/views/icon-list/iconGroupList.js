@@ -10,23 +10,6 @@ export default [
         ]
     },
     {
-        title: 'Canvas',
-        icons: [
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-loading-canvas' ,icon: require('./icons/logo-web-canvas-loading.png') ,name: '圆圈' ,     } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-heart-canvas/?hMin=0&hMax=360&countHeart=500&sizeMin=10&sizeMax=50&bgColor=%233d3d3d' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
-        ]
-    },
-    {
-        title: '网易云 7日黑胶',
-        icons: [
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=CaP0cC3Ls3T1co9URbTgLQ&p=W4Dpr9bU3dQx_Fce4ZdCa2efPMAjgLuB8mzayY51SEa8gLyle53tgMFoe7elJQsyBiWsxzudtcr3JHHu521m6bbAgcE7aNSrr0dfN3IDRkA&userid=79759260&app_version=8.9.30&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '3月完' ,     } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=XG_zS_50_j-DN-MTO9k9yA&p=p_E55KtdeJO5livvCYr0O0MVmIh2jJjC6hCeGii2oJbsch4o2sm8eUvEPzrLvf1QbpP_9B3Nz_vEHk0F_aHZidRNG8PC9VjwqL8u8IuPzto&userid=79759260&app_version=8.9.20&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '2月完' ,     } ,
-        ]
-    },
-    {
         title: '工具',
         icons: [
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/car-oil' ,              icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
@@ -44,6 +27,23 @@ export default [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/wubi-dict-editor-web' , icon: require('./icons/logo-wubi-editor.png') ,        name: '五笔助手' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../download' ,                   icon: require('./icons/logo-download.png') ,           name: '常用下载' ,     } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/unlock-music' ,         icon: require('./icons/logo-unlock-music.png') ,       name: '音乐解码' ,     } ,
+        ]
+    },
+    {
+        title: '网易云 7日黑胶',
+        icons: [
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=CaP0cC3Ls3T1co9URbTgLQ&p=W4Dpr9bU3dQx_Fce4ZdCa2efPMAjgLuB8mzayY51SEa8gLyle53tgMFoe7elJQsyBiWsxzudtcr3JHHu521m6bbAgcE7aNSrr0dfN3IDRkA&userid=79759260&app_version=8.9.30&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '3月完' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=XG_zS_50_j-DN-MTO9k9yA&p=p_E55KtdeJO5livvCYr0O0MVmIh2jJjC6hCeGii2oJbsch4o2sm8eUvEPzrLvf1QbpP_9B3Nz_vEHk0F_aHZidRNG8PC9VjwqL8u8IuPzto&userid=79759260&app_version=8.9.20&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '2月完' ,     } ,
+        ]
+    },
+    {
+        title: 'Canvas',
+        icons: [
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-loading-canvas' ,icon: require('./icons/logo-web-canvas-loading.png') ,name: '圆圈' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-canvas-bg' ,     icon: require('./icons/logo-web-canvas-block.png') ,  name: '活动方块' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-heart-canvas' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-heart-canvas/?hMin=0&hMax=360&countHeart=500&sizeMin=10&sizeMax=50&bgColor=%233d3d3d' ,  icon: require('./icons/logo-web-canvas-heart.png') ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: '../test/animate-bg-text-canvas' ,icon: require('./icons/logo-web-canvas-text.png') ,   name: '文字' ,     } ,
         ]
     },
     {
