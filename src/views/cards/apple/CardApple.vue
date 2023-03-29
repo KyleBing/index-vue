@@ -8,7 +8,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp('ipad')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('ipad')}}</div>
+                    <div class="count">{{thumbsUpMap.get('ipad') || 0}}</div>
                 </div>
             </div>
             <div class="apple-item">
@@ -18,7 +18,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp('iphone')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('iphone')}}</div>
+                    <div class="count">{{thumbsUpMap.get('iphone') || 0}}</div>
                 </div>
             </div>
             <div class="apple-item">
@@ -28,7 +28,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp('airpods')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('airpods')}}</div>
+                    <div class="count">{{thumbsUpMap.get('airpods') || 0}}</div>
                 </div>
             </div>
             <div class="apple-item">
@@ -38,7 +38,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp('apple-chip')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('apple-chip')}}</div>
+                    <div class="count">{{thumbsUpMap.get('apple-chip') || 0}}</div>
                 </div>
             </div>
             <div class="apple-item" style="opacity: 0.5">
@@ -48,7 +48,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp('apple-watch')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('apple-watch')}}</div>
+                    <div class="count">{{thumbsUpMap.get('apple-watch') || 0 }}</div>
                 </div>
             </div>
         </div>
