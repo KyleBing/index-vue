@@ -44,7 +44,7 @@
             <div class="apple-item" style="opacity: 0.5">
                 <a class="link-item" target="_blank">
                     <img src="./icons/links/apple-watch@2x.png" alt="watch">
-                    <h3>Watch 制作中</h3>
+                    <h3>Watch...</h3>
                 </a>
                 <div class="thumb-up" @click="thumbsUp('apple-watch')">
                     <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
