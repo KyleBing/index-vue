@@ -32,6 +32,7 @@ export default [
     {
         title: '网易云 7日黑胶',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=qj0ojHhiu0XiadIY3n14Ag&p=FIrkti_v2Ux7nPAxiLTOL3_iW9PBWH1hrzpoI7lhENtS7fcgxdLyBrYzERE4B6EW0okiTwMQIODHivr4YxtXpyrYw3DswHQjl7zxSQl7ILA&userid=79759260&app_version=8.9.40&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '4月' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=CaP0cC3Ls3T1co9URbTgLQ&p=W4Dpr9bU3dQx_Fce4ZdCa2efPMAjgLuB8mzayY51SEa8gLyle53tgMFoe7elJQsyBiWsxzudtcr3JHHu521m6bbAgcE7aNSrr0dfN3IDRkA&userid=79759260&app_version=8.9.30&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '3月完' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=XG_zS_50_j-DN-MTO9k9yA&p=p_E55KtdeJO5livvCYr0O0MVmIh2jJjC6hCeGii2oJbsch4o2sm8eUvEPzrLvf1QbpP_9B3Nz_vEHk0F_aHZidRNG8PC9VjwqL8u8IuPzto&userid=79759260&app_version=8.9.20&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '2月完' ,     } ,
         ]

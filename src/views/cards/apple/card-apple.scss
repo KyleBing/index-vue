@@ -19,8 +19,8 @@
   justify-content: center;
   flex-flow: row nowrap;
   .link-item{
-
     @include border-radius($radius);
+    position: relative;
     width: 90px;
     display: flex;
     flex-flow: column nowrap;
@@ -96,5 +96,21 @@
       margin-top: 3px;
       text-align: center;
     }
+  }
+}
+
+$indicator-width: 20px;
+
+.indicator-new{
+  position: absolute;
+  width: $indicator-width;
+  height: $indicator-width;
+  top: 0;
+  right: 0;
+  @include border-radius(100px);
+  @include box-shadow(-1px 2px 3px transparentize(black, 0.8));
+  img{
+    display: block;
+    width: 100%;
   }
 }

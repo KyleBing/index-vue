@@ -43,6 +43,9 @@
             </div>
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/apple-watch">
+                    <div class="indicator-new">
+                        <img alt="black-berry-new-message-icon" :src="iconNewMsg">
+                    </div>
                     <img src="./icons/links/apple-watch@2x.png" alt="watch">
                     <h3>Watch</h3>
                 </a>
@@ -59,6 +62,7 @@
 
 import axios from "axios";
 import Card from "@/components/Card";
+import blackberryNewMessageIcon from "@/views/cards/others/blackberry-new.svg";
 
 
 export default {
@@ -70,6 +74,9 @@ export default {
 
             // websocket
             websocket: null,
+
+            iconNewMsg: blackberryNewMessageIcon
+
         }
     },
     mounted() {
@@ -173,4 +180,5 @@ class WSMessage{
 
 <style scoped lang="scss">
 @import "card-apple";
+
 </style>
