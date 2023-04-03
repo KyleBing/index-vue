@@ -69,4 +69,9 @@ export default {
     width: 100%;
     color: $text-content;
 }
+@media (prefers-color-scheme: dark) {
+    .recommend{
+        color: $dark-text-desc;
+    }
+}
 </style>
