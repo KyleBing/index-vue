@@ -6,13 +6,15 @@
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-apple/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><icon-list/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-clock/></div>
-                    <div class="col-md-24 col-sm-24 col-xs-24"><card-gi-talk/></div>
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-md-24 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-recommend/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-project/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-self/></div>
+                </div>
+                <div class="col col-lg-24 col-sm-24 col-md-24 col-xs-24">
+                    <div class="col-md-24 col-sm-24 col-xs-24"><card-gi-talk/></div>
                 </div>
             </div>
         </div>
