@@ -6,6 +6,7 @@
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-apple/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><icon-list/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-clock/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><card-gi-talk/></div>
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-md-24 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
@@ -31,9 +32,11 @@ import CardIcon from "@/views/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
 import CardSelf from "@/views/cards/profile/CardSelf";
 import CardRecommend from "@/views/cards/recommend/CardRecommend";
+import CardGiTalk from "@/views/cards/gitalk/CardGiTalk";
 export default {
     name: 'Index',
     components: {
+        CardGiTalk,
         CardRecommend,
         CardSelf,
         IconList,
