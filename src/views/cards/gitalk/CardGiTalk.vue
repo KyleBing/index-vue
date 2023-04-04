@@ -28,7 +28,7 @@ export default {
             repo: 'comments',      // The repository of store comments,
             owner: 'KyleBing',
             admin: ['KyleBing'],
-            id: 'kylebing/comments',
+            id: 'kylebing.cn/index',
             distractionFreeMode: false,
             language: 'zh-CN'
         })
