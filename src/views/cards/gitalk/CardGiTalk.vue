@@ -1,5 +1,5 @@
 <template>
-    <Card stitle="">
+    <Card title="给我留言">
         <div id="gitalk">
 
         </div>
