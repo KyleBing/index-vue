@@ -14,7 +14,7 @@ export default [
         icons: [
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/car-oil' ,              icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr/' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../qr?hash=two' ,                        icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/name' ,                 icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: '../tools/typepad' ,              icon: require('./icons/logo-typepad.png') ,            name: '跟打器' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: '../tools/keyboard/' ,            icon: require('./icons/logo-keyboard.png') ,           name: '键盘测试' ,     } ,
