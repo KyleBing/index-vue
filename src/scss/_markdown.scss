@@ -123,7 +123,7 @@ $gap: 15px;
 @media (prefers-color-scheme: dark) {
     .markdown{
         hr{
-            background-color: $dark-border-active;
+            background-color: $dark-border;
         }
 
         @for $item from 1 through 7 {
