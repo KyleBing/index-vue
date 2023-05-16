@@ -1,7 +1,7 @@
 export default [
     {title: "资料", content: "邴新科，程序员(web前端)，山东济南。"},
     {title: "音乐", content: `<a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'></a>
-                                <a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'>《烟花巷》</a> 
+                                <a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'>《水星记》</a> 
                                 <a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'>《美人画卷》</a> 
                                 <a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'>《我的楼兰》</a> 
                                 <a target='_blank' href='https://music.163.com/playlist?id=368268862&userid=79759260'>《Need You Now》</a> 
