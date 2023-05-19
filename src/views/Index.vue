@@ -31,11 +31,9 @@ import CardIcon from "@/views/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
 import CardSelf from "@/views/cards/profile/CardSelf";
 import CardRecommend from "@/views/cards/recommend/CardRecommend";
-import CardGiTalk from "@/views/cards/gitalk/CardGiTalk";
 export default {
     name: 'Index',
     components: {
-        CardGiTalk,
         CardRecommend,
         CardSelf,
         IconList,
