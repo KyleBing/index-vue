@@ -1,5 +1,8 @@
 <template>
-    <div class="card-icon" @click="toRoute">
+    <a
+        target="_blank"
+        class="card-icon"
+        :href="iconInfo.pageLink">
         <div
             :class="['icon', {'no-padding': iconInfo.noPadding}, {black: iconInfo.isBgBlack}]"
             :style="iconBgStyle"
@@ -10,7 +13,7 @@
             <img alt="black-berry-new-message-icon" :src="iconNewMsg">
         </div>
         <div class="name">{{ iconInfo.name }}</div>
-    </div>
+    </a>
 </template>
 
 <script>
