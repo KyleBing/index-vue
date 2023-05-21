@@ -55,7 +55,6 @@ export default {
     components: {Card},
     data(){
         return{
-            picCount: avatarData.picCount, // 头像数量
             currentAvatarIndex: 1, // 初始 avatar Index
             PROFILE,
             AVATAR_ARRAY: avatarData.avatarArray
@@ -63,12 +62,12 @@ export default {
     },
     mounted() {
         // 给初始 index 一个随机值
-        this.currentAvatarIndex = Math.floor(Math.random() * this.picCount)
+        this.currentAvatarIndex = Math.floor(Math.random() * this.AVATAR_ARRAY.length)
     },
     methods: {
         changeAvatar(){
             let nextIndex = this.currentAvatarIndex + 1
-            if (nextIndex >= this.picCount){
+            if (nextIndex >= this.AVATAR_ARRAY.length){
                 this.currentAvatarIndex = 0
             } else {
                 this.currentAvatarIndex = nextIndex
