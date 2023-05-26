@@ -2,12 +2,12 @@
     <div class="index">
         <div class="container" v-cloak>
             <div class="row">
-                <div class="col col-lg-8 col-sm-8 col-md-24 col-sm-24 col-xs-24">
+                <div class="col col-lg-8 col-sm-8 col-md-8 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-apple/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><icon-list/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-clock/></div>
                 </div>
-                <div class="col col-lg-16 col-sm-16 col-md-24 col-sm-24 col-xs-24">
+                <div class="col col-lg-16 col-sm-16 col-md-16 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-recommend/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-project/></div>
