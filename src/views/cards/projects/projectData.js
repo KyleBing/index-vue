@@ -10,6 +10,7 @@ export default  [
         ],
     },
 
+/*
     {
         title: '工具',
         value: 'tool',
@@ -21,24 +22,25 @@ export default  [
             {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
             {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
             {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
-            // {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
-            // {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
-            // {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
-            // {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
-            // {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
-            // {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
-            // {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
-            // {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
-            // {title: 'MarkDown', isPublic: true, description: 'MarkDown 语法说明', path: '/tools/markdown'},
-            // {title: 'Apps', isPublic: true, description: '一些有用的小程序', path: '/tools/apps'},
-            // {title: '比例计算', isPublic: true, description: '屏幕比例计算', path: '/tools/ratio'},
-            // {title: '黑莓工程', isPublic: true, description: '黑莓工程模式解锁码', path: '/tools/blackberry_code'},
-            // {title: '食堂菜谱', isPublic: true, description: '以前食堂菜谱', path: '/tools/food'},
-            // {title: 'iPhone', isPublic: true, description: '之前买二手5s/6s用到的信息', path: '/tools/iphone'},
-            // {title: 'Rime皮肤', isPublic: true, description: 'Rime 皮肤编辑器，小狼毫', path: '/tools/rime_skin_editor'},
-            // {title: 'XXOO', isPublic: true, description: '', path: '/tools/xo'},
+            {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
+            {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
+            {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
+            {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
+            {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
+            {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
+            {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
+            {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
+            {title: 'MarkDown', isPublic: true, description: 'MarkDown 语法说明', path: '/tools/markdown'},
+            {title: 'Apps', isPublic: true, description: '一些有用的小程序', path: '/tools/apps'},
+            {title: '比例计算', isPublic: true, description: '屏幕比例计算', path: '/tools/ratio'},
+            {title: '黑莓工程', isPublic: true, description: '黑莓工程模式解锁码', path: '/tools/blackberry_code'},
+            {title: '食堂菜谱', isPublic: true, description: '以前食堂菜谱', path: '/tools/food'},
+            {title: 'iPhone', isPublic: true, description: '之前买二手5s/6s用到的信息', path: '/tools/iphone'},
+            {title: 'Rime皮肤', isPublic: true, description: 'Rime 皮肤编辑器，小狼毫', path: '/tools/rime_skin_editor'},
+            {title: 'XXOO', isPublic: true, description: '', path: '/tools/xo'},
         ]
     },
+*/
 
 /*    {
         title: '页面',
@@ -63,14 +65,14 @@ export default  [
         list:  [
             {title: 'SCSS Example', isPublic: true, description: 'SCSS测试例子', path: '/test/scss/'},
             {title: '鼠标滚轮测试', isPublic: true, description: 'window.onscroll 实现图片内容变化', path: '/test/scroll'},
-            // {title: 'iOS 更新齿轮', isPublic: true, description: '旋转 iOS 设置图标', path: '/test/gear'},
             {title: 'Websocket', isPublic: true, description: 'websocket 测试', path: '/test/websocket'},
-            {title: '关闭页面提醒', isPublic: true, description: 'window onbeforeunload 事件', path: '/test/unload-event'},
+            {title: 'iOS 更新齿轮', isPublic: true, description: '旋转 iOS 设置图标', path: '/test/gear'},
+            // {title: '关闭页面提醒', isPublic: true, description: 'window onbeforeunload 事件', path: '/test/unload-event'},
             // {title: 'Animation', isPublic: false, description: 'css animation translate3D', path: '/test/animate'},
-            {title: 'Full Calendar', isPublic: true, description: '日程排布工具', path: '/test/fullcalendar/'},
-            {title: 'Service Worker', isPublic: true, description: 'CacheStorage 使网页可离线访问', path: '/test/service-worker/'},
-            {title: '瀑布流', isPublic: true, description: '图片瀑布流', path: '/test/waterfall'},
-            {title: 'Clipboard.js', isPublic: true, description: 'JS 复制插件', path: '/test/clipboard'},
+            // {title: 'Full Calendar', isPublic: true, description: '日程排布工具', path: '/test/fullcalendar/'},
+            // {title: 'Service Worker', isPublic: true, description: 'CacheStorage 使网页可离线访问', path: '/test/service-worker/'},
+            // {title: '瀑布流', isPublic: true, description: '图片瀑布流', path: '/test/waterfall'},
+            // {title: 'Clipboard.js', isPublic: true, description: 'JS 复制插件', path: '/test/clipboard'},
         ],
     },
     {
@@ -135,15 +137,5 @@ export default  [
             {title: '瑞平项目列表', isPublic: true, description: '', path: '/proj/HuiMin/ruiping-password/'},
             {title: '新东方官网', isPublic: true, description: '', path: '/proj/HuiMin/xdf/'},
         ],
-    },
-    {
-        title: 'WAY TO FLY',
-        value: 'other',
-        isPublic: true,
-        list:  [
-            {title: '泡泡云', isPublic: true, description: 'a window on the GFW', path: 'https://ppy.buzz/auth/register?code=TfPH'},
-            // {title: 'SS-LINKS', isPublic: true, description: 'a window on the GFW', path: 'https://i.ss01.net/#/register?code=hHIX8iuK'},
-            {title: 'Bandwagon VPS', isPublic: true, description: '6.38% 优惠券： BWH3HYATVBJW', path: 'https://bwh88.net/cart.php?aff=10480'},
-        ]
     },
 ]

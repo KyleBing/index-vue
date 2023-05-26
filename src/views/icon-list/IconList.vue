@@ -34,7 +34,7 @@ export default {
 <style scoped  lang="scss">
 @import "../../scss/plugin";
 .icon-list-group{
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 .icon-list-header{
     display: flex;
