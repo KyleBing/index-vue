@@ -58,6 +58,7 @@ export default [
     {
         title: '有趣的网站',
         icons: [
+            { noPadding: true, isNew: true,  isBgBlack: false,  pageLink: 'https://hakim.se/',                                                 icon: require('./icons/logo-blank.png'),                name: 'hakim.se',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://kylebing.cn/tools/highway',                                  icon: require('./icons/logo-highway.png'),              name: '高速上的2B们',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '2017',      },
