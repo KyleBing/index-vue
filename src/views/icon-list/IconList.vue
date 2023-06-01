@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import iconGroupList from "@/views/icon-list/iconGroupList.js";
+import iconGroupList from "@/views/icon-list/iconListData.js";
 import CardIcon from "@/views/cards/others/CardIcon";
 
 export default {
