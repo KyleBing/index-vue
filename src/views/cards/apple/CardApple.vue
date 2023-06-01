@@ -43,9 +43,9 @@
             </div>
             <div class="apple-item">
                 <a class="link-item" target="_blank" href="../tools/apple-watch">
-                    <div class="indicator-new">
+<!--                    <div class="indicator-new">
                         <img alt="black-berry-new-message-icon" :src="iconNewMsg">
-                    </div>
+                    </div>-->
                     <img src="./icons/links/apple-watch@2x.png" alt="watch">
                     <h3>Watch</h3>
                 </a>
