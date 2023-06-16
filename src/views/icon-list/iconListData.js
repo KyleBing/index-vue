@@ -50,6 +50,7 @@ export default [
     {
         title: 'Canvas',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=HelloWorld' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-HW' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=%E6%88%91' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-我' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=1&titleFontSize=50&lineWidth=10&isShowTitle=0' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-线条' ,     } ,
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离' ,     } ,
