@@ -37,7 +37,10 @@
             <div class="intro">
                 <table class="intro-container">
                     <tbody>
-                    <tr v-for="(item, index) in PROFILE" :key="index"><td class="intro-title">{{item.title}}</td><td class="intro-content" v-html="item.content"></td></tr>
+                    <tr v-for="(item, index) in PROFILE" :key="index">
+                        <td class="intro-title">{{item.title}}</td>
+                        <td class="intro-content" v-html="item.content"></td>
+                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -77,7 +80,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import "../../../scss/plugin";
 
 .profile{
@@ -142,6 +145,8 @@ export default {
     }
     width: 600px;
     align-items: center;
+
+
     .intro-container{
         width: 100%;
         p {
@@ -166,6 +171,7 @@ export default {
             overflow: hidden;
             a{
                 color: $intro-text-color;
+                text-decoration: underline;
                 &:hover{
                     color: $orange;
                 }
@@ -177,10 +183,13 @@ export default {
             }
             .intro-content{
                 padding-bottom: 0;
+
             }
         }
     }
 }
+
+
 
 
 .profile-showed{
