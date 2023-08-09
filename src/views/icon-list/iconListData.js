@@ -40,6 +40,7 @@ export default [
     {
         title: '网易云 7日黑胶',
         icons: [
+            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://163cn.tv/fkG2I3' ,                     icon: require('./icons/logo-netease-music.png') ,name: '8月' ,     } ,
             { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=cudcSllmrPiWoRL-75iaFw&p=5LZK-YHo3G-qjt6UlXPOG4ck6Jsk7bhUjiwQ88OIt2Xsn_D_20LzjzfBCjQBgnAXX5kpVKKVjQ-SjL1Ki-bQxiXupHFgO11lNMfNmD9lGwo&userid=79759260&app_version=8.10.15&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '7月完' ,     } ,
             { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=1OtPBYw3FlgNw_YmZudIEg&p=MFpkHLFLKa0C8dsRZxfb0CMLEyGPbKrk2dwKsEwYIrFa5Nofv0xdEJUjuU0qoRvLTlWOV7giNdMlBGZyMsBYfF3PK6VpQzMnM2Xcj-EIGCI&userid=79759260&app_version=8.9.95&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '6月完' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=LicTw1fi166OdFT0EswA2A&p=8Hb1nvPLegqPZqAkk1X4xlKMM_KbjkbsHSvVTKQB0fSzhZGdb4zWtvqwkPSXqaPultJrult8QWEaFdu4mzcMcmXfc4AxH7mQAEAzduTiGB0&userid=79759260&app_version=8.9.73&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '5月完' ,     } ,
