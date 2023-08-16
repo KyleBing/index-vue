@@ -3,7 +3,7 @@ export default [
         title: '我的',
         icons: [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/diary/' ,                     icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
-            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/map/' ,                 icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/map/' ,                 icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/manager' ,                    icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/readme' ,                     icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/me/gif' ,                     icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
@@ -30,7 +30,7 @@ export default [
     {
         title: '开发工具',
         icons: [
-            { noPadding: false ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/json-table' ,           icon: require('./icons/logo-json-table.png') ,         name: '表格 JSON' ,  } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/json-table' ,           icon: require('./icons/logo-json-table.png') ,         name: '表格 JSON' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/useragent' ,            icon: require('./icons/logo-agent.png') ,              name: 'UserAgent' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/icons' ,                icon: require('./icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/base64-text' ,          icon: require('./icons/logo-base64.png') ,             name: 'Base64文本' , } ,
@@ -52,7 +52,7 @@ export default [
     {
         title: 'Canvas',
         icons: [
-            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/mine/' ,icon: require('./icons/logo-blank.png') ,name: '我的所有' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/mine/' ,icon: require('./icons/logo-blank.png') ,name: '我的所有' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=+++' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-+++' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=HelloWorld' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-HW' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=%E6%88%91' ,icon: require('./icons/logo-web-canvas-lost.png') ,name: '迷离-我' ,     } ,
@@ -68,13 +68,13 @@ export default [
     {
         title: '有趣的网站',
         icons: [
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next-iphone/',                           icon: require('./icons/logo-iphone.png'),               name: '我是库克',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: require('./icons/logo-painting.png'),             name: '免费名画',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://dapanyuntu.com/',                                            icon: require('./icons/logo-stock.png'),                name: '大盘田字图',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://javier.xyz/emoji-to-scale',                                  icon: require('./icons/logo-emoji-scale.png'),          name: 'emoji排序',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.macosicongallery.com/',                                  icon: require('./icons/logo-macicon.png'),              name: 'Mac Icon',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.openstreetmap.org/',                                     icon: require('./icons/logo-openstreetmap.png'),        name: 'OpenStreetMap',      },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://oimo.io/works',                                              icon: require('./icons/logo-oimo.png'),                 name: 'oimo.io',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next-iphone/',                           icon: require('./icons/logo-iphone.png'),               name: '我是库克',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: require('./icons/logo-painting.png'),             name: '免费名画',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://dapanyuntu.com/',                                            icon: require('./icons/logo-stock.png'),                name: '大盘田字图',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://javier.xyz/emoji-to-scale',                                  icon: require('./icons/logo-emoji-scale.png'),          name: 'emoji排序',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.macosicongallery.com/',                                  icon: require('./icons/logo-macicon.png'),              name: 'Mac Icon',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.openstreetmap.org/',                                     icon: require('./icons/logo-openstreetmap.png'),        name: 'OpenStreetMap',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://oimo.io/works',                                              icon: require('./icons/logo-oimo.png'),                 name: 'oimo.io',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://hakim.se/',                                                  icon: require('./icons/logo-blank.png'),                name: 'hakim.se',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://kylebing.cn/tools/highway',                                  icon: require('./icons/logo-highway.png'),              name: '高速上的2B们',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: require('./icons/logo-web-amazing.png'),          name: '页面效果哇塞',   },
