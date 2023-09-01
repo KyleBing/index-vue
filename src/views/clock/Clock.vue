@@ -66,7 +66,16 @@ import {mapState} from "vuex";
 const WEEKDAY = {0: '周日', 1: '周一', 2: '周二', 3: '周三', 4: '周四', 5: '周五', 6: '周六',}
 const WEEKDAY_SHORT = {0: '日', 1: '一', 2: '二', 3: '三', 4: '四', 5: '五', 6: '六',}
 const COLORS = [
-    '#FFF','#4CD964','#5AC8FA','#007AFF','#5856D6','#FF2D70','#FF3B30','#FF9500','#FFCC00','#8E8E93'
+    '#FFF',
+    '#4CD964',
+    '#5AC8FA',
+    '#007AFF',
+    '#5856D6',
+    '#FF2D70',
+    '#FF3B30',
+    '#FF9500',
+    '#FFCC00',
+    '#8E8E93'
 ]
 function padNumberWith0(num){
     return String(num).padStart(2, '0')
