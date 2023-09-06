@@ -1,0 +1,31 @@
+<template>
+    <icon-list :icons="icons"/>
+</template>
+
+<script>
+import IconList from "@/views/icon-list/IconList";
+export default {
+    name: "IconsMine",
+    components: {IconList},
+    data(){
+        return {
+            icons:[
+                {
+                    title: '我的',
+                    icons: [
+                        { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/diary/' ,                     icon: require('../icons/logo-diary.png') ,        name: '日记' ,     } ,
+                        { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/map/' ,                 icon: require('../icons/logo-map.png') ,          name: '路书' ,     } ,
+                        { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/manager' ,                    icon: require('../icons/logo-manager.png') ,      name: '后台' ,       } ,
+                        { noPadding: false , isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/readme' ,                     icon: require('../icons/logo-doc.png') ,          name: 'README' ,   } ,
+                        { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://kylebing.cn/me/gif' ,                     icon: require('../icons/logo-gif.gif') ,          name: '像素画' ,     },
+                    ]
+                }
+            ],
+        }
+    }
+}
+</script>
+
+<style scoped>
+
+</style>
