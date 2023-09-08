@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Card from "@/components/Card";
+import Card from "@/components/Card.vue";
 import axios from "axios";
 import { marked } from "marked"
 
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 .recommend{
     width: 100%;

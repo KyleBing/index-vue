@@ -22,7 +22,7 @@
 
 <script>
 
-import Card from "@/components/Card";
+import Card from "@/components/Card.vue";
 import {mapState} from "vuex";
 
 

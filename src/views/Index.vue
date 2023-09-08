@@ -21,16 +21,15 @@
 
 <script>
 import Copyright from "@/views/Copyright";
-import CardProfile from "@/views/cards/profile/CardProfile";
-import CardApple from "@/views/cards/apple/CardApple";
-import CardProject from "@/views/cards/projects/CardProject";
-import CardClock from "@/views/cards/clock/CardClock";
+import CardProfile from "@/cards/profile/CardProfile";
+import CardApple from "@/cards/apple/CardApple";
+import CardProject from "@/cards/projects/CardProject";
+import CardClock from "@/cards/clock/CardClock";
 import {mapMutations} from "vuex";
-import CardCalculator from "@/views/cards/tools/CardCalculator";
-import CardIcon from "@/views/cards/others/CardIcon";
+import CardIcon from "@/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
-import CardSelf from "@/views/cards/profile/CardSelf";
-import CardRecommend from "@/views/cards/recommend/CardRecommend";
+import CardSelf from "@/cards/profile/CardSelf";
+import CardRecommend from "@/cards/recommend/CardRecommend";
 export default {
     name: 'Index',
     components: {
@@ -38,7 +37,6 @@ export default {
         CardSelf,
         IconList,
         CardIcon,
-        CardCalculator,
         CardClock, CardProject, CardApple, CardProfile, Copyright},
     data(){
         return {

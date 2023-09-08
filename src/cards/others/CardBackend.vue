@@ -2,7 +2,7 @@
     <CardImage title="我的后台"
                class=""
                :no-padding="true"
-               :cover="cover || ''"
+               :cover="cover"
                :logo="logo"
                page-link="../manager"
     >
@@ -11,24 +11,22 @@
 </template>
 
 <script>
-import Card from "@/components/Card";
-import CardImage from "@/components/CardImage";
+import Card from "@/components/Card.vue";
+import CardImage from "@/components/CardImage.vue";
 export default {
-    name: "CardCalculator",
+    name: "CardBackend",
     components: {CardImage, Card},
     data(){
         return {
-            // cover: require('./card-img-backend.png'),
-            // logo: require('./logo-qr.png')
-            cover: '',
-            logo: ''
+            cover: require('./../imgs/card-img-backend.png'),
+            logo: require('../../views/icon-list/icons/logo-qr.png')
         }
     },
 }
 </script>
 
 <style scoped lang="scss">
-@import "src/scss/plugin";
+@import "plugin";
 
 
 </style>

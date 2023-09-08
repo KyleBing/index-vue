@@ -18,7 +18,7 @@
 
 <script>
 import iconGroupList from "@/views/icon-list/iconListData.js";
-import CardIcon from "@/views/cards/others/CardIcon";
+import CardIcon from "@/cards/others/CardIcon";
 
 export default {
     name: "IconList",

@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 $indicator-width: 20px;
 .card-icon{

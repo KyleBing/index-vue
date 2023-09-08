@@ -9,6 +9,11 @@
                 <div class="social-links">
                     <a class="social-link"
                        target="_blank"
+                       href="https://kylebing.blog.csdn.net/">
+                        <img src="./icon/csdn.svg" alt="CSDN">
+                    </a>
+                    <a class="social-link"
+                       target="_blank"
                        href="https://space.bilibili.com/12729637">
                         <img src="./icon/bilibili.svg" alt="bilibili">
                     </a>
@@ -27,11 +32,7 @@
                        href="https://github.com/KyleBing">
                         <img src="./icon/github.svg" alt="github">
                     </a>
-                    <a class="social-link"
-                       target="_blank"
-                       href="https://kylebing.blog.csdn.net/">
-                        <img src="./icon/csdn.svg" alt="CSDN">
-                    </a>
+
                 </div>
             </div>
             <div class="intro">
@@ -51,7 +52,7 @@
 <script>
 import PROFILE from "./profileData";
 import avatarData from "./avatarData";
-import Card from "@/components/Card";
+import Card from "@/components/Card.vue";
 
 export default {
     name: "CardProfile",
@@ -81,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 .profile{
     @include border-radius($radius)

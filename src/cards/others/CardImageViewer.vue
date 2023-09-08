@@ -12,22 +12,22 @@
 </template>
 
 <script>
-import Card from "@/components/Card";
-import CardImage from "@/components/CardImage";
+import Card from "@/components/Card.vue";
+import CardImage from "@/components/CardImage.vue";
 export default {
     name: "CardImageViewer",
     components: {CardImage, Card},
     data(){
         return {
             cover: require('./../imgs/card-img-imgs.png'),
-            logo: require('../../icon-list/icons/logo-diary.png')
+            logo: require('../../views/icon-list/icons/logo-diary.png')
         }
     },
 }
 </script>
 
 <style scoped lang="scss">
-@import "src/scss/plugin";
+@import "plugin";
 img{
     height: 200px;
     display: block;

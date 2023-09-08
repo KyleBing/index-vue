@@ -61,8 +61,8 @@
 <script>
 
 import axios from "axios";
-import Card from "@/components/Card";
-import blackberryNewMessageIcon from "@/views/cards/others/blackberry-new.svg";
+import Card from "@/components/Card.vue";
+import blackberryNewMessageIcon from "@/cards/others/blackberry-new.svg";
 
 
 export default {

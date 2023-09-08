@@ -6,7 +6,7 @@ export default [
                                 <a target='_blank' href='https://movie.douban.com/subject/3541415/'>《盗梦空间》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/20278505/'>《前目的地》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/6538866/'>《极速车王》。</a>`},
-    {title: "品牌", content: "迪卡侬、宜家、苹果、小米、大众、CBR、九号、黄焖鸡"},
-    {title: "爱好", content: "看电影、拍剪视频、摩托车、王者、Xbox、码自己的东西、K歌、游泳。"},
+    {title: "品牌", content: "迪卡侬、高驰、小米、宜家、苹果、大众、CBR、九号、黄焖鸡"},
+    {title: "爱好", content: "喜欢看电影、拍剪视频、开车、骑车、敲代码、徒步、游泳、跑步，喜欢户外风景。"},
     {title: "格言", content: "永远相信，美好的事情即将发生。"}
 ]
