@@ -1,5 +1,5 @@
 <template>
-    <Card class="projects mb-0" title="" :is-show-title="false" v-if="contentHtml">
+    <Card class="projects mb-0" :title="keyword" :is-show-title="true" v-if="contentHtml">
         <div class="recommend markdown" v-if="diary.is_markdown === 1" v-html="contentHtml"/>
         <div class="recommend" v-else v-html="contentHtml"/>
     </Card>
@@ -11,8 +11,14 @@ import axios from "axios";
 import { marked } from "marked"
 
 export default {
-    name: "CardRecommend",
+    name: "DiaryContentCard",
     components: {Card},
+    props: {
+        keyword: {
+            type: String,
+            default: ''
+        }
+    },
     data(){
         return {
             diary: '',
@@ -20,13 +26,16 @@ export default {
         }
     },
     mounted(){
-        this.getLatestRecommend()
+        this.getLatestPublicDiaryContentWidthKeyword()
     },
     methods: {
-        getLatestRecommend(){
+        getLatestPublicDiaryContentWidthKeyword(){
             axios({
                 type: 'get',
-                url: '../../portal/diary/latest-recommend',
+                url: '../../portal/diary/get-latest-public-diary-with-keyword',
+                params: {
+                    keyword: this.keyword
+                }
             })
                 .then(res => {
                     if (res.status === 200){

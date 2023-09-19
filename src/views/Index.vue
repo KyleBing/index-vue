@@ -11,7 +11,8 @@
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-recommend/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-project/></div>
-                    <div class="col-md-24 col-sm-24 col-xs-24"><card-self/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><DiaryContentCard keyword="关于学习"/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><DiaryContentCard keyword="外网访问套餐推荐"/></div>
                 </div>
             </div>
         </div>
@@ -30,9 +31,11 @@ import CardIcon from "@/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
 import CardSelf from "@/cards/profile/CardSelf";
 import CardRecommend from "@/cards/recommend/CardRecommend";
+import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard";
 export default {
     name: 'Index',
     components: {
+        DiaryContentCard,
         CardRecommend,
         CardSelf,
         IconList,

@@ -4,7 +4,7 @@
             <div v-if="isShowTitle" class="title">{{ title }}</div>
 <!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
-        <div class="section-content">
+        <div class="section-content" :style="isShowTitle? `padding-top: 20px`: ''">
             <slot></slot>
             <div v-if="isDeveloping" class="is-developing"><img src="./icon/developing.svg" alt="developing"> </div>
         </div>

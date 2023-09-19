@@ -10,8 +10,8 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/portal/': {
-        target: 'http://localhost:3000',
-        // target: 'http://kylebing.cn:3000',
+        // target: 'http://localhost:3000',
+        target: 'http://kylebing.cn:3000',
         changeOrigin: true,
         pathRewrite: {'/portal/': ''},
       },
