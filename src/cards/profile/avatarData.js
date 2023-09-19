@@ -15,6 +15,11 @@ let avatarArray = [
     'https://diary-container.kylebing.cn/FjDdoRsSdNQk6qtz1c1alOAeMF_n', // 户外草地
     'https://diary-container.kylebing.cn/FsTSsxNbgN3QBUKPTHKu3vVEOd1X', // 湖边张开手
     'https://diary-container.kylebing.cn/FkpVB6V4G5WsaE4RGEzSp7PLP8Nt', // 帐篷
+    'https://diary-container.kylebing.cn/FlMvjMV6nGCjyYxd44sOBikHiv3X', // 西装头盔
+    'https://diary-container.kylebing.cn/Fpxy5guJQbVuRIVgu7hCCQunMZG9', // 头盔-回家路上
+    'https://diary-container.kylebing.cn/FjqRR0LNczouHBq6HVFq-QnEaaze', // 全身-中铁汇苑
+    'https://diary-container.kylebing.cn/Fl0NVbDAV5MzukQh1ydAFpeUfldV', // 理发后
+    'https://diary-container.kylebing.cn/FqQhliCttLb7dba8oMV-pGoKNQyL', // 森林公园-自拍-拿着GoPro
 ]
 
 export default {
