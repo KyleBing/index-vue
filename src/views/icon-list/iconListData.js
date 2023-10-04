@@ -40,6 +40,7 @@ export default [
     {
         title: '网易云 7日黑胶',
         icons: [
+            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://163cn.tv/0boeU3' ,                     icon: require('./icons/logo-netease-music.png') ,name: '10月' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://163cn.tv/LSrKm4' ,                     icon: require('./icons/logo-netease-music.png') ,name: '9月完' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://163cn.tv/fkG2I3' ,                     icon: require('./icons/logo-netease-music.png') ,name: '8月完' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'https://music.163.com/prime/m/gift-receive?d=cudcSllmrPiWoRL-75iaFw&p=5LZK-YHo3G-qjt6UlXPOG4ck6Jsk7bhUjiwQ88OIt2Xsn_D_20LzjzfBCjQBgnAXX5kpVKKVjQ-SjL1Ki-bQxiXupHFgO11lNMfNmD9lGwo&userid=79759260&app_version=8.10.15&dlt=0846' ,                     icon: require('./icons/logo-netease-music.png') ,name: '7月完' ,     } ,
@@ -69,7 +70,7 @@ export default [
     {
         title: '有趣的网站',
         icons: [
-            { noPadding: true, isNew: true,  isBgBlack: false, pageLink: 'https://www.gsmarena.com/',                                          icon: require('./icons/logo-blank.png'),               name: '所有手机大全',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.gsmarena.com/',                                          icon: require('./icons/logo-blank.png'),               name: '所有手机大全',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next-iphone/',                           icon: require('./icons/logo-iphone.png'),               name: '我是库克',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: require('./icons/logo-painting.png'),             name: '免费名画',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://dapanyuntu.com/',                                            icon: require('./icons/logo-stock.png'),                name: '大盘田字图',      },
