@@ -1,0 +1,14 @@
+@import "../scss/plugin";
+
+.wap{
+  padding: 20px;
+  height: 100vh;
+  color: $text-title;
+  background-color: white;
+  font-family: 'Pixel-12', sans-serif !important;
+  font-weight: normal !important;
+}
+
+a{
+  color: $blue;
+}

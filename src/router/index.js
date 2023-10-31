@@ -1,12 +1,15 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
-import Index from "@/views/Index";
-import Clock from "@/views/clock/Clock";
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: () => import('@/views/Index')
+    },
+    {
+        path: '/wap',
+        name: 'Wap',
+        component: () => import('@/wap/Wap')
     },
     {
         path: '/clock',
