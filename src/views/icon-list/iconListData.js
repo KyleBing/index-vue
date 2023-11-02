@@ -40,6 +40,7 @@ export default [
     {
         title: '网易云 7日黑胶',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://163cn.tv/F9OBP1' ,                     icon: require('./icons/logo-netease-music.png') ,name: '11月' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://163cn.tv/0boeU3' ,                     icon: require('./icons/logo-netease-music.png') ,name: '10月 ✓' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://163cn.tv/LSrKm4' ,                     icon: require('./icons/logo-netease-music.png') ,name: '9月 ✓' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://163cn.tv/fkG2I3' ,                     icon: require('./icons/logo-netease-music.png') ,name: '8月 ✓' ,     } ,
