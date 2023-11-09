@@ -2,7 +2,7 @@
     <Card class="blue" title="">
         <div class="card-apple">
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/ipad">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/ipad">
                     <img src="./icons/links/ipad_white@2x.png" alt="ipad">
                     <h3>iPad</h3>
                 </a>
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/iphone">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/iphone">
                     <img src="./icons/links/iphone_white@2x.png" alt="phone">
                     <h3>iPhone</h3>
                 </a>
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/airpods">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/airpods">
                     <img src="./icons/links/airpods_white@2x.png" alt="airpods">
                     <h3>AirPods</h3>
                 </a>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/apple-chip">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-chip">
                     <img src="./icons/links/chip_white@2x.png" alt="chip">
                     <h3>处理器</h3>
                 </a>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="apple-item">
-                <a class="link-item" target="_blank" href="../tools/apple-watch">
+                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">
 <!--                    <div class="indicator-new">
                         <img alt="black-berry-new-message-icon" :src="iconNewMsg">
                     </div>-->
