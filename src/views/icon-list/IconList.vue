@@ -6,11 +6,6 @@
         <div class="icon-list">
             <card-icon v-for="item in group.icons" :key="item.name"
                        :iconInfo="item"
-                       :is-bg-black="item.isBgBlack"
-                       :icon="item.icon" :name="item.name"
-                       :is-new="item.isNew"
-                       :is-no-padding="item.noPadding"
-                       :page-link="item.pageLink"
             />
         </div>
     </div>

@@ -4,7 +4,10 @@
             <div class="row">
                 <div class="col col-lg-8 col-sm-8 col-md-8 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-apple/></div>
-                    <div class="col-md-24 col-sm-24 col-xs-24"><icon-list/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24">
+                        <NeteaseMusicShareIconList/>
+                        <icon-list/>
+                    </div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-clock/></div>
                 </div>
                 <div class="col col-lg-16 col-sm-16 col-md-16 col-sm-24 col-xs-24">
@@ -32,9 +35,11 @@ import IconList from "@/views/icon-list/IconList";
 import CardSelf from "@/cards/profile/CardSelf";
 import CardRecommend from "@/cards/recommend/CardRecommend";
 import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard";
+import NeteaseMusicShareIconList from "@/views/icon-list/NeteaseMusicShareIconList.vue";
 export default {
     name: 'Index',
     components: {
+        NeteaseMusicShareIconList,
         DiaryContentCard,
         CardRecommend,
         CardSelf,
