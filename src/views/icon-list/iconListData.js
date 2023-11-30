@@ -12,6 +12,7 @@ export default [
     {
         title: '工具',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                  icon: require('./icons/logo-cbr650r.png') ,            name: 'CBR650R' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/car-oil' ,                 icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'https://kylebing.cn/tools/name' ,                    icon: require('./icons/logo-name.png') ,               name: '起名工具' ,      } ,
