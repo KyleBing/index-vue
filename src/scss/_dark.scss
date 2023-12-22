@@ -1,5 +1,3 @@
-
-
 @media (prefers-color-scheme: dark) {
   html{
     background-color: lighten(black, 10%);
@@ -78,19 +76,19 @@
   }
 
 
-  // setion
+  // SECTION
   .section{
     &.gray{
-      background: linear-gradient(to top left, #444, #666);
+      background: linear-gradient(to top left, #333, #555);
     }
   }
 
   .profile{
-    background: linear-gradient(to top left, #444, #666);
+    background: linear-gradient(to top left, #333, #444);
   }
 
   .projects{
-    background: linear-gradient(to top left, #444, #666);
+    background: linear-gradient(to top left, #333, #444);
     .project-list-item{
       border-color: $dark-border;
 

@@ -156,12 +156,19 @@ export default {
         .section-content {
             min-height: 100px;
         }
+
     }
 }
 
 @media (prefers-color-scheme: dark) {
     .section{
         border-color: $dark-border;
+        &:hover {
+            .section-header {
+                @include transition(color 0.5s);
+                color: $dark-text-title;
+            }
+        }
     }
 }
 
