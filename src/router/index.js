@@ -1,6 +1,4 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
-import Index from "@/views/Index";
-import Clock from "@/views/clock/Clock";
 
 const routes = [
     {
@@ -18,6 +16,12 @@ const routes = [
         name: 'WantedList',
         component: () => import('@/views/wanted-list/WantedList')
     },
+    {
+        path: '*',
+        name: '404',
+        component: () => import('@/views/Index')
+    },
+
 ]
 
 const router = createRouter({
