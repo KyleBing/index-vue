@@ -4,24 +4,18 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('@/views/Index')
+        component: () => import('@/views/Index.vue')
     },
     {
         path: '/clock',
         name: 'Clock',
-        component: () => import('@/views/clock/Clock')
+        component: () => import('@/views/clock/Clock.vue')
     },
     {
         path: '/wanted-list',
         name: 'WantedList',
-        component: () => import('@/views/wanted-list/WantedList')
-    },
-    {
-        path: '*',
-        name: '404',
-        component: () => import('@/views/Index')
-    },
-
+        component: () => import('@/views/wanted-list/WantedList.vue')
+    }
 ]
 
 const router = createRouter({
