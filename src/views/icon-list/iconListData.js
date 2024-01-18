@@ -6,7 +6,7 @@ export default [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: false , isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/gif' ,                       icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
             { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-hole-life?v=1' , icon: require('./icons/logo-all-my-life.png') ,  name: '一生的时间' ,  },
         ]
     },
