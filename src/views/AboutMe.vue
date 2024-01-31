@@ -1,22 +1,13 @@
 <template>
     <div class="index">
-        <div v-cloak>
-            <div class="mb-2">
-                <CardProfile/>
-                <ProfileEntrance class="mt-2"/>
-            </div>
-            <div class="mb-2">
-                <CardRecommend/>
-            </div>
-            <div class="mb-2">
-                <CardApple/>
-            </div>
-            <div class="mb-2">
-                <NeteaseMusicShareIconList/>
-                <IconList/>
-            </div>
-            <div class="mb-2">
-                <CardClock/>
+        <div class="container" v-cloak>
+            <div class="row">
+                <div class="col col-lg-16 col-sm-16 col-md-16 col-sm-24 col-xs-24">
+                    <div class="col-md-24 col-sm-24 col-xs-24"><card-profile/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><card-project/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><DiaryContentCard keyword="关于学习"/></div>
+                    <div class="col-md-24 col-sm-24 col-xs-24"><DiaryContentCard keyword="外网访问套餐推荐"/></div>
+                </div>
             </div>
         </div>
         <copyright/>
@@ -26,7 +17,6 @@
 <script>
 import Copyright from "@/views/Copyright";
 import CardProfile from "@/cards/profile/CardProfile";
-import CardApple from "@/cards/apple/CardApple.vue";
 import CardProject from "@/cards/projects/CardProject";
 import CardClock from "@/cards/clock/CardClock";
 import {mapMutations} from "vuex";
@@ -36,11 +26,9 @@ import CardSelf from "@/cards/profile/CardSelf";
 import CardRecommend from "@/cards/recommend/CardRecommend";
 import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard";
 import NeteaseMusicShareIconList from "@/views/icon-list/NeteaseMusicShareIconList.vue";
-import ProfileEntrance from "@/cards/profile/ProfileEntrance.vue";
 export default {
-    name: 'Index',
+    name: 'AboutMe',
     components: {
-        ProfileEntrance,
         NeteaseMusicShareIconList,
         DiaryContentCard,
         CardRecommend,
@@ -54,21 +42,12 @@ export default {
         }
     },
     mounted() {
-        this.addScrollEvent()
     },
     unmounted() {
-        this.removeScrollEvent()
     },
     methods: {
         ...mapMutations(['SET_SCROLL_TOP']),
-        addScrollEvent(){
-            onscroll = () => {
-                this.SET_SCROLL_TOP(document.documentElement.scrollTop)
-            }
-        },
-        removeScrollEvent(){
-            onscroll = null
-        }
+
     }
 }
 </script>

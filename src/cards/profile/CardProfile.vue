@@ -6,34 +6,7 @@
                 <div class="head flipInX animated" @click="changeAvatar">
                     <img :src="AVATAR_ARRAY[currentAvatarIndex]" alt="HeadPic">
                 </div>
-                <div class="social-links">
-                    <a class="social-link"
-                       target="_blank"
-                       href="https://kylebing.blog.csdn.net/">
-                        <img src="./icon/csdn.svg" alt="CSDN">
-                    </a>
-                    <a class="social-link"
-                       target="_blank"
-                       href="https://space.bilibili.com/12729637">
-                        <img src="./icon/bilibili.svg" alt="bilibili">
-                    </a>
-                    <a class="social-link"
-                       target="_blank"
-                       href="https://weibo.com/u/5446375965">
-                        <img src="./icon/weibo.svg" alt="weibo">
-                    </a>
-                    <a class="social-link"
-                       target="_blank"
-                       href="mailto:kylebing@163.com">
-                        <img src="./icon/email.svg" alt="email">
-                    </a>
-                    <a class="social-link"
-                       target="_blank"
-                       href="https://github.com/KyleBing">
-                        <img src="./icon/github.svg" alt="github">
-                    </a>
 
-                </div>
             </div>
             <div class="intro">
                 <table class="intro-container">

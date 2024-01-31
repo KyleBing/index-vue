@@ -25,6 +25,9 @@ $text-dark-desc: transparentize(white, 0.6);
 
 $bg-body:  #F9F9F9;
 $bg-color: #F4F1EF;
+$bg-active: transparentize($blue, 0.92);
+
+$border-active: transparentize($blue, 0.8);
 
 $intro-title-color: #9B9B9B;
 $intro-text-color:  #505257;

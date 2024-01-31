@@ -41,7 +41,7 @@
                     <div class="count">{{thumbsUpMap.get('apple-chip') || 0}}</div>
                 </div>
             </div>
-            <div class="apple-item">
+            <div class="apple-item disabled">
                 <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">
 <!--                    <div class="indicator-new">
                         <img alt="black-berry-new-message-icon" :src="iconNewMsg">
@@ -179,6 +179,6 @@ class WSMessage{
 </script>
 
 <style scoped lang="scss">
-@import "card-apple";
+@import "./card-apple";
 
 </style>

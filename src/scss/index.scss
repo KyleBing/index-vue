@@ -1,4 +1,5 @@
 @import "plugin";
+@import "gutter";
 @import "reset";
 
 
@@ -19,19 +20,16 @@ body{
 }
 
 .container{
+  position: relative;
+  margin: 0 auto;
+  max-width: 1024px;
   padding: $gap;
 }
 
-.col-xs-24{
-  margin-bottom: $gap;
-}
 
 @media (max-width: 1280px) {
   .container{
-    padding: 0;
-  }
-  .col-xs-24{
-    margin-bottom: $gap-mobile;
+    padding: 10px;
   }
 }
 
