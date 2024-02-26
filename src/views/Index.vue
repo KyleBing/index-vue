@@ -5,8 +5,8 @@
                 <div class="col col-lg-8 col-sm-8 col-md-8 col-sm-24 col-xs-24">
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-apple/></div>
                     <div class="col-md-24 col-sm-24 col-xs-24">
-                        <NeteaseMusicShareIconList/>
                         <icon-list/>
+                        <NeteaseMusicShareIconList/>
                     </div>
                     <div class="col-md-24 col-sm-24 col-xs-24"><card-clock/></div>
                 </div>
