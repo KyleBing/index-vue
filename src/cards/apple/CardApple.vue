@@ -41,19 +41,19 @@
                     <div class="count">{{thumbsUpMap.get('apple-chip') || 0}}</div>
                 </div>
             </div>
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">
-<!--                    <div class="indicator-new">
-                        <img alt="black-berry-new-message-icon" :src="iconNewMsg">
-                    </div>-->
-                    <img src="./icons/links/apple-watch@2x.png" alt="watch">
-                    <h3 style="text-decoration: line-through">Watch</h3>
-                </a>
-                <div class="thumb-up" @click="thumbsUp('apple-watch')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('apple-watch') || 0 }}</div>
-                </div>
-            </div>
+<!--            <div class="apple-item">-->
+<!--                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">-->
+<!--&lt;!&ndash;                    <div class="indicator-new">-->
+<!--                        <img alt="black-berry-new-message-icon" :src="iconNewMsg">-->
+<!--                    </div>&ndash;&gt;-->
+<!--                    <img src="./icons/links/apple-watch@2x.png" alt="watch">-->
+<!--                    <h3 style="text-decoration: line-through">Watch</h3>-->
+<!--                </a>-->
+<!--                <div class="thumb-up" @click="thumbsUp('apple-watch')">-->
+<!--                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">-->
+<!--                    <div class="count">{{thumbsUpMap.get('apple-watch') || 0 }}</div>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </Card>
 </template>
