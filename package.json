@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@vuepic/vue-datepicker": "^3.3.1",
@@ -24,6 +25,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
     "sass": "^1.69.6",
     "sass-loader": "^13.3.2",
     "typescript": "^5.0.2",

@@ -14,42 +14,11 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import Copyright from "@/views/Copyright";
 import CardProfile from "@/cards/profile/CardProfile";
 import CardProject from "@/cards/projects/CardProject";
-import CardClock from "@/cards/clock/CardClock";
-import {mapMutations} from "vuex";
-import CardIcon from "@/cards/others/CardIcon";
-import IconList from "@/views/icon-list/IconList";
-import CardSelf from "@/cards/profile/CardSelf";
-import CardRecommend from "@/cards/recommend/CardRecommend";
 import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard";
-import NeteaseMusicShareIconList from "@/views/icon-list/NeteaseMusicShareIconList.vue";
-export default {
-    name: 'AboutMe',
-    components: {
-        NeteaseMusicShareIconList,
-        DiaryContentCard,
-        CardRecommend,
-        CardSelf,
-        IconList,
-        CardIcon,
-        CardClock, CardProject, CardApple, CardProfile, Copyright},
-    data(){
-        return {
-
-        }
-    },
-    mounted() {
-    },
-    unmounted() {
-    },
-    methods: {
-        ...mapMutations(['SET_SCROLL_TOP']),
-
-    }
-}
 </script>
 
 <style scoped>

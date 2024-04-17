@@ -11,26 +11,23 @@
 </template>
 
 
-<script>
-import {mapMutations} from "vuex";
+<script lang="ts" setup>
 
-export default {
-    mounted() {
-        this.SET_INSETS({
+import {onMounted} from "vue";
+import {useProjectStore} from "./store.ts";
+const pinia = useProjectStore()
+onMounted(()=>{
+    pinia.SET_INSETS({
+        height: innerHeight,
+        width: innerWidth,
+    })
+    onresize = () => {
+        pinia.SET_INSETS({
             height: innerHeight,
             width: innerWidth,
         })
-        onresize = () => {
-            this.SET_INSETS({
-                height: innerHeight,
-                width: innerWidth,
-            })
-        }
-    },
-    methods: {
-        ...mapMutations(['SET_INSETS'])
     }
-}
+})
 </script>
 
 <style lang="scss">

@@ -23,53 +23,34 @@
     </div>
 </template>
 
-<script>
+<script lang="ts" setup>
 import Copyright from "@/views/Copyright";
 import CardProfile from "@/cards/profile/CardProfile";
 import CardApple from "@/cards/apple/CardApple.vue";
-import CardProject from "@/cards/projects/CardProject";
 import CardClock from "@/cards/clock/CardClock";
-import {mapMutations} from "vuex";
-import CardIcon from "@/cards/others/CardIcon";
 import IconList from "@/views/icon-list/IconList";
-import CardSelf from "@/cards/profile/CardSelf";
 import CardRecommend from "@/cards/recommend/CardRecommend";
-import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard";
 import NeteaseMusicShareIconList from "@/views/icon-list/NeteaseMusicShareIconList.vue";
 import ProfileEntrance from "@/cards/profile/ProfileEntrance.vue";
-export default {
-    name: 'Index',
-    components: {
-        ProfileEntrance,
-        NeteaseMusicShareIconList,
-        DiaryContentCard,
-        CardRecommend,
-        CardSelf,
-        IconList,
-        CardIcon,
-        CardClock, CardProject, CardApple, CardProfile, Copyright},
-    data(){
-        return {
+import {onMounted, onUnmounted} from "vue";
+import {useProjectStore} from "@/store.ts";
 
-        }
-    },
-    mounted() {
-        this.addScrollEvent()
-    },
-    unmounted() {
-        this.removeScrollEvent()
-    },
-    methods: {
-        ...mapMutations(['SET_SCROLL_TOP']),
-        addScrollEvent(){
-            onscroll = () => {
-                this.SET_SCROLL_TOP(document.documentElement.scrollTop)
-            }
-        },
-        removeScrollEvent(){
-            onscroll = null
-        }
+onMounted(()=>{
+    addScrollEvent()
+})
+
+onUnmounted(()=>{
+    removeScrollEvent()
+})
+
+const pinia = useProjectStore()
+function addScrollEvent(){
+    onscroll = () => {
+        pinia.SET_SCROLL_TOP(document.documentElement.scrollTop)
     }
+}
+function removeScrollEvent(){
+    onscroll = null
 }
 </script>
 
