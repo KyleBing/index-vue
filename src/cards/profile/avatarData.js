@@ -21,6 +21,10 @@ let avatarArray = [
     'http://diary-container.kylebing.cn/Fl0NVbDAV5MzukQh1ydAFpeUfldV', // 理发后
     'http://diary-container.kylebing.cn/FqQhliCttLb7dba8oMV-pGoKNQyL', // 森林公园-自拍-拿着GoPro
     'http://diary-container.kylebing.cn/Fiz6b-VeVmWN5iX1IZEmhA9OWtTG', // 周岁
+    'http://diary-container.kylebing.cn/FkfrmlS_hLwDw8091eDq1zPxBk1P', // 车模
+    'http://diary-container.kylebing.cn/FteO3DNX9NietZVOMeGZpAZHLiyj', // bb10
+    'http://diary-container.kylebing.cn/Fr59B_V-kOJaHpDs_8Rbp13gyIDU', // 山顶背影
+    'http://diary-container.kylebing.cn/Fuddkg_altcfjjzzQJUClzyTXmut', // 车 轮胎
 ]
 
 export default {

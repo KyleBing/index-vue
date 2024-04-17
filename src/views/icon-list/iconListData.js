@@ -8,6 +8,7 @@ export default [
             { noPadding: false , isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-hole-life?v=1' , icon: require('./icons/logo-all-my-life.png') ,  name: '一生的时间' ,  },
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/bb-keyboard' ,              icon: require('./icons/logo-bb-keyboard.png') ,  name: '黑莓键盘' ,  },
         ]
     },
     {
