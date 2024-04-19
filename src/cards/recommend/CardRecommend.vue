@@ -5,60 +5,54 @@
     </Card>
 </template>
 
-<script>
-import Card from "@/components/Card.vue";
+<script lang="ts" setup>
 import axios from "axios";
 import { marked } from "marked"
+import {onMounted, ref} from "vue";
+import {DiaryEntityDatabase} from "@/entity/Diary.ts";
+import Card from "@/components/Card.vue";
 
-export default {
-    name: "CardRecommend",
-    components: {Card},
-    data(){
-        return {
-            diary: '',
-            contentHtml: ''
-        }
-    },
-    mounted(){
-        this.getLatestRecommend()
-    },
-    methods: {
-        getLatestRecommend(){
-            axios({
-                type: 'get',
-                url: '../../portal/diary/latest-recommend',
-            })
-                .then(res => {
-                    if (res.status === 200){
-                        this.diary = res.data.data
-                        if (this.diary){
-                            if (this.diary.is_markdown === 1){
-                                this.contentHtml = marked.parse(this.diary.content)
-                            } else {
-                                this.contentHtml = this.getContentHtml(this.diary.content)
-                            }
-                        }
-                    }
-                })
-        },
-        getContentHtml(content){
-            let isInCodeMode = /\[ ?code ?\]/i.test(content)
-            if (isInCodeMode){
-                return `<pre class="code">${content}</pre>`
-            } else {
-                let contentArray = content.split('\n')
-                let contentHtml = ""
-                contentArray.forEach(item => {
-                    if (item === ''){
-                        contentHtml += '<br/>'
+const diary = ref<DiaryEntityDatabase>({})
+const contentHtml = ref('')
+
+onMounted(()=>{
+    getLatestRecommend()
+})
+
+function getLatestRecommend(){
+    axios({
+        method: 'get',
+        url: '../../portal/diary/latest-recommend',
+    })
+        .then(res => {
+            if (res.status === 200){
+                diary.value = res.data.data
+                if (diary){
+                    if (diary.value.is_markdown === 1){
+                        contentHtml.value = marked.parse(diary.value.content)
                     } else {
-                        contentHtml += `<p>${item}</p>`
+                        contentHtml.value = getContentHtml(diary.value.content)
                     }
-                })
-                return contentHtml
+                }
             }
-        },
-    },
+        })
+}
+function getContentHtml(content: string){
+    let isInCodeMode = /\[ ?code ?\]/i.test(content)
+    if (isInCodeMode){
+        return `<pre class="code">${content}</pre>`
+    } else {
+        let contentArray = content.split('\n')
+        let contentHtml = ""
+        contentArray.forEach(item => {
+            if (item === ''){
+                contentHtml += '<br/>'
+            } else {
+                contentHtml += `<p>${item}</p>`
+            }
+        })
+        return contentHtml
+    }
 }
 </script>
 

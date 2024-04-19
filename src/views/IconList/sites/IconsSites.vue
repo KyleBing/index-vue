@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import IconList from "@/views/icon-list/IconList";
+import IconList from "@/views/IconList/IconList";
 export default {
     name: "IconsSites",
     components: {IconList},

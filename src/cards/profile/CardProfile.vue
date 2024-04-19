@@ -4,14 +4,14 @@
         <div class="profile-content">
             <div class="head-container">
                 <div class="head flipInX animated" @click="changeAvatar">
-                    <img :src="AVATAR_ARRAY[currentAvatarIndex]" alt="HeadPic">
+                    <img :src="AvatarArray[currentAvatarIndex]" alt="HeadPic">
                 </div>
 
             </div>
             <div class="intro">
                 <table class="intro-container">
                     <tbody>
-                    <tr v-for="(item, index) in PROFILE" :key="index">
+                    <tr v-for="(item, index) in ProfileData" :key="index">
                         <td class="intro-title">{{item.title}}</td>
                         <td class="intro-content" v-html="item.content"></td>
                     </tr>
@@ -22,34 +22,23 @@
     </Card>
 </template>
 
-<script>
-import PROFILE from "./profileData";
-import avatarData from "./avatarData";
-import Card from "@/components/Card.vue";
+<script lang="ts" setup>
+import {ProfileData, AvatarArray} from "./profileData.ts";
+import {onMounted, ref} from "vue";
+import Card from "../../components/Card.vue";
 
-export default {
-    name: "CardProfile",
-    components: {Card},
-    data(){
-        return{
-            currentAvatarIndex: 1, // 初始 avatar Index
-            PROFILE,
-            AVATAR_ARRAY: avatarData.avatarArray
-        }
-    },
-    mounted() {
-        // 给初始 index 一个随机值
-        this.currentAvatarIndex = Math.floor(Math.random() * this.AVATAR_ARRAY.length)
-    },
-    methods: {
-        changeAvatar(){
-            let nextIndex = this.currentAvatarIndex + 1
-            if (nextIndex >= this.AVATAR_ARRAY.length){
-                this.currentAvatarIndex = 0
-            } else {
-                this.currentAvatarIndex = nextIndex
-            }
-        }
+const currentAvatarIndex = ref(1)
+
+onMounted(()=>{
+    currentAvatarIndex.value = Math.floor(Math.random() * AvatarArray.length)
+})
+
+function  changeAvatar(){
+    let nextIndex = currentAvatarIndex.value + 1
+    if (nextIndex >= AvatarArray.length){
+        currentAvatarIndex.value = 0
+    } else {
+        currentAvatarIndex.value = nextIndex
     }
 }
 </script>

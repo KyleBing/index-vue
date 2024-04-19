@@ -15,6 +15,7 @@
 
 import {onMounted} from "vue";
 import {useProjectStore} from "./store.ts";
+
 const pinia = useProjectStore()
 onMounted(()=>{
     pinia.SET_INSETS({

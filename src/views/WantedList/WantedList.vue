@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import wantedThings from "@/views/wanted-list/wantedThings";
+import wantedThings from "@/views/WantedList/wantedThings";
 export default {
     name: "WantedList",
     data(){

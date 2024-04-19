@@ -1,0 +1,167 @@
+import icon_diary from './icons/logo_diary.png'
+import logo_map from './icons/logo_map.png'
+import logo_manager from './icons/logo_manager.png'
+import logo_vitepress from './icons/logo_vitepress.png'
+import logo_gif from './icons/logo_gif.gif'
+import logo_all_my_life from './icons/logo_all_my_life.png'
+import logo_bb_keyboard from './icons/logo_bb_keyboard.png'
+import logo_cbr650r from './icons/logo_cbr650r.png'
+import logo_car_oil from './icons/logo_car_oil.png'
+import logo_qr from './icons/logo_qr.png'
+import logo_name from './icons/logo_name.png'
+import logo_typepad from './icons/logo_typepad.png'
+import logo_keyboard from './icons/logo_keyboard.png'
+import logo_calculator from './icons/logo_calculator.png'
+import logo_symbol from './icons/logo_symbol.png'
+import logo_vps from './icons/logo_vps.png'
+import logo_image_viewer from './icons/logo_image_viewer.png'
+import logo_wubi_editor from './icons/logo_wubi_editor.png'
+import logo_download from './icons/logo_download.png'
+import logo_unlock_music from './icons/logo_unlock_music.png'
+import logo_json_table from './icons/logo_json_table.png'
+import logo_agent from './icons/logo_agent.png'
+import logo_element_ui_icons from './icons/logo_element_ui_icons.png'
+import logo_base64 from './icons/logo_base64.png'
+import logo_ele from './icons/logo_ele.png'
+import logo_blank from './icons/logo_blank.png'
+import logo_web_canvas_lost from './icons/logo_web_canvas_lost.png'
+import logo_web_canvas_loading from './icons/logo_web_canvas_loading.png'
+import logo_web_canvas_block from './icons/logo_web_canvas_block.png'
+import logo_web_canvas_heart from './icons/logo_web_canvas_heart.png'
+import logo_web_canvas_text from './icons/logo_web_canvas_text.png'
+import logo_iphone from './icons/logo_iphone.png'
+import logo_painting from './icons/logo_painting.png'
+import logo_stock from './icons/logo_stock.png'
+import logo_emoji_scale from './icons/logo_emoji_scale.png'
+import logo_macicon from './icons/logo_macicon.png'
+import logo_openstreetmap from './icons/logo_openstreetmap.png'
+import logo_oimo from './icons/logo_oimo.png'
+import logo_highway from './icons/logo_highway.png'
+import logo_web_amazing from './icons/logo_web_amazing.png'
+import logo_web_v2ex from './icons/logo_web_v2ex.png'
+import logo_web_pi from './icons/logo_web_pi.png'
+import logo_web_chiphell from './icons/logo_web_chiphell.png'
+import logo_web_cube from './icons/logo_web_cube.png'
+import logo_web_neave from './icons/logo_web_neave.png'
+import logo_web_cabbi from './icons/logo_web_cabbi.png'
+import logo_web_chrismckenzie from './icons/logo_web_chrismckenzie.png'
+import logo_web_dogs from './icons/logo_web_dogs.png'
+import logo_web_text_character from './icons/logo_web_text_character.png'
+import logo_web_ps from './icons/logo_web_ps.png'
+import logo_web_webtoday from './icons/logo_web_webtoday.png'
+import logo_web_360_view from './icons/logo_web_360_view.png'
+import logo_web_artist_ib from './icons/logo_web_artist_ib.png'
+import logo_web_pic_zoom from './icons/logo_web_pic_zoom.png'
+import logo_web_txti from './icons/logo_web_txti.png'
+import logo_web_pointer from './icons/logo_web_pointer.png'
+import logo_web_racecar from './icons/logo_web_racecar.png'
+import logo_web_gif from './icons/logo_web_gif.gif'
+import logo_web_chinese_new_year from './icons/logo_web_chinese_new_year.png'
+import logo_web_3d from './icons/logo_web_3d.png'
+import logo_web_useless_website from './icons/logo_web_useless_website.png'
+import logo_web_raining_outside from './icons/logo_web_raining_outside.png'
+import logo_web_noisli from './icons/logo_web_noisli.png'
+import logo_web_game_avoid from './icons/logo_web_game_avoid.png'
+
+export default [
+    {
+        title: '我的',
+        icons: [
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                        icon: icon_diary ,        name: '日记' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: logo_map ,          name: '路书' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: logo_manager ,      name: '后台' ,       } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                        icon: logo_vitepress ,     name: 'README' ,   } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: logo_gif ,          name: '像素画' ,     },
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-hole-life?v=1' ,  icon: logo_all_my_life ,  name: '一生的时间' ,  },
+            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/bb-keyboard' ,              icon: logo_bb_keyboard ,  name: '黑莓键盘' ,  },
+        ]
+    },
+    {
+        title: '工具',
+        icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                  icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: logo_qr ,                 name: '挪车提醒' ,     } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/name' ,                    icon: logo_name ,               name: '起名工具' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/typepad' ,                 icon: logo_typepad ,            name: '跟打器' ,      } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/keyboard/' ,               icon: logo_keyboard ,           name: '键盘测试' ,     } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/calculator' ,              icon: logo_calculator ,         name: '计算器' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/words' ,                   icon: logo_symbol ,             name: '标点处理' ,     } ,
+            // { noPadding: false , isNew: false, isBgBlack: false , pageLink: 'http://kylebing.cn/tools/vps' ,                     icon: logo_vps ,                name: 'VPS' ,      } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/drop-and-show' ,           icon: logo_image_viewer ,       name: '图片查看器' ,    } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/wubi-dict-editor-web' ,    icon: logo_wubi_editor ,        name: '五笔助手' ,     } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/download' ,                      icon: logo_download ,           name: '常用下载' ,     } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/unlock-music' ,            icon: logo_unlock_music ,       name: '音乐解码' ,     } ,
+
+        ]
+    },
+    {
+        title: '开发工具',
+        icons: [
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/json-table' ,           icon: logo_json_table ,         name: '表格 JSON' ,  } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/useragent' ,            icon: logo_agent ,              name: 'UserAgent' ,  } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: logo_element_ui_icons ,   name: 'element图标' , } ,
+            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: logo_base64 ,             name: 'Base64文本' , } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
+        ]
+    },
+    {
+        title: 'Canvas',
+        icons: [
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/mine/' ,icon: logo_blank ,name: '我的所有' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=+++' ,icon: logo_web_canvas_lost ,name: '迷离-+++' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=HelloWorld' ,icon: logo_web_canvas_lost ,name: '迷离-HW' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=%E6%88%91' ,icon: logo_web_canvas_lost ,name: '迷离-我' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=1&titleFontSize=50&lineWidth=10&isShowTitle=0' ,icon: logo_web_canvas_lost ,name: '迷离-线条' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost' ,icon: logo_web_canvas_lost ,name: '迷离' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-loading-canvas' ,icon: logo_web_canvas_loading ,name: '圆圈' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-bg' ,     icon: logo_web_canvas_block ,  name: '活动方块' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-heart-canvas' ,  icon: logo_web_canvas_heart ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-heart-canvas/?hMin=0&hMax=360&countHeart=500&sizeMin=10&sizeMax=50&bgColor=%233d3d3d' ,  icon: logo_web_canvas_heart ,  name: '飘动的心' ,     } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-bg-text-canvas' ,icon: logo_web_canvas_text ,   name: '文字' ,     } ,
+        ]
+    },
+    {
+        title: '有趣的网站',
+        icons: [
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.gsmarena.com/',                                          icon: logo_blank,               name: '所有手机大全',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next_iphone/',                           icon: logo_iphone,               name: '我是库克',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: logo_painting,             name: '免费名画',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://dapanyuntu.com/',                                            icon: logo_stock,                name: '大盘田字图',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://javier.xyz/emoji-to-scale',                                  icon: logo_emoji_scale,          name: 'emoji排序',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.macosicongallery.com/',                                  icon: logo_macicon,              name: 'Mac Icon',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.openstreetmap.org/',                                     icon: logo_openstreetmap,        name: 'OpenStreetMap',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://oimo.io/works',                                              icon: logo_oimo,                 name: 'oimo.io',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://hakim.se/',                                                  icon: logo_blank,                name: 'hakim.se',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://kylebing.cn/tools/highway',                                  icon: logo_highway,              name: '高速上的2B们',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.makemepulse.com/',                                       icon: logo_web_amazing,          name: '页面效果哇塞',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2017.makemepulse.com/',                                       icon: logo_web_amazing,          name: '2017',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2018.makemepulse.com/',                                       icon: logo_web_amazing,          name: '2018',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://2019.makemepulse.com/',                                       icon: logo_web_amazing,          name: '2019',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.v2ex.com/?r=kylebing',                                   icon: logo_web_v2ex,             name: 'V2EX',     },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.shejipi.com/',                                           icon: logo_web_pi,               name: '设计癖',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.chiphell.com/',                                          icon: logo_web_chiphell,         name: 'chiphell', },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://iamthecu.be/',                                               icon: logo_web_cube,             name: '魔方',       },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neave.com/',                                                 icon: logo_web_neave,            name: 'Neave',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://cabbi.bo/enough/',                                            icon: logo_web_cabbi,            name: 'Cabbi',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://chrismckenzie.com/',                                         icon: logo_web_chrismckenzie,    name: '小方块',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.omfgdogs.com/',                                          icon: logo_web_dogs,             name: '欢乐小狗狗',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://patorjk.com/software/taag/#p=testall&f=Avatar&t=Kyle%20Bing', icon: logo_web_text_character,   name: '字符字符',     },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://ps.gaoding.com/#/',                                          icon: logo_web_ps,               name: '在线PS',     },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://how-i-experience-web-today.com/',                            icon: logo_web_webtoday,         name: '今天的互联网',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.airpano.org.cn/360photo/china-1000island/',               icon: logo_web_360_view,         name: '360中国千岛',  },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://izzyburton.co.uk/',                                          icon: logo_web_artist_ib,        name: '艺术家IB',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://zoomquilt.org/',                                             icon: logo_web_pic_zoom,         name: '不断放大图片',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://txti.es/',                                                    icon: logo_web_txti,             name: '文字页面',     },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://pointerpointer.com/',                                        icon: logo_web_pointer,          name: '点哪指哪',     },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://bruno-simon.com/',                                           icon: logo_web_racecar,          name: '小赛车',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://greatestgifsofalltime.tumblr.com/',                          icon: logo_web_gif,              name: '唯美gif',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://chinesenewyear.net/',                                        icon: logo_web_chinese_new_year, name: '中国年',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://cineshader.com/',                                            icon: logo_web_3d,               name: '一个3D场景',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://theuselessweb.com/',                                         icon: logo_web_useless_website,  name: '一堆无用站点',   },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://tympanus.net/Development/RainEffect/index.html#slide-4',     icon: logo_web_raining_outside,  name: '窗外下雨了',    },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.noisli.com/',                                            icon: logo_web_noisli,           name: '白嗓音',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: logo_web_game_avoid,       name: '躲避游戏',      },
+        ]
+    },
+]

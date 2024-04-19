@@ -2,8 +2,8 @@
     <div
         :class="['clock', {'hide-pointer': !config.isShowToolPanel}]"
          :style="`
-             height: ${insets.height}px;
-             color: ${colors[config.colorIndex]}`"
+             height: ${pinia.insets.height}px;
+             color: ${COLORS[config.colorIndex]}`"
     >
         <div class="time" :style="`font-size: ${config.fontSize}px`">
             <div class="hour">{{ hours }}</div>
@@ -63,6 +63,8 @@
 
 import {onMounted, onUnmounted, ref} from "vue";
 import {useRouter} from "vue-router";
+import {useProjectStore} from "@/store.ts";
+const pinia = useProjectStore()
 
 enum ENUM_WEEKDAY {'周日' = 0, '周一' = 1, '周二' = 2, '周三' = 3, '周四' = 4, '周五' = 5, '周六' = 6}
 enum ENUM_WEEKDAY_SHORT {'日' = 0, '一' = 1, '二'= 2, '三'= 3, '四'= 4, '五'= 5, '六'= 6}

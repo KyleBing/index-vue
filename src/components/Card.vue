@@ -11,40 +11,35 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "Card",
-    props: {
-        title: {
-            type: String
-        },
-        pageLink: {
-            type: String
-        },
-        noPadding: {
-            type: Boolean,
-            default: false
-        },
-        isDeveloping: { // 提示信息：正在开发中
-            type: Boolean,
-            default : false
-        },
-        isShowTitle: {
-            type: Boolean,
-            default : true
-        }
-    },
-    methods: {
-        toRoute(){
-            if (this.pageLink){
-                this.$router.push(this.pageLink)
-            }
-        }
+<script lang="ts" setup>
+
+import {useRouter} from "vue-router";
+
+const router = useRouter()
+interface Props {
+    title: string,
+    pageLink?: string,
+    noPadding?: boolean,
+    isDeveloping?:  boolean, // 提示信息：正在开发中
+    isShowTitle?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    noPadding: false,
+    isDeveloping: false,
+    isShowTitle: true
+})
+
+function toRoute(){
+    if (props.pageLink){
+        router.push(props.pageLink)
     }
 }
 </script>
 
 <style scoped lang="scss">
+@use "sass:math";
+
 @import "../scss/plugin";
 
 .section{
@@ -65,20 +60,20 @@ export default {
         z-index: 10;
         @include transition(color 0.5s);
         position: absolute;
-        top: $gap / 2 ;
+        top: math.div($gap , 2) ;
         left: 0;
         right: 0;
         color: $text-desc;
         .title{
             letter-spacing: 0.5px;
             position: absolute;
-            left: $gap / 2;
+            left: math.div($gap , 2);
             //font-weight: bold;
             font-size: $fz-sm;
         }
         .share-link{
             position: absolute;
-            right: $gap / 2;
+            right: math.div($gap , 2);
             &:hover{
                 color: $magenta;
             }

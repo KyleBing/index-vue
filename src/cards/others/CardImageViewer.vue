@@ -20,7 +20,7 @@ export default {
     data(){
         return {
             cover: require('./../imgs/card-img-imgs.png'),
-            logo: require('../../views/icon-list/icons/logo-diary.png')
+            logo: require('../../views/IconList/icons/logo-diary.png')
         }
     },
 }

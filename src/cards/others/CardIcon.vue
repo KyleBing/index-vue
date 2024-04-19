@@ -10,48 +10,42 @@
             <img :src="iconInfo.icon" alt="icon">
         </div>
         <div class="indicator-new" v-if="iconInfo.isNew">
-            <img alt="black-berry-new-message-icon" :src="iconNewMsg">
+            <img alt="black-berry-new-message-icon" :src="SVG_ICONS.blackberry_new">
         </div>
         <div class="name">{{ iconInfo.name }}</div>
     </a>
 </template>
 
-<script>
-let blackberryNewMessageIcon = require('./blackberry-new.svg')
-export default {
-    props: {
-        iconInfo: {
-            type: Object,
-            default: {}
-        },
-    },
-    name: "CardIcon",
-    methods: {
-        toRoute(){
-            if (this.iconInfo.pageLink){
-                if (/^(\.\.|http).*$/.test(this.iconInfo.pageLink)){
-                    window.open(this.iconInfo.pageLink, '_blank')
-                } else {
-                    this.$router.push(this.iconInfo.pageLink)
-                }
-            }
-        }
-    },
-    data(){
-        return {
-            iconNewMsg: blackberryNewMessageIcon
-        }
-    },
-    computed: {
-        iconBgStyle(){
-            if (this.iconInfo.noPadding){
-                return `background-color: transparent`
-            } else {
-                return ''
-            }
+<script lang="ts" setup>
+import SVG_ICONS from "@/assets/SVG_ICONS.ts";
+import {computed} from "vue";
+import {useRouter} from "vue-router";
+import {CardIconEntity} from "@/views/Music/CardIcon.ts";
+
+interface Props {
+    iconInfo: CardIconEntity
+}
+const props = defineProps<Props>()
+
+const router = useRouter()
+
+function toRoute(){
+    if (props.iconInfo.pageLink){
+        if (/^(\.\.|http).*$/.test(props.iconInfo.pageLink)){
+            window.open(props.iconInfo.pageLink, '_blank')
+        } else {
+            router.push(props.iconInfo.pageLink)
         }
     }
 }
+
+const iconBgStyle = computed(()=> {
+    if (props.iconInfo.noPadding){
+        return `background-color: transparent`
+    } else {
+        return ''
+    }
+})
 </script>
 
 <style lang="scss">

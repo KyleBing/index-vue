@@ -1,8 +1,8 @@
 import {createRouter, createWebHashHistory, RouteRecordRaw} from 'vue-router'
 import Index from "./views/Index.vue";
 import AboutMe from "./views/AboutMe.vue";
-import Clock from "./views/clock/Clock.vue";
-import WantedList from "./views/wanted-list/WantedList.vue";
+import Clock from "./views/Clock/Clock.vue";
+import WantedList from "./views/WantedList/WantedList.vue";
 
 const routes: Array<RouteRecordRaw> = [
     {

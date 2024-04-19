@@ -4,7 +4,6 @@ import svgLoader from "vite-svg-loader"
 import { resolve } from 'path'
 import zipPack from "vite-plugin-zip-pack" // make dist.zip file
 import {dateFormatter} from "./src/utility";
-
 const timeStringNow = dateFormatter(new Date(), 'yyyy-MM-dd hh-mm-ss')
 
 
@@ -12,14 +11,16 @@ const timeStringNow = dateFormatter(new Date(), 'yyyy-MM-dd hh-mm-ss')
 export default defineConfig({
     server: {
         host: '0.0.0.0',// 自定义主机名
-        port: 8080,// 自定义端口
         https: false,
         proxy: {
-            '/dev': {
+            '/portal': {
                 // target: 'http://localhost:3000',
                 target: 'http://kylebing.cn:3000',
                 changeOrigin: true,
-                rewrite: (path) => path.replace(/^\/dev/, '/'),
+                rewrite: (path) => {
+                    console.log(path)
+                    return path.replace('/portal', '/')
+                },
             },
         }
     },

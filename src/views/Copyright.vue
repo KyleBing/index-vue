@@ -1,7 +1,7 @@
 <template>
     <div class="copyright">
         <p>
-            <span>Copyright © 2016-2023 </span>
+            <span>Copyright © 2016-2024 </span>
             <a href="mailto:kylebing@163.com">KyleBing</a>
             <span>All rights reserved. </span>
         </p>
@@ -14,11 +14,7 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: "Copyright"
-}
-</script>
+<script lang="ts" setup></script>
 
 <style scoped lang="scss">
 @import "../scss/plugin";

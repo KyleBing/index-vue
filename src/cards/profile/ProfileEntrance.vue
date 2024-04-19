@@ -1,63 +1,51 @@
 <template>
-        <div class="entrance-list">
-            <a class="entrance-item"
-               target="_blank"
-               href="https://kylebing.blog.csdn.net/">
-                <img class="icon" src="./icon/csdn.svg" alt="CSDN">
-                <span class="title">CSDN</span>
-            </a>
-            <a class="entrance-item"
-               target="_blank"
-               href="https://space.bilibili.com/12729637">
-                <img class="icon" src="./icon/bilibili.svg" alt="bilibili">
-                <span class="title">BiliBili</span>
+    <div class="entrance-list">
+        <a class="entrance-item"
+           target="_blank"
+           href="https://kylebing.blog.csdn.net/">
+            <img class="icon" src="./icon/csdn.svg" alt="CSDN">
+            <span class="title">CSDN</span>
+        </a>
+        <a class="entrance-item"
+           target="_blank"
+           href="https://space.bilibili.com/12729637">
+            <img class="icon" src="./icon/bilibili.svg" alt="bilibili">
+            <span class="title">BiliBili</span>
 
-            </a>
-            <a class="entrance-item"
-               target="_blank"
-               href="https://weibo.com/u/5446375965">
-                <img class="icon" src="./icon/weibo.svg" alt="weibo">
-                <span class="title">微博</span>
+        </a>
+        <a class="entrance-item"
+           target="_blank"
+           href="https://weibo.com/u/5446375965">
+            <img class="icon" src="./icon/weibo.svg" alt="weibo">
+            <span class="title">微博</span>
 
-            </a>
-            <a class="entrance-item"
-               target="_blank"
-               href="mailto:kylebing@163.com">
-                <img class="icon" src="./icon/email.svg" alt="email">
-                <span class="title">Email</span>
+        </a>
+        <a class="entrance-item"
+           target="_blank"
+           href="mailto:kylebing@163.com">
+            <img class="icon" src="./icon/email.svg" alt="email">
+            <span class="title">Email</span>
 
-            </a>
-            <a class="entrance-item"
-               target="_blank"
-               href="https://github.com/KyleBing">
-                <img class="icon" src="./icon/github.svg" alt="github">
-                <span class="title">Github</span>
+        </a>
+        <a class="entrance-item"
+           target="_blank"
+           href="https://github.com/KyleBing">
+            <img class="icon" src="./icon/github.svg" alt="github">
+            <span class="title">Github</span>
 
-            </a>
-        </div>
+        </a>
+    </div>
 </template>
 
-<script>
-import Card from "@/components/Card.vue";
+<script lang="ts" setup>
+import {ref} from "vue";
 
-export default {
-    name: "ProfileEntrance",
-    components: {Card},
-    data() {
-        return {
-            studyRoad: ''
-        }
-    },
-    mounted() {
-    },
-    computed: {
-        studyRoadHtml() {
-            return this.studyRoad
-                .split('\n')
-                .map(item => `<p>${item.trim()}</p>`)
-                .join('\n')
-        }
-    },
+const studyRoad = ref('')
+function studyRoadHtml() {
+    return studyRoad.value
+        .split('\n')
+        .map(item => `<p>${item.trim()}</p>`)
+        .join('\n')
 }
 </script>
 

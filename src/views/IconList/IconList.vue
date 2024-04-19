@@ -4,26 +4,16 @@
             <div class="title">{{ group.title }}</div>
         </div>
         <div class="icon-list">
-            <card-icon v-for="item in group.icons" :key="item.name"
+            <CardIcon v-for="item in group.icons" :key="item.name"
                        :iconInfo="item"
             />
         </div>
     </div>
 </template>
 
-<script>
-import iconGroupList from "@/views/icon-list/iconListData.js";
-import CardIcon from "@/cards/others/CardIcon";
-
-export default {
-    name: "IconList",
-    components: {CardIcon},
-    data(){
-        return {
-            iconGroupList,
-        }
-    }
-}
+<script lang="ts" setup>
+import iconGroupList from "@/views/IconList/iconListData.js";
+import CardIcon from "@/cards/others/CardIcon.vue";
 </script>
 
 <style scoped  lang="scss">
