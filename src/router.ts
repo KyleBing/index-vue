@@ -33,5 +33,6 @@ const router = createRouter({
 })
 
 export {
-    router
+    router,
+    routes
 }

@@ -10,7 +10,6 @@ import logo_car_oil from '../../assets/icons/logo_car_oil.png'
 import logo_qr from '../../assets/icons/logo_qr.png'
 import logo_name from '../../assets/icons/logo_name.png'
 import logo_typepad from '../../assets/icons/logo_typepad.png'
-import logo_keyboard from '../../assets/icons/logo_keyboard.png'
 import logo_calculator from '../../assets/icons/logo_calculator.png'
 import logo_symbol from '../../assets/icons/logo_symbol.png'
 import logo_vps from '../../assets/icons/logo_vps.png'
@@ -52,7 +51,6 @@ import logo_web_webtoday from '../../assets/icons/logo_web_webtoday.png'
 import logo_web_360_view from '../../assets/icons/logo_web_360_view.png'
 import logo_web_artist_ib from '../../assets/icons/logo_web_artist_ib.png'
 import logo_web_pic_zoom from '../../assets/icons/logo_web_pic_zoom.png'
-import logo_web_txti from '../../assets/icons/logo_web_txti.png'
 import logo_web_pointer from '../../assets/icons/logo_web_pointer.png'
 import logo_web_racecar from '../../assets/icons/logo_web_racecar.png'
 import logo_web_gif from '../../assets/icons/logo_web_gif.gif'
@@ -62,6 +60,7 @@ import logo_web_useless_website from '../../assets/icons/logo_web_useless_websit
 import logo_web_raining_outside from '../../assets/icons/logo_web_raining_outside.png'
 import logo_web_noisli from '../../assets/icons/logo_web_noisli.png'
 import logo_web_game_avoid from '../../assets/icons/logo_web_game_avoid.png'
+import logo_keyboard from '../../assets/icons/logo_keyboard.png'
 
 
 interface IconItemEntity {
@@ -93,7 +92,8 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: '工具',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                  icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: logo_keyboard ,            name: '显示键名' ,      } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: logo_qr ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/name' ,                    icon: logo_name ,               name: '起名工具' ,      } ,
@@ -166,7 +166,6 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.airpano.org.cn/360photo/china-1000island/',               icon: logo_web_360_view,         name: '360中国千岛',  },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://izzyburton.co.uk/',                                          icon: logo_web_artist_ib,        name: '艺术家IB',    },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://zoomquilt.org/',                                             icon: logo_web_pic_zoom,         name: '不断放大图片',   },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://txti.es/',                                                    icon: logo_web_txti,             name: '文字页面',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://pointerpointer.com/',                                        icon: logo_web_pointer,          name: '点哪指哪',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://bruno-simon.com/',                                           icon: logo_web_racecar,          name: '小赛车',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://greatestgifsofalltime.tumblr.com/',                          icon: logo_web_gif,              name: '唯美gif',    },

@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <router-view/>
-        <div class="float-btn float-left">
+        <div class="float-btn float-left" @click="backward()">
             <img src="./assets/arrow_left.svg" alt="LEFT">
         </div>
-        <div class="float-btn float-right">
+        <div class="float-btn float-right" @click="forward">
             <img src="./assets/arrow_right.svg" alt="RIGHT">
         </div>
     </div>
@@ -13,8 +13,10 @@
 
 <script lang="ts" setup>
 
-import {onMounted} from "vue";
+import {onMounted, ref} from "vue";
 import {useProjectStore} from "./store.ts";
+import {useRouter} from "vue-router";
+import {routes} from "@/router.ts";
 
 const pinia = useProjectStore()
 onMounted(()=>{
@@ -29,6 +31,30 @@ onMounted(()=>{
         })
     }
 })
+
+const router = useRouter()
+
+const currentRouteIndex = ref(0)
+function forward(){
+    if (currentRouteIndex.value > routes.length){
+
+    } else {
+        currentRouteIndex.value = currentRouteIndex.value + 1
+        router.push({
+            name: routes[currentRouteIndex.value].name
+        })
+    }
+}
+function backward(){
+    if (currentRouteIndex.value > 0){
+        currentRouteIndex.value = currentRouteIndex.value - 1
+        router.push({
+            name: routes[currentRouteIndex.value].name
+        })
+    } else {
+
+    }
+}
 </script>
 
 <style lang="scss">
