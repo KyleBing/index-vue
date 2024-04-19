@@ -12,7 +12,7 @@
                 <CardApple/>
             </div>
             <div class="mb-2">
-                <NeteaseMusicShareIconList/>
+                <MusicIconList/>
                 <IconList/>
             </div>
         </div>
@@ -23,11 +23,11 @@
 <script lang="ts" setup>
 import {onMounted, onUnmounted} from "vue";
 import Copyright from "./Copyright.vue";
-import CardProfile from "../cards/profile/CardProfile.vue";
-import ProfileEntrance from "../cards/profile/ProfileEntrance.vue";
-import CardRecommend from "../cards/recommend/CardRecommend.vue";
-import CardApple from "../cards/apple/CardApple.vue";
-import NeteaseMusicShareIconList from "./Music/MusicIconList.vue";
+import CardProfile from "./Cards/Profile/CardProfile.vue";
+import ProfileEntrance from "./Cards/Profile/ProfileEntrance.vue";
+import CardRecommend from "./Cards/Recommend/CardRecommend.vue";
+import CardApple from "./Cards/Apple/CardApple.vue";
+import MusicIconList from "./Music/MusicIconList.vue";
 import IconList from "./IconList/IconList.vue";
 
 import {useProjectStore} from "../store.ts";

@@ -33,9 +33,9 @@ export default {
                     icons: [
                         { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/json-table' ,           icon: require('../icons/logo-json-table.png') ,         name: '表格 JSON' ,  } ,
                         { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/useragent' ,            icon: require('../icons/logo-agent.png') ,              name: 'UserAgent' ,  } ,
-                        { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: require('../icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
-                        { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: require('../icons/logo-base64.png') ,             name: 'Base64文本' , } ,
-                        { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: require('../icons/logo-ele.png') ,                name: 'Vue 例子'} ,
+                        { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: require('../../../assets/icons/logo-element-ui-icons.png') ,   name: 'element图标' , } ,
+                        { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: require('../../../assets/icons/logo-base64.png') ,             name: 'Base64文本' , } ,
+                        { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: require('../../../assets/icons/logo-ele.png') ,                name: 'Vue 例子'} ,
                     ]
                 },
             ],

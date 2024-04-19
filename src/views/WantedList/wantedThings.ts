@@ -1,4 +1,14 @@
-export default [
+interface WantedThingEntity{
+    owned: boolean,      // 是否已经拥有
+    sold: boolean,       // 是否已售
+    date: string,        // 日期
+    priceOrigin: number, // 原价格
+    price: number,       // 价格
+    priceSold: number,   // 卖出价格
+    title: string,       // 物品名
+}
+
+const wantedThings: Array<WantedThingEntity> = [
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 100000,    price: 50000,     title: "大众 朗逸手动档",},
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 70000,     price: 70000,     title: "本田 CBR500R",},
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 26000,     price: 26000,     title: "九号 E300p",},
@@ -81,3 +91,8 @@ export default [
     {owned: true,  sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 0,         price: 1288,      title: "AirPods",},
     {owned: true,  sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 0,         price: 340,       title: "运动装",},
 ]
+
+export {
+    type WantedThingEntity,
+    wantedThings
+}

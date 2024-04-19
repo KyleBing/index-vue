@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
-import CardImage from "@/components/CardImage.vue";
+import Card from "@/views/Cards/components/Card.vue";
+import CardImage from "@/views/Cards/components/CardImage.vue";
 export default {
     name: "CardBackend",
     components: {CardImage, Card},

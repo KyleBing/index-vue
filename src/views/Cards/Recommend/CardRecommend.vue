@@ -10,7 +10,7 @@ import axios from "axios";
 import { marked } from "marked"
 import {onMounted, ref} from "vue";
 import {DiaryEntityDatabase} from "@/entity/Diary.ts";
-import Card from "@/components/Card.vue";
+import Card from "@/views/Cards/components/Card.vue";
 
 const diary = ref<DiaryEntityDatabase>({})
 const contentHtml = ref('')
@@ -57,7 +57,7 @@ function getContentHtml(content: string){
 </script>
 
 <style scoped lang="scss">
-@import "../../scss/plugin";
+@import "../../../scss/plugin";
 
 .recommend{
     width: 100%;

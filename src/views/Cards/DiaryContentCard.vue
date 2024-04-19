@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
+import Card from "@/views/Cards/components/Card.vue";
 import axios from "axios";
 import { marked } from "marked"
 

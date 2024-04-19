@@ -22,7 +22,7 @@
 
 <script>
 import PROJECTS from "./projectData";
-import Card from "@/components/Card.vue";
+import Card from "@/views/Cards/components/Card.vue";
 
 export default {
     name: "CardProject",
@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../scss/plugin";
+@import "../../../scss/plugin";
 
 .projects-content{
     width: 100%;

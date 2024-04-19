@@ -15,10 +15,10 @@
 </template>
 
 <script lang="ts" setup>
-import CardProject from "@/cards/projects/CardProject.vue";
-import DiaryContentCard from "@/cards/diaryContentCard/DiaryContentCard.vue";
+import CardProject from "@/views/Cards/Projects/CardProject.vue";
+import DiaryContentCard from "@/views/Cards/DiaryContentCard.vue";
 import Copyright from "@/views/Copyright.vue";
-import CardProfile from "@/cards/profile/CardProfile.vue";
+import CardProfile from "@/views/Cards/Profile/CardProfile.vue";
 </script>
 
 <style scoped>

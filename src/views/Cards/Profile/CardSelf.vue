@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
+import Card from "@/views/Cards/components/Card.vue";
 
 export default {
     name: "CardSelf",
@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../scss/plugin";
+@import "../../../scss/plugin";
 
 .study-road {
     padding: 20px 0;

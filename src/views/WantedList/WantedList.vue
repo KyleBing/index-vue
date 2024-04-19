@@ -30,27 +30,20 @@
     </div>
 </template>
 
-<script>
-import wantedThings from "@/views/WantedList/wantedThings";
-export default {
-    name: "WantedList",
-    data(){
-        return {
-            wantedThings,
-        }
-    },
-    computed: {
-        totalCostOwn(){
-            return wantedThings
-                .filter(item => item.owned)
-                .reduce((sum, currentValue) => sum + currentValue.price, 0)
-        },
-        totalCost(){
-            return wantedThings
-                .reduce((sum, currentValue) => sum + currentValue.price, 0)
-        }
-    }
-}
+<script lang="ts" setup>
+import {wantedThings} from "@/views/WantedList/wantedThings.ts";
+import {computed} from "vue";
+
+const totalCostOwn = computed(()=>{
+    return wantedThings
+        .filter(item => item.owned)
+        .reduce((sum, currentValue) => sum + currentValue.price, 0)
+})
+const totalCost = computed(()=>{
+    return wantedThings
+        .reduce((sum, currentValue) => sum + currentValue.price, 0)
+})
+
 </script>
 
 <style scoped lang="scss">

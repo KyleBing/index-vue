@@ -4,94 +4,55 @@
             <div v-if="isShowTitle" class="title">{{ title }}</div>
 <!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
         </div>
-        <div class="section-content">
-
-            <div class="cover"
-                 :class="['cover']"
-                 :style="`top: ${isAnimated ? offsetTop : 0}px`">
-                <img :src="cover" alt="cover">
-            </div>
-            <div class="logo">
-                <img v-if="logo" :src="logo" alt="logo">
-                <div class="title" :style="`color: ${logoTitleColor}`">{{ logoTitle }}</div>
-            </div>
+        <div class="section-content" :style="isShowTitle? `padding-top: 20px`: ''">
             <slot></slot>
+            <div v-if="isDeveloping" class="is-developing">
+                <img :src="SVG_ICONS.developing" alt="developing">
+            </div>
         </div>
     </div>
 </template>
 
-<script>
-import {mapState} from "vuex";
+<script lang="ts" setup>
 
-export default {
-    name: "CardImage",
-    props: {
-        title: {
-            type: String
-        },
+import {useRouter} from "vue-router";
+import SVG_ICONS from "@/assets/SVG_ICONS.ts";
 
-        // 背景图
-        cover: {
-            type: String
-        },
-        // logo
-        logo: {
-            type: String
-        },
-        logoTitle: {
-            type: String
-        },
-        logoTitleColor: {
-            type: String,
-            default: 'white'
-        },
-        pageLink: {
-            type: String
-        },
-        isAnimated: { // 是否启用图片动画
-            type: Boolean,
-            default: false
-        },
-        noPadding: {
-            type: Boolean,
-            default: false
-        },
-        isShowTitle: {
-            type: Boolean,
-            default : true
-        }
-    },
-    computed:{
-        ...mapState(['scrollTop']),
-        offsetTop(){
-            return -(this.scrollTop / innerHeight) * 100 + 100
-        }
-    },
-    methods: {
-        toRoute(){
-            if (this.pageLink){
-                if (/^\.\..*$/.test(this.pageLink)){
-                    location = this.pageLink
-                } else {
-                    this.$router.push(this.pageLink)
-                }
-            }
-        }
+const router = useRouter()
+interface Props {
+    title: string,
+    pageLink?: string,
+    noPadding?: boolean,
+    isDeveloping?:  boolean, // 提示信息：正在开发中
+    isShowTitle?: boolean
+}
+
+const props = withDefaults(defineProps<Props>(), {
+    noPadding: false,
+    isDeveloping: false,
+    isShowTitle: true
+})
+
+function toRoute(){
+    if (props.pageLink){
+        router.push(props.pageLink)
     }
 }
 </script>
 
 <style scoped lang="scss">
-@import "../scss/plugin";
+@use "sass:math";
 
+@import "../../../scss/plugin";
 
 .section{
+    //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
     position: relative;
+    border: 1px solid $item-border-color;
     background-color: transparentize(white, 0.2);
     @include border-radius($radius);
     padding: $gap;
     overflow: hidden;
-    transition: all 0.3s;
     &.no-padding{
         padding: 0;
     }
@@ -102,60 +63,32 @@ export default {
         z-index: 10;
         @include transition(color 0.5s);
         position: absolute;
-        top: $gap / 2 ;
+        top: math.div($gap , 2) ;
         left: 0;
         right: 0;
         color: $text-desc;
         .title{
             letter-spacing: 0.5px;
             position: absolute;
-            left: $gap / 2;
+            left: math.div($gap , 2);
             //font-weight: bold;
             font-size: $fz-sm;
         }
         .share-link{
             position: absolute;
-            right: $gap / 2;
+            right: math.div($gap , 2);
             &:hover{
                 color: $magenta;
             }
         }
     }
     .section-content{
-        height: 180px;
         width: 100%;
-        overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        min-height: 140px;
         border: 1px solid transparent;
-        .cover{
-            @include transition(all 1s ease-in-out);
-            position: absolute;
-            display: block;
-            width: 100%;
-            img{
-                width: 100%;
-            }
-        }
-        .logo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-            z-index: 10;
-            margin-right: 80px;
-            img{
-                display: block;
-                width: 50px;
-            }
-            .title{
-                margin-top: 10px;
-                color: white;
-                font-size: $fz-m;
-                text-align: center;
-            }
-        }
     }
 
     &:hover{
@@ -220,6 +153,19 @@ export default {
         padding: $gap-mobile;
         .section-content {
             min-height: 100px;
+        }
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .section{
+        border-color: $dark-border;
+        &:hover {
+            .section-header {
+                @include transition(color 0.5s);
+                color: $dark-text-title;
+            }
         }
     }
 }

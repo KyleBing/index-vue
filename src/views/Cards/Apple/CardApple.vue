@@ -1,59 +1,16 @@
 <template>
     <Card class="blue" title="">
         <div class="card-apple">
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/ipad">
-                    <img src="./icons/links/ipad_white@2x.png" alt="ipad">
-                    <h3>iPad</h3>
+            <div class="apple-item" v-for="item in appleListData" :key="item.keyword">
+                <a class="link-item" target="_blank" :href="item.path">
+                    <img :src="item.icon" :alt="item.keyword">
+                    <h3>{{ item.title }}</h3>
                 </a>
-                <div class="thumb-up" @click="thumbsUp('ipad')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('ipad') || 0}}</div>
+                <div class="thumb-up" @click="thumbsUp(item.keyword)">
+                    <img :src="heart_inactive" alt="hear-inactive">
+                    <div class="count">{{thumbsUpMap.get(item.keyword) || 0}}</div>
                 </div>
             </div>
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/iphone">
-                    <img src="./icons/links/iphone_white@2x.png" alt="phone">
-                    <h3>iPhone</h3>
-                </a>
-                <div class="thumb-up" @click="thumbsUp('iphone')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('iphone') || 0}}</div>
-                </div>
-            </div>
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/airpods">
-                    <img src="./icons/links/airpods_white@2x.png" alt="airpods">
-                    <h3>AirPods</h3>
-                </a>
-                <div class="thumb-up" @click="thumbsUp('airpods')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('airpods') || 0}}</div>
-                </div>
-            </div>
-            <div class="apple-item">
-                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-chip">
-                    <img src="./icons/links/chip_white@2x.png" alt="chip">
-                    <h3>处理器</h3>
-                </a>
-                <div class="thumb-up" @click="thumbsUp('apple-chip')">
-                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get('apple-chip') || 0}}</div>
-                </div>
-            </div>
-<!--            <div class="apple-item disabled">-->
-<!--                <a class="link-item" target="_blank" href="http://kylebing.cn/tools/apple-watch">-->
-<!--                    <div class="indicator-new">-->
-<!--                        <img alt="black-berry-new-message-icon" :src="iconNewMsg">-->
-<!--                    </div>-->
-<!--                    <img src="./icons/links/apple-watch@2x.png" alt="watch">-->
-<!--                    <h3 style="text-decoration: line-through">Watch</h3>-->
-<!--                </a>-->
-<!--                <div class="thumb-up" @click="thumbsUp('apple-watch')">-->
-<!--                    <img src="./icons/heart_inactive@3x.png" alt="hear-inactive">-->
-<!--                    <div class="count">{{thumbsUpMap.get('apple-watch') || 0 }}</div>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </Card>
 </template>
@@ -61,7 +18,12 @@
 <script lang="ts" setup>
 import axios from "axios";
 import {onMounted, ref} from 'vue'
-import Card from "@/components/Card.vue";
+import Card from "@/views/Cards/components/Card.vue";
+
+
+
+import heart_inactive from './icons/heart_inactive@3x.png'
+import {appleListData} from "@/views/Cards/Apple/appleListData.ts";
 
 const thumbsUpMap = new Map() // 点选数的 map
 
@@ -171,6 +133,6 @@ class WSMessage{
 </script>
 
 <style scoped lang="scss">
-@import "./card-apple";
+@import "card-apple";
 
 </style>

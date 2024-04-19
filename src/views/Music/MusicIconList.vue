@@ -14,12 +14,12 @@
 <script lang="ts" setup>
 import axios from "axios";
 import {onMounted, ref} from "vue";
-import CardIcon from "@/cards/others/CardIcon.vue";
 import {CardIconEntity} from "@/views/Music/CardIcon.ts";
 
 const iconList = ref<Array<CardIconEntity>>([])
 const iconListString = ref('')
-import MusicIconBg from '../IconList/icons/logo_netease_music.png'
+import MusicIconBg from '../../assets/icons/logo_netease_music.png'
+import CardIcon from "@/views/Cards/Others/CardIcon.vue";
 onMounted(()=>{
     getMusicShareIconList()
 })

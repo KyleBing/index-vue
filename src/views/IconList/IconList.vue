@@ -1,5 +1,5 @@
 <template>
-    <div class="icon-list-group" v-for="(group, index) in iconGroupList" :key="index">
+    <div class="icon-list-group" v-for="(group, index) in iconList" :key="index">
         <div class="icon-list-header">
             <div class="title">{{ group.title }}</div>
         </div>
@@ -12,8 +12,8 @@
 </template>
 
 <script lang="ts" setup>
-import iconGroupList from "@/views/IconList/iconListData.js";
-import CardIcon from "@/cards/others/CardIcon.vue";
+import {iconList} from "@/views/IconList/iconListData.ts";
+import CardIcon from "@/views/Cards/Others/CardIcon.vue";
 </script>
 
 <style scoped  lang="scss">
