@@ -9,11 +9,12 @@ interface WantedThingEntity{
 }
 
 const wantedThings: Array<WantedThingEntity> = [
-    {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 100000,    price: 50000,     title: "大众 朗逸手动档",},
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 70000,     price: 70000,     title: "本田 CBR500R",},
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 26000,     price: 26000,     title: "九号 E300p",},
     {owned: false, sold: false, priceSold: 0,    date: '1991-03-06', priceOrigin: 200000,    price: 1500000,   title: "房子",},
 
+    {owned: true,  sold: false, priceSold: 0,    date: '2024-02-25', priceOrigin: 1000,      price: 150,       title: "黑莓9900等",},
+    {owned: true,  sold: false, priceSold: 0,    date: '2023-01-08', priceOrigin: 100000,    price: 45000,     title: "大众速腾 15手动挡1.6L",},
     {owned: true,  sold: false, priceSold: 0,    date: '2022-04-02', priceOrigin: 199,       price: 199,       title: "小米不粘锅",},
     {owned: true,  sold: false, priceSold: 0,    date: '2022-04-02', priceOrigin: 999,       price: 999,       title: "小米空气净化器",},
     {owned: true,  sold: false, priceSold: 0,    date: '2022-04-02', priceOrigin: 1600,      price: 1600,      title: "小米智能门锁",},

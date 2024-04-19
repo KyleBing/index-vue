@@ -1,7 +1,8 @@
 <template>
     <Card class="projects mb-0">
         <div class="projects-content">
-            <div :class="['project-group', `project-${projGroup.value}`]" v-for="projGroup in PROJECTS.filter(item => item.isPublic || IS_LOCAL)" :key="projGroup.value">
+            <div :class="['project-group', `project-${projGroup.value}`]"
+                 v-for="projGroup in projectList.filter(item => item.isPublic || IS_LOCAL)" :key="projGroup.value">
                 <div class="project-title">
                     <h2>{{ projGroup.title }}</h2>
                 </div>
@@ -20,39 +21,30 @@
     </Card>
 </template>
 
-<script>
-import PROJECTS from "./projectData";
+<script lang="ts" setup>
+import {projectList} from "./projectData.ts";
 import Card from "@/views/Cards/components/Card.vue";
+import {onMounted, ref} from "vue";
 
-export default {
-    name: "CardProject",
-    components: {Card},
-    data(){
-        return {
-            PROJECTS: PROJECTS,
+const storageIdentifier = 'index_show_all'
+const IS_LOCAL = ref(false)
+const count = ref(34)
 
-            storageIdentifier : 'index_show_all',
-            IS_LOCAL: false,
-
-            count: 34,
+onMounted(()=>{
+    IS_LOCAL.value =  /^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)
+    switch (localStorage.getItem(storageIdentifier)){
+        case null: break
+        case '1': IS_LOCAL.value = true; break
+        case '0': IS_LOCAL.value = false; break
+    }
+    document.onkeyup = e => {
+        if (e.key === 'a' ) {
+            console.log(e.key)
+            IS_LOCAL.value = !IS_LOCAL.value
+            localStorage.setItem(storageIdentifier, IS_LOCAL.value ? '1':'0')
         }
-    },
-    mounted(){
-        this.IS_LOCAL =  /^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)
-        switch (localStorage.getItem(this.storageIdentifier)){
-            case null: break
-            case '1': this.IS_LOCAL = true; break
-            case '0': this.IS_LOCAL = false; break
-        }
-        document.onkeyup = e => {
-            if (e.key === 'a' ) {
-                console.log(e.key)
-                this.IS_LOCAL = !this.IS_LOCAL
-                localStorage.setItem(this.storageIdentifier, this.IS_LOCAL ? '1':'0')
-            }
-        }
-    },
-}
+    }
+})
 </script>
 
 <style scoped lang="scss">

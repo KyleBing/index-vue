@@ -41,7 +41,7 @@ function getInitThumbsUpCount(){
         .get('../../portal/thumbs-up/all')
         .then(res => {
             if (res.data && res.data.data){
-                console.log(res.data.data)
+                // console.log(res.data.data)
                 // {
                 //   "name": "airpods",
                 //     "count": 8,

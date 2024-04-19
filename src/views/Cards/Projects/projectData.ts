@@ -1,4 +1,18 @@
-export default  [
+interface ProjectListItemEntity {
+    title: string,
+    isPublic: boolean,
+    description: string,
+    path: string
+}
+interface ProjectListGroupEntity{
+    title: string,
+    value: string,
+    isPublic: boolean,
+    list: Array<ProjectListItemEntity>
+}
+
+
+const projectList: Array<ProjectListGroupEntity> = [
     {
         title: 'Github',
         value: 'latest',
@@ -10,46 +24,46 @@ export default  [
         ],
     },
 
-/*
-    {
-        title: '工具',
-        value: 'tool',
-        isPublic: true,
-        list:  [
-            {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-department'},
-            {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},
-            {title: '苹果产品图', isPublic: true, description: '产品尺寸示意图，各角度', path: '/tools/apple'},
-            {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
-            {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
-            {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
-            {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
-            {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
-            {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
-            {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
-            {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
-            {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
-            {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
-            {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
-            {title: 'MarkDown', isPublic: true, description: 'MarkDown 语法说明', path: '/tools/markdown'},
-            {title: 'Apps', isPublic: true, description: '一些有用的小程序', path: '/tools/apps'},
-            {title: '比例计算', isPublic: true, description: '屏幕比例计算', path: '/tools/ratio'},
-            {title: '黑莓工程', isPublic: true, description: '黑莓工程模式解锁码', path: '/tools/blackberry_code'},
-            {title: '食堂菜谱', isPublic: true, description: '以前食堂菜谱', path: '/tools/food'},
-            {title: 'iPhone', isPublic: true, description: '之前买二手5s/6s用到的信息', path: '/tools/iphone'},
-            {title: 'Rime皮肤', isPublic: true, description: 'Rime 皮肤编辑器，小狼毫', path: '/tools/rime_skin_editor'},
-            {title: 'XXOO', isPublic: true, description: '', path: '/tools/xo'},
-        ]
-    },
-*/
+    /*
+        {
+            title: '工具',
+            value: 'tool',
+            isPublic: true,
+            list:  [
+                {title: '济南车管所', isPublic: true, description: '济南车管所分布图', path: '/tools/map/#/info/car-department'},
+                {title: '图标查找', isPublic: true, description: '查找 Ele Fa iView 图标', path: '/tools/icons'},
+                {title: '苹果产品图', isPublic: true, description: '产品尺寸示意图，各角度', path: '/tools/apple'},
+                {title: '饥荒', isPublic: true, description: '饥荒物品参考书', path: '/tools/starve/dist'},
+                {title: '汉字列表', isPublic: true, description: 'unicode汉字列表', path: '/tools/chinese-characters'},
+                {title: 'UserAgent', isPublic: true, description: '显示当前平台浏览器：微信，支付宝', path: '/tools/useragent'},
+                {title: '图片转base64', isPublic: true, description: '图片base64互转', path: '/e/#/base64/base64-text'},
+                {title: '玫枫跟打器', isPublic: true, description: '网页版，开源，五笔跟打器', path: '/tools/typepad'},
+                {title: '常用下载', isPublic: true, description: '常用文件下载，工具等', path: '/download'},
+                {title: '音乐解密工具', isPublic: true, description: '转QQ(qmc)、网易云(ncm)自有音乐格式到 mp3', path: '/tools/music-unlock'},
+                {title: '周报格式化', isPublic: false, description: '周报格式化工具', path: '/tools/summary'},
+                {title: '百度文库', isPublic: true, description: '获取当前页文库内容', path: '/tools/baidudoc'},
+                {title: '电影天堂', isPublic: true, description: '电影天堂最新电影简化页面', path: '/tools/films'},
+                {title: 'IP 地址地域显示', isPublic: true, description: '搜狐 IP 地址获取 API', path: '/tools/get-client-ip'},
+                {title: 'MarkDown', isPublic: true, description: 'MarkDown 语法说明', path: '/tools/markdown'},
+                {title: 'Apps', isPublic: true, description: '一些有用的小程序', path: '/tools/apps'},
+                {title: '比例计算', isPublic: true, description: '屏幕比例计算', path: '/tools/ratio'},
+                {title: '黑莓工程', isPublic: true, description: '黑莓工程模式解锁码', path: '/tools/blackberry_code'},
+                {title: '食堂菜谱', isPublic: true, description: '以前食堂菜谱', path: '/tools/food'},
+                {title: 'iPhone', isPublic: true, description: '之前买二手5s/6s用到的信息', path: '/tools/iphone'},
+                {title: 'Rime皮肤', isPublic: true, description: 'Rime 皮肤编辑器，小狼毫', path: '/tools/rime_skin_editor'},
+                {title: 'XXOO', isPublic: true, description: '', path: '/tools/xo'},
+            ]
+        },
+    */
 
-/*    {
-        title: '页面',
-        value: 'page',
-        isPublic: false,
-        list:  [
-            {title: '招聘页面', isPublic: true, description: '滑雪场招聘页面', path: '/proj-page/alipay'},
-        ],
-    },*/
+    /*    {
+            title: '页面',
+            value: 'page',
+            isPublic: false,
+            list:  [
+                {title: '招聘页面', isPublic: true, description: '滑雪场招聘页面', path: '/proj-page/alipay'},
+            ],
+        },*/
     {
         title: 'API',
         value: 'api',
@@ -139,3 +153,9 @@ export default  [
         ],
     },
 ]
+
+export {
+    type ProjectListGroupEntity,
+    type ProjectListItemEntity,
+    projectList
+}

@@ -9,7 +9,7 @@
                     <tbody>
                         <template v-for="(item, index) in wantedThings" :key="index">
                             <tr class="bought" v-if="item.owned">
-                                <td><del>{{ item.title }}</del></td>
+                                <td>{{ item.title }}</td>
                                 <td>{{ item.priceSold? item.priceSold: ''}}</td>
                                 <td><del>{{ item.price }}</del></td>
                             </tr>

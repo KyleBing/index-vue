@@ -20,7 +20,7 @@ import SVG_ICONS from "@/assets/SVG_ICONS.ts";
 
 const router = useRouter()
 interface Props {
-    title: string,
+    title?: string,
     pageLink?: string,
     noPadding?: boolean,
     isDeveloping?:  boolean, // 提示信息：正在开发中
