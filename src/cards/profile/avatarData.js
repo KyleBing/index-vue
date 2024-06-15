@@ -25,6 +25,7 @@ let avatarArray = [
     'http://diary-container.kylebing.cn/FteO3DNX9NietZVOMeGZpAZHLiyj', // bb10
     'http://diary-container.kylebing.cn/Fr59B_V-kOJaHpDs_8Rbp13gyIDU', // 山顶背影
     'http://diary-container.kylebing.cn/Fuddkg_altcfjjzzQJUClzyTXmut', // 车 轮胎
+    'http://diary-container.kylebing.cn/FhVqIXl488oSiQAkLk9bJ0kVrbZV', // 我 相机拍的
 ]
 
 export default {

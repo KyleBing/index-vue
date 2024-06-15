@@ -7,6 +7,6 @@ export default [
                                 <a target='_blank' href='https://movie.douban.com/subject/20278505/'>《前目的地》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/6538866/'>《极速车王》。</a>`},
     {title: "品牌", content: "迪卡侬、高驰、小米、宜家、苹果、大众、CBR、九号、黄焖鸡"},
-    {title: "爱好", content: "喜欢看电影、拍剪视频、开车、骑车、敲代码、徒步、游泳、跑步，喜欢户外风景。"},
+    {title: "爱好", content: "喜欢看电影、摄影、拍剪视频、开车、骑车、敲代码、徒步、游泳、跑步，喜欢户外风景。"},
     {title: "格言", content: "永远相信，美好的事情即将发生。"}
 ]
