@@ -118,7 +118,7 @@ export default {
 
         // websocket
         websocketInit(){
-            this.websocket = new WebSocket('wss://kylebing.cn/ws')
+            this.websocket = new WebSocket('ws://kylebing.cn/ws')
             this.websocket.onopen = this.websocketOnOpen
             this.websocket.onmessage = this.websocketOnMessage
             this.websocket.onerror = this.websocketOnError
