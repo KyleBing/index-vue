@@ -5,6 +5,7 @@ export default [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                       icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: require('./icons/logo-analog_clock.png') ,  name: '时钟' ,     } ,
+            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: require('./icons/logo-analog_clock.png') ,  name: '时钟-黑' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-vitepress.png') ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
