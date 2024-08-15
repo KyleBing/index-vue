@@ -4,17 +4,18 @@ export default [
         icons: [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                       icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
+            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: require('./icons/logo-analog_clock.png') ,  name: '时钟' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
-            { noPadding: false , isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-doc.png') ,          name: 'README' ,   } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-vitepress.png') ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-hole-life?v=1' , icon: require('./icons/logo-all-my-life.png') ,  name: '一生的时间' ,  },
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/bb-keyboard' ,              icon: require('./icons/logo-bb-keyboard.png') ,  name: '黑莓键盘' ,  },
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/bb-keyboard' ,              icon: require('./icons/logo-bb-keyboard.png') ,  name: '黑莓键盘' ,  },
         ]
     },
     {
         title: '工具',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: require('./icons/logo-keyboard.png') ,            name: '显示键名' ,      } ,
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: require('./icons/logo-keyboard.png') ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: require('./icons/logo-cbr650r.png') ,            name: 'CBR650R' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
