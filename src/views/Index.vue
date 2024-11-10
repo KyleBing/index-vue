@@ -2,8 +2,8 @@
     <div class="index">
         <div v-cloak>
             <div class="mb-2">
-                <CardProfile/>
-                <ProfileEntrance class="mt-2"/>
+<!--                <CardProfile/>-->
+<!--                <ProfileEntrance class="mt-2"/>-->
             </div>
             <div class="mb-2">
                 <CardRecommend/>

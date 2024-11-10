@@ -59,7 +59,7 @@ function studyRoadHtml() {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     .entrance-item{
         flex-shrink: 0;
         display: flex;
