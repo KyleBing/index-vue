@@ -4,8 +4,8 @@ export default [
         icons: [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                       icon: require('./icons/logo-diary.png') ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: require('./icons/logo-map.png') ,          name: '路书' ,     } ,
-            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: require('./icons/logo-analog_clock.png') ,  name: '时钟' ,     } ,
-            { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: require('./icons/logo-analog_clock.png') ,  name: '时钟-黑' ,     } ,
+            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: require('./icons/logo-analog_clock.png') ,  name: '时钟' ,     } ,
+            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: require('./icons/logo-analog_clock.png') ,  name: '时钟-黑' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: require('./icons/logo-manager.png') ,      name: '后台' ,       } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                       icon: require('./icons/logo-vitepress.png') ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: require('./icons/logo-gif.gif') ,          name: '像素画' ,     },
@@ -16,7 +16,7 @@ export default [
     {
         title: '工具',
         icons: [
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: require('./icons/logo-keyboard.png') ,            name: '显示键名' ,      } ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: require('./icons/logo-keyboard.png') ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: require('./icons/logo-cbr650r.png') ,            name: 'CBR650R' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: require('./icons/logo-car-oil.png') ,            name: '汽车行程花费' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: require('./icons/logo-qr.png') ,                 name: '挪车提醒' ,     } ,
@@ -62,6 +62,24 @@ export default [
     {
         title: '有趣的网站',
         icons: [
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.senpian.com/aizw',                                          icon: require('./icons/logo-art-ai.png'),            name: 'AI作图鉴赏',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://zhangjiquan.com/',                                          icon: require('./icons/logo-handheld.png'),              name: '掌机圈',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.lishichelun.com/',                                      icon: require('./icons/logo-wheel-his.png'),              name: '历史车轮',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.ipanda.com/',                                          icon: require('./icons/logo-panda.png'),                  name: '熊猫频道',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://retrosizer.com/',                                          icon: require('./icons/logo-size-compare-retro.png'),     name: '🎮尺寸比较',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://comparesizes.com/#/',                                          icon: require('./icons/logo-size-compare-3d.png'),     name: '尺寸比较-3D',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://js1k.com/',                                                    icon: require('./icons/logo-js1k.png'),                name: 'JS 1k竞赛',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://macosicons.com/#/',                                           icon: require('./icons/logo-icon-high.png'),            name: '高清应用图标',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://gamemcu.com/su7/',                                           icon: require('./icons/logo-su7.png'),                   name: '小米SU7模型',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.zfrontier.com/',                                           icon: require('./icons/logo-keyboard-fan.png'),        name: '装备前线',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://cat.llx.life/',                                              icon: require('./icons/logo-game-cat.png'),              name: '🎮喵喵竞赛',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://wiki.xxiivv.com/site/home.html',                               icon: require('./icons/logo-strange.png'),             name: '奇奇怪怪',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://nes.heheda.top/',                                              icon: require('./icons/logo-nes-online.png'),          name: '🎮NES在线',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://ra2web.com/',                                                  icon: require('./icons/logo-red2.png'),                name: '🎮红警2',      },
+            // { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://videocelebs.net/',                                              icon: require('./icons/logo-nude.png'),               name: 'X18nd',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.hifini.com/',                                              icon: require('./icons/logo-hifini.png'),              name: '音乐磁场',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://asciiflow.com/',                                              icon: require('./icons/logo-ascii.png'),                name: '作图转ASCII',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.an2.net/',                                                icon: require('./icons/logo-an2.png'),                  name: '家长喜欢',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.gsmarena.com/',                                          icon: require('./icons/logo-blank.png'),               name: '所有手机大全',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next-iphone/',                           icon: require('./icons/logo-iphone.png'),               name: '我是库克',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: require('./icons/logo-painting.png'),             name: '免费名画',      },
@@ -92,7 +110,7 @@ export default [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://zoomquilt.org/',                                             icon: require('./icons/logo-web-pic-zoom.png'),         name: '不断放大图片',   },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://txti.es/',                                                    icon: require('./icons/logo-web-txti.png'),             name: '文字页面',     },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://pointerpointer.com/',                                        icon: require('./icons/logo-web-pointer.png'),          name: '点哪指哪',     },
-            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://bruno-simon.com/',                                           icon: require('./icons/logo-web-racecar.png'),          name: '小赛车',      },
+            { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://bruno-simon.com/',                                           icon: require('./icons/logo-web-racecar.png'),          name: '🎮小赛车',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://greatestgifsofalltime.tumblr.com/',                          icon: require('./icons/logo-web-gif.gif'),              name: '唯美gif',    },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://chinesenewyear.net/',                                        icon: require('./icons/logo-web-chinese-new-year.png'), name: '中国年',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://cineshader.com/',                                            icon: require('./icons/logo-web-3d.png'),               name: '一个3D场景',   },
@@ -100,6 +118,8 @@ export default [
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://tympanus.net/Development/RainEffect/index.html#slide-4',     icon: require('./icons/logo-web-raining-outside.png'),  name: '窗外下雨了',    },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.noisli.com/',                                            icon: require('./icons/logo-web-noisli.png'),           name: '白嗓音',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'http://www.sinuousgame.com/',                                        icon: require('./icons/logo-web-game-avoid.png'),       name: '躲避游戏',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://photos.google.com/share/AF1QipNi8VN2pw2Ya_xCV8eFgzEZmiXDy1-GwhXbqFtvXoH3HypF10as9puV8FdoVZpOZA?pli=1&key=WkZjQTIxQTM5a01oZkNUYTE2ZllKTVJKZk1CMTR3',                                              icon: require('./icons/logo-ios-wallpaper.png'),                name: 'iOS所有壁纸',      },
+
         ]
     },
 ]
