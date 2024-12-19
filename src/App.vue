@@ -35,25 +35,27 @@ onMounted(()=>{
 const router = useRouter()
 
 const currentRouteIndex = ref(0)
-function forward(){
-    if (currentRouteIndex.value > routes.length){
 
+function forward(){
+    if (currentRouteIndex.value >= routes.length - 1){
+        currentRouteIndex.value = 0
     } else {
         currentRouteIndex.value = currentRouteIndex.value + 1
-        router.push({
-            name: routes[currentRouteIndex.value].name
-        })
     }
+    router.push({
+        name: routes[currentRouteIndex.value].name
+    })
 }
+
 function backward(){
     if (currentRouteIndex.value > 0){
         currentRouteIndex.value = currentRouteIndex.value - 1
-        router.push({
-            name: routes[currentRouteIndex.value].name
-        })
     } else {
-
+        currentRouteIndex.value = routes.length - 1
     }
+    router.push({
+        name: routes[currentRouteIndex.value].name
+    })
 }
 </script>
 
