@@ -1,10 +1,14 @@
 <template>
     <div class="container">
-        <div class="header">
-            <h1>{{route.meta.title}}</h1>
+
+        <div class="page">
+<!--            <div class="header">-->
+<!--                <h1>{{route.meta.title}}</h1>-->
+<!--            </div>-->
+
+            <router-view/>
         </div>
 
-        <router-view/>
 
         <!-- BUTTON BACKWARD -->
         <div class="float-btn float-left" @click="backward()">
@@ -95,7 +99,7 @@ function backward(){
     &:hover{
         transform: translateY(-1px);
         @include box-shadow(2px 2px 5px transparentize(black, 0.9), 3px 3px 3px inset transparentize(white, 0.8)) ;
-        outline: 20px solid transparentize(white, 0.6);
+        outline: 10px solid transparentize(white, 0.6);
         border: 2px solid white;
         @include transition(all, 0.3s);
         background-color: transparentize(white, 0.9);
@@ -112,11 +116,19 @@ function backward(){
 
 .header{
     margin-bottom: 20px;
-
     h1{
+        color: $green;
+        font-size: $fz-big;
         text-align: center;
-        color: $text-title;
+        //color: $text-title;
     }
+}
+
+.page{
+    @include border-radius(5px);
+    padding: $gap;
+    border: 1px solid $color-border;
+    background-color: transparentize(white, 0.5);
 }
 
 </style>

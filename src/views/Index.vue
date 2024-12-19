@@ -5,8 +5,8 @@
                 <CardApple/>
             </div>
             <div class="mb-2">
-                <MusicIconList/>
                 <IconList/>
+                <MusicIconList/>
             </div>
         </div>
         <copyright/>
