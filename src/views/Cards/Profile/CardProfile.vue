@@ -1,5 +1,5 @@
 <template>
-    <Card title="" class="profile">
+    <Card title="个人资料" class="profile">
         <!--PROFILE-->
         <div class="profile-content">
             <div class="head-container">
@@ -52,7 +52,6 @@ function  changeAvatar(){
 
 .profile-content{
     min-height: 180px;
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

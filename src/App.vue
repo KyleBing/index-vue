@@ -1,12 +1,20 @@
 <template>
     <div class="container">
+        <div class="header">
+            <h1>{{route.meta.title}}</h1>
+        </div>
+
         <router-view/>
+
+        <!-- BUTTON BACKWARD -->
         <div class="float-btn float-left" @click="backward()">
             <img src="./assets/arrow_left.svg" alt="LEFT">
         </div>
+        <!-- BUTTON FORWARD -->
         <div class="float-btn float-right" @click="forward">
             <img src="./assets/arrow_right.svg" alt="RIGHT">
         </div>
+
     </div>
 </template>
 
@@ -15,8 +23,9 @@
 
 import {onMounted, ref} from "vue";
 import {useProjectStore} from "./store.ts";
-import {useRouter} from "vue-router";
+import {useRoute, useRouter} from "vue-router";
 import {routes} from "@/router.ts";
+
 
 const pinia = useProjectStore()
 onMounted(()=>{
@@ -33,6 +42,7 @@ onMounted(()=>{
 })
 
 const router = useRouter()
+const route = useRoute()
 
 const currentRouteIndex = ref(0)
 
@@ -62,7 +72,6 @@ function backward(){
 <style lang="scss">
 @import "scss/index";
 .float-btn{
-    background-color: transparentize(white, 1);
     @include backdrop-filter(blur(10px) saturate(180%));
     position: absolute;
     overflow: hidden;
@@ -75,13 +84,19 @@ function backward(){
     border: 1px solid transparent;
     @include border-radius(100px);
     @include transition(all, 0.3s);
+    outline: 1px solid transparentize(white, 0.9);
+    @extend .unselectable;
+    @extend .btn-like;
     img{
         display: block;
         width: 100%;
         height: 100%;
     }
     &:hover{
-        border-color: white;
+        transform: translateY(-1px);
+        @include box-shadow(2px 2px 5px transparentize(black, 0.9), 3px 3px 3px inset transparentize(white, 0.8)) ;
+        outline: 20px solid transparentize(white, 0.6);
+        border: 2px solid white;
         @include transition(all, 0.3s);
         background-color: transparentize(white, 0.9);
     }
@@ -94,4 +109,14 @@ function backward(){
     padding-left: 30px;
     right: -100px;
 }
+
+.header{
+    margin-bottom: 20px;
+
+    h1{
+        text-align: center;
+        color: $text-title;
+    }
+}
+
 </style>
