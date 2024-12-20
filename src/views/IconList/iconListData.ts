@@ -62,6 +62,46 @@ import logo_web_noisli from '../../assets/icons/logo_web_noisli.png'
 import logo_web_game_avoid from '../../assets/icons/logo_web_game_avoid.png'
 import logo_keyboard from '../../assets/icons/logo_keyboard.png'
 
+import logo_art_ai from '../../assets/icons/logo_art_ai.png'
+import logo_handheld from '../../assets/icons/logo_handheld.png'
+import logo_wheel_his from '../../assets/icons/logo_wheel_his.png'
+import logo_panda from '../../assets/icons/logo_panda.png'
+import logo_size_compare_retro from '../../assets/icons/logo_size_compare_retro.png'
+import logo_size_compare_3d from '../../assets/icons/logo_size_compare_3d.png'
+import logo_js1k from '../../assets/icons/logo_js1k.png'
+import logo_icon_high from '../../assets/icons/logo_icon_high.png'
+import logo_su7 from '../../assets/icons/logo_su7.png'
+import logo_keyboard_fan from '../../assets/icons/logo_keyboard_fan.png'
+import logo_game_cat from '../../assets/icons/logo_game_cat.png'
+import logo_strange from '../../assets/icons/logo_strange.png'
+import logo_nes_online from '../../assets/icons/logo_nes_online.png'
+import logo_red2 from '../../assets/icons/logo_red2.png'
+import logo_nude from '../../assets/icons/logo_nude.png'
+import logo_hifini from '../../assets/icons/logo_hifini.png'
+import logo_ascii from '../../assets/icons/logo_ascii.png'
+import logo_an2 from '../../assets/icons/logo_an2.png'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 interface IconItemEntity {
     noPadding: boolean,
@@ -138,6 +178,24 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: '有趣的网站',
         icons: [
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.senpian.com/aizw',                                       icon:logo_art_ai,                name: 'AI作图鉴赏',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://zhangjiquan.com/',                                           icon:logo_handheld,              name: '掌机圈',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.lishichelun.com/',                                      icon:logo_wheel_his,              name: '历史车轮',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.ipanda.com/',                                            icon:logo_panda,                  name: '熊猫频道',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://retrosizer.com/',                                            icon:logo_size_compare_retro,     name: '🎮尺寸比较',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://comparesizes.com/#/',                                        icon:logo_size_compare_3d,        name: '尺寸比较-3D',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://js1k.com/',                                                  icon:logo_js1k,                  name: 'JS 1k竞赛',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://macosicons.com/#/',                                          icon:logo_icon_high,             name: '高清应用图标',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://gamemcu.com/su7/',                                           icon:logo_su7,                   name: '小米SU7模型',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.zfrontier.com/',                                         icon:logo_keyboard_fan,          name: '装备前线',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://cat.llx.life/',                                              icon:logo_game_cat,              name: '🎮喵喵竞赛',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://wiki.xxiivv.com/site/home.html',                              icon:logo_strange,              name: '奇奇怪怪',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://nes.heheda.top/',                                             icon:logo_nes_online,           name: '🎮NES在线',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://ra2web.com/',                                                 icon:logo_red2,                 name: '🎮红警2',      },
+            // { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://videocelebs.net/',                                              icon:logo_nude,               name: 'X18nd',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.hifini.com/',                                             icon:logo_hifini,               name: '音乐磁场',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://asciiflow.com/',                                              icon:logo_ascii,                name: '作图转ASCII',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.an2.net/',                                                icon:logo_an2,                  name: '家长喜欢',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.gsmarena.com/',                                          icon: logo_blank,               name: '所有手机大全',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://neal.fun/design-the-next_iphone/',                           icon: logo_iphone,               name: '我是库克',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://gallerix.asia/',                                             icon: logo_painting,             name: '免费名画',      },
