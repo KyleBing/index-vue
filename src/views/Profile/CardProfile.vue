@@ -24,8 +24,8 @@
 <script lang="ts" setup>
 import {ProfileData, AvatarArray} from "./profileData.ts";
 import {onMounted, ref} from "vue";
-import Card from "../components/Card.vue";
-import ProfileEntrance from "@/views/Cards/Profile/ProfileEntrance.vue";
+import Card from "../Cards/components/Card.vue";
+import ProfileEntrance from "@/views/Profile/ProfileEntrance.vue";
 
 const currentAvatarIndex = ref(1)
 
@@ -44,7 +44,7 @@ function  changeAvatar(){
 </script>
 
 <style lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 .profile{
     @include border-radius($radius)

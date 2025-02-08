@@ -50,7 +50,7 @@ function studyRoadHtml() {
 </script>
 
 <style lang="scss" scoped>
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 .entrance-list{
     width: 100%;
     background-color: white;

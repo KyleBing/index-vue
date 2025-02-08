@@ -11,8 +11,8 @@
 
 <script lang="ts" setup>
 import DiaryContentCard from "@/views/Cards/DiaryContentCard.vue";
-import CardProfile from "@/views/Cards/Profile/CardProfile.vue";
-import ProfileEntrance from "@/views/Cards/Profile/ProfileEntrance.vue";
+import CardProfile from "@/views/Profile/CardProfile.vue";
+import ProfileEntrance from "@/views/Profile/ProfileEntrance.vue";
 </script>
 
 <style scoped>

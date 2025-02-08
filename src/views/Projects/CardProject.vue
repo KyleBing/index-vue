@@ -48,7 +48,7 @@ onMounted(()=>{
 </script>
 
 <style scoped lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 .projects-content{
     width: 100%;
