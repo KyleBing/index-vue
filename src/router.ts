@@ -25,15 +25,7 @@ const routes: Array<RouteRecordRaw> = [
             icon: '',
         }
     },
-    {
-        path: '/about-me',
-        name: 'AboutMe',
-        component: AboutMe,
-        meta: {
-            title: '关于我',
-            icon: '',
-        }
-    },
+
     // {
     //     path: '/clock',
     //     name: 'Clock',
@@ -59,7 +51,16 @@ const routes: Array<RouteRecordRaw> = [
             title: '外网套餐',
             icon: '',
         }
-    }
+    },
+    {
+        path: '/about-me',
+        name: 'AboutMe',
+        component: AboutMe,
+        meta: {
+            title: '关于我',
+            icon: '',
+        }
+    },
 ]
 
 const router = createRouter({
