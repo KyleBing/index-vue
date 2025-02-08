@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 import {onMounted, onUnmounted} from "vue";
 import Copyright from "./Copyright.vue";
-import CardApple from "./Cards/Apple/CardApple.vue";
+import CardApple from "@/views/Apple/CardApple.vue";
 import MusicIconList from "./Music/MusicIconList.vue";
 import IconList from "./IconList/IconList.vue";
 

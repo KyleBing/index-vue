@@ -1,12 +1,11 @@
 <template>
-    <Card title="个人资料" class="profile">
+    <Card title="个人资料" :is-show-title="false" class="profile">
         <!--PROFILE-->
         <div class="profile-content">
             <div class="head-container">
                 <div class="head flipInX animated" @click="changeAvatar">
                     <img :src="AvatarArray[currentAvatarIndex]" alt="HeadPic">
                 </div>
-
             </div>
             <div class="intro">
                 <table class="intro-container">
@@ -26,6 +25,7 @@
 import {ProfileData, AvatarArray} from "./profileData.ts";
 import {onMounted, ref} from "vue";
 import Card from "../components/Card.vue";
+import ProfileEntrance from "@/views/Cards/Profile/ProfileEntrance.vue";
 
 const currentAvatarIndex = ref(1)
 

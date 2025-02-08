@@ -23,7 +23,7 @@ import Card from "@/views/Cards/components/Card.vue";
 
 
 import heart_inactive from './icons/heart_inactive@3x.png'
-import {appleListData} from "@/views/Cards/Apple/appleListData.ts";
+import {appleListData} from "@/views/Apple/appleListData.ts";
 
 const thumbsUpMap = new Map() // 点选数的 map
 

@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 
-import CardRecommend from "@/views/Cards/Recommend/CardRecommend.vue";
+import CardRecommend from "@/views/Recommend/CardRecommend.vue";
 </script>
 
 <style scoped>

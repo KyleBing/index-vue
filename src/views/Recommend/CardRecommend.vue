@@ -62,7 +62,7 @@ function getContentHtml(content: string){
 </script>
 
 <style scoped lang="scss">
-@import "../../../scss/plugin";
+@import "../../scss/plugin";
 
 .recommend{
     width: 100%;
