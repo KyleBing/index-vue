@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import {projectList} from "./projectData.ts";
-import Card from "@/views/Cards/components/Card.vue";
+import Card from "@/components/Card.vue";
 import {onMounted, ref} from "vue";
 
 const storageIdentifier = 'index_show_all'

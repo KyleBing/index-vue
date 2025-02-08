@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Card from "@/views/Cards/components/Card.vue";
+import Card from "@/components/Card.vue";
 
 export default {
     name: "CardSelf",

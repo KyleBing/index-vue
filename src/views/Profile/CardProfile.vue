@@ -24,7 +24,7 @@
 <script lang="ts" setup>
 import {ProfileData, AvatarArray} from "./profileData.ts";
 import {onMounted, ref} from "vue";
-import Card from "../Cards/components/Card.vue";
+import Card from "@/components/Card.vue";
 import ProfileEntrance from "@/views/Profile/ProfileEntrance.vue";
 
 const currentAvatarIndex = ref(1)

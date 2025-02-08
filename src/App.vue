@@ -128,10 +128,11 @@ function backward(){
 }
 
 .page{
-    @include border-radius(20px);
+    @include border-radius(10px);
     padding: $gap;
     border: 1px solid $color-border;
     background-color: $bg-body;
+    @include box-shadow(8px 8px 5px transparentize(black, 0.95)) ;
     //background-color: transparentize(white, 0.5);
 }
 

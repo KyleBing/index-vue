@@ -43,7 +43,7 @@ function toRoute(){
 <style scoped lang="scss">
 @use "sass:math";
 
-@import "../../../scss/plugin";
+@import "../scss/plugin";
 
 .section{
     //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));

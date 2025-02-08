@@ -15,7 +15,7 @@ import axios from "axios";
 import { marked } from "marked"
 import {onMounted, ref} from "vue";
 import {DiaryEntityDatabase} from "@/entity/Diary.ts";
-import Card from "@/views/Cards/components/Card.vue";
+import Card from "@/components/Card.vue";
 
 const diary = ref<DiaryEntityDatabase>({})
 const contentHtml = ref('')
