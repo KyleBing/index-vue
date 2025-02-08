@@ -3,6 +3,7 @@ import Index from "./views/Index.vue";
 import AboutMe from "./views/AboutMe.vue";
 import Clock from "./views/Clock/Clock.vue";
 import WantedList from "./views/WantedList/WantedList.vue";
+import GFW from "./views/GFW/GFW.vue";
 import Recent from "@/views/Recent/Recent.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -30,18 +31,26 @@ const routes: Array<RouteRecordRaw> = [
             title: '关于我'
         }
     },
-    {
-        path: '/clock',
-        name: 'Clock',
-        component:  Clock,
-        meta: {
-            title: '时钟'
-        }
-    },
+    // {
+    //     path: '/clock',
+    //     name: 'Clock',
+    //     component:  Clock,
+    //     meta: {
+    //         title: '时钟'
+    //     }
+    // },
     {
         path: '/wanted-list',
         name: 'WantedList',
         component: WantedList,
+        meta: {
+            title: '想要的东西'
+        }
+    },
+    {
+        path: '/gfw',
+        name: 'GreatFireWall',
+        component: GFW,
         meta: {
             title: '想要的东西'
         }

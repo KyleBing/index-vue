@@ -2,10 +2,9 @@
     <div class="container">
 
         <div class="page">
-<!--            <div class="header">-->
+<!--            <div class="page-header">-->
 <!--                <h1>{{route.meta.title}}</h1>-->
 <!--            </div>-->
-
             <router-view/>
         </div>
 
@@ -114,7 +113,7 @@ function backward(){
     right: -100px;
 }
 
-.header{
+.page-header{
     margin-bottom: 20px;
     h1{
         color: $green;
@@ -125,10 +124,11 @@ function backward(){
 }
 
 .page{
-    @include border-radius(5px);
+    @include border-radius(20px);
     padding: $gap;
     border: 1px solid $color-border;
-    background-color: transparentize(white, 0.5);
+    background-color: $bg-body;
+    //background-color: transparentize(white, 0.5);
 }
 
 </style>

@@ -10,7 +10,7 @@ const timeStringNow = dateFormatter(new Date(), 'yyyy-MM-dd hh-mm-ss')
 // https://vitejs.dev/config/
 export default defineConfig({
     server: {
-        port: 4000,
+        port: 1021,
         host: '0.0.0.0',// 自定义主机名
         https: false,
         proxy: {

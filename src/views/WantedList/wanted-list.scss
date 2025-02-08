@@ -6,15 +6,9 @@ $bg-second      : #EBEBEB;
 $bg-navbar      : #B61111;
 $bg-footer      : #3B3B3B;
 
-.wanted-list-container{
-  padding: 30px;
-  margin: 0 auto;
-  width: 500px;
-}
 
 .card{
   padding: 20px;
-  background-color: white;
   @include border-radius(10px);
   &-header{
     padding-bottom: 20px;
