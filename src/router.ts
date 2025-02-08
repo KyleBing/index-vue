@@ -12,7 +12,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Home',
         component: Index,
         meta: {
-            title: '首页'
+            title: '首页',
+            icon: '',
         }
     },
     {
@@ -20,7 +21,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'Recent',
         component: Recent,
         meta: {
-            title: '最近'
+            title: '最近',
+            icon: '',
         }
     },
     {
@@ -28,7 +30,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'AboutMe',
         component: AboutMe,
         meta: {
-            title: '关于我'
+            title: '关于我',
+            icon: '',
         }
     },
     // {
@@ -44,7 +47,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'WantedList',
         component: WantedList,
         meta: {
-            title: '想要的东西'
+            title: '想要的东西',
+            icon: '',
         }
     },
     {
@@ -52,7 +56,8 @@ const routes: Array<RouteRecordRaw> = [
         name: 'GreatFireWall',
         component: GFW,
         meta: {
-            title: '想要的东西'
+            title: '外网套餐',
+            icon: '',
         }
     }
 ]

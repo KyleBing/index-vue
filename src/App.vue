@@ -1,6 +1,9 @@
 <template>
     <div class="container">
 
+
+        <NavList/>
+
         <div class="page">
 <!--            <div class="page-header">-->
 <!--                <h1>{{route.meta.title}}</h1>-->
@@ -9,14 +12,14 @@
         </div>
 
 
-        <!-- BUTTON BACKWARD -->
+<!--        &lt;!&ndash; BUTTON BACKWARD &ndash;&gt;
         <div class="float-btn float-left" @click="backward()">
             <img src="./assets/arrow_left.svg" alt="LEFT">
         </div>
-        <!-- BUTTON FORWARD -->
+        &lt;!&ndash; BUTTON FORWARD &ndash;&gt;
         <div class="float-btn float-right" @click="forward">
             <img src="./assets/arrow_right.svg" alt="RIGHT">
-        </div>
+        </div>-->
 
     </div>
 </template>
@@ -28,6 +31,7 @@ import {onMounted, ref} from "vue";
 import {useProjectStore} from "./store.ts";
 import {useRoute, useRouter} from "vue-router";
 import {routes} from "@/router.ts";
+import NavList from "@/views/NavList/NavList.vue";
 
 
 const pinia = useProjectStore()

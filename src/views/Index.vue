@@ -21,6 +21,7 @@ import MusicIconList from "./Music/MusicIconList.vue";
 import IconList from "./IconList/IconList.vue";
 
 import {useProjectStore} from "../store.ts";
+import Nav from "@/views/NavList/Nav.vue";
 
 onMounted(()=>{
     addScrollEvent()
