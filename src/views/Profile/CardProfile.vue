@@ -51,7 +51,7 @@ function  changeAvatar(){
 @import "../../scss/plugin";
 
 .profile{
-    @include border-radius($radius)
+    //@include border-radius(30px)
 }
 
 .profile-content{
