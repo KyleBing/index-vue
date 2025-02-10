@@ -55,14 +55,14 @@ function toRoute(){
 
 .section{
     position: relative;
-    @include border-radius($radius);
+    @include border-radius(5px);
     padding: $gap;
     overflow: hidden;
     //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
 
     &.show-bg{
         border: 1px solid $item-border-color;
-        background-color: transparentize(white, 0.2);
+        background-color: white;
     }
     &.no-padding{
         padding: 0;
@@ -77,12 +77,12 @@ function toRoute(){
         top: math.div($gap , 2) ;
         left: 0;
         right: 0;
-        color: $text-desc;
+        color: $text-title;
         .title{
             letter-spacing: 0.5px;
             position: absolute;
             left: math.div($gap , 2);
-            //font-weight: bold;
+            font-weight: bold;
             font-size: $fz-sm;
         }
         .share-link{
@@ -102,17 +102,6 @@ function toRoute(){
         border: 1px solid transparent;
     }
 
-    &:hover{
-        .section-header{
-            @include transition(color 0.5s);
-            color: $text-title;
-        }
-        &.gray{
-            .section-header{
-                color: $text-dark-title
-            }
-        }
-    }
     &.black{
         background: black;
         .section-header{
@@ -175,7 +164,7 @@ function toRoute(){
         &:hover {
             .section-header {
                 @include transition(color 0.5s);
-                color: $dark-text-title;
+                color: $text-dark-title
             }
         }
     }

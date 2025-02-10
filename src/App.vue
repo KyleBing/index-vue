@@ -133,7 +133,7 @@ function backward(){
     padding: $gap;
     //border: 1px solid $color-border;
     @include box-shadow(8px 8px 5px transparentize(black, 0.95)) ;
-    background-color: transparentize(white, 0.5);
+    background-color: transparentize(white, 0.3);
 }
 
 
