@@ -1,7 +1,6 @@
 <template>
     <div class="container">
 
-
         <NavList/>
 
         <div class="page">
@@ -11,15 +10,17 @@
             <router-view/>
         </div>
 
+<!--
 
-<!--        &lt;!&ndash; BUTTON BACKWARD &ndash;&gt;
+        &lt;!&ndash; BUTTON BACKWARD &ndash;&gt;
         <div class="float-btn float-left" @click="backward()">
             <img src="./assets/arrow_left.svg" alt="LEFT">
         </div>
         &lt;!&ndash; BUTTON FORWARD &ndash;&gt;
         <div class="float-btn float-right" @click="forward">
             <img src="./assets/arrow_right.svg" alt="RIGHT">
-        </div>-->
+        </div>
+-->
 
     </div>
 </template>
@@ -130,10 +131,9 @@ function backward(){
 .page{
     @include border-radius(10px);
     padding: $gap;
-    border: 1px solid $color-border;
-    background-color: $bg-body;
+    //border: 1px solid $color-border;
     @include box-shadow(8px 8px 5px transparentize(black, 0.95)) ;
-    //background-color: transparentize(white, 0.5);
+    background-color: transparentize(white, 0.5);
 }
 
 </style>

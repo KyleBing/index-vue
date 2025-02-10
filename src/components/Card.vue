@@ -1,5 +1,11 @@
 <template>
-    <div :class="['section', {'no-padding': noPadding}, {'link': pageLink}]" @click="toRoute">
+    <div :class="[
+            'section',
+            {'no-padding': noPadding},
+            {'link': pageLink},
+            {'show-bg': isShowBg},
+        ]"
+         @click="toRoute">
         <div class="section-header">
             <div v-if="isShowTitle" class="title">{{ title }}</div>
 <!--            <router-link v-if="pageLink" :to="pageLink" class="share-link">进入页面</router-link>-->
@@ -24,13 +30,15 @@ interface Props {
     pageLink?: string,
     noPadding?: boolean,
     isDeveloping?:  boolean, // 提示信息：正在开发中
-    isShowTitle?: boolean
+    isShowTitle?: boolean,
+    isShowBg?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
     noPadding: false,
     isDeveloping: false,
-    isShowTitle: true
+    isShowTitle: true,
+    isShowBg: false
 })
 
 function toRoute(){
@@ -46,13 +54,16 @@ function toRoute(){
 @import "../scss/plugin";
 
 .section{
-    //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
     position: relative;
-    //border: 1px solid $item-border-color;
-    //background-color: transparentize(white, 0.2);
     @include border-radius($radius);
     padding: $gap;
     overflow: hidden;
+    //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));
+
+    &.show-bg{
+        border: 1px solid $item-border-color;
+        background-color: transparentize(white, 0.2);
+    }
     &.no-padding{
         padding: 0;
     }

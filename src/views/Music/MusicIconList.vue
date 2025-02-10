@@ -1,7 +1,7 @@
 <template>
     <div class="icon-list-group" v-if="iconListString">
         <div class="icon-list-header">
-            <div class="title">网易云 7日黑胶</div>
+            <div class="title">网易云 黑胶体验分享</div>
         </div>
         <div class="icon-list">
             <CardIcon v-for="item in iconList" :key="item.name"

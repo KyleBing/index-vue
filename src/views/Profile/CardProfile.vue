@@ -1,5 +1,10 @@
 <template>
-    <Card title="个人资料" :is-show-title="false" class="profile">
+    <Card
+        title="个人资料"
+        :is-show-bg="true"
+        :is-show-title="false"
+        class="profile"
+    >
         <!--PROFILE-->
         <div class="profile-content">
             <div class="head-container">
@@ -25,7 +30,6 @@
 import {ProfileData, AvatarArray} from "./profileData.ts";
 import {onMounted, ref} from "vue";
 import Card from "@/components/Card.vue";
-import ProfileEntrance from "@/views/Profile/ProfileEntrance.vue";
 
 const currentAvatarIndex = ref(1)
 
