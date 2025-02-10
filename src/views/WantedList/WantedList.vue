@@ -8,9 +8,15 @@
                 <tbody>
                     <template v-for="(item, index) in wantedThings" :key="index">
                         <tr class="bought" v-if="item.owned">
-                            <td>{{ item.title }}</td>
-                            <td>{{ item.priceSold? item.priceSold: ''}}</td>
-                            <td><del>{{ item.price }}</del></td>
+                            <td>
+                                <p>{{ item.title }}</p>
+                                <p class="date">{{item.date}}</p>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span v-if="item.priceSold">({{ item.priceSold}}) </span>
+                                <del>{{ item.price }}</del>
+                            </td>
                         </tr>
                         <tr v-else>
                             <td>{{ item.title }}</td>
