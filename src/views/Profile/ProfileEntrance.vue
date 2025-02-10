@@ -38,15 +38,6 @@
 </template>
 
 <script lang="ts" setup>
-import {ref} from "vue";
-
-const studyRoad = ref('')
-function studyRoadHtml() {
-    return studyRoad.value
-        .split('\n')
-        .map(item => `<p>${item.trim()}</p>`)
-        .join('\n')
-}
 </script>
 
 <style lang="scss" scoped>

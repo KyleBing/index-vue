@@ -20,8 +20,10 @@ body{
 }
 
 .container{
+
   position: relative;
   margin: 0 auto;
+  //transform: translateX(150px);
   max-width: 1024px;
   padding: $gap;
 }

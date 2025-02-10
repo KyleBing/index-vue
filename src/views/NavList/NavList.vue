@@ -7,7 +7,7 @@
            v-for="item in routes" :key="item.path"
            @click="router.push(item.path)"
         >
-            <img class="icon" src="../Profile/icon/csdn.svg" alt="CSDN">
+            <img class="icon" src="../Profile/icon/bilibili.svg" alt="CSDN">
             <span class="title">{{ item.meta.title }}</span>
         </a>
     </div>
