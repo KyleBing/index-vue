@@ -16,8 +16,10 @@ import {iconList} from "@/views/IconList/iconListData.ts";
 import CardIcon from "@/views/Cards/Others/CardIcon.vue";
 </script>
 
-<style scoped  lang="scss">
+<style lang="scss">
 @import "../../scss/plugin";
+
+
 .icon-list-group{
     padding: 20px 20px;
 }
@@ -46,6 +48,15 @@ import CardIcon from "@/views/Cards/Others/CardIcon.vue";
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
+}
+
+@media (max-width: $width-sm){
+    .icon-list-group{
+        padding: 10px;
+    }
+    .icon-list{
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 1280px) {

@@ -136,4 +136,13 @@ function backward(){
     background-color: transparentize(white, 0.5);
 }
 
+
+@media (max-width: $width-sm){
+    .page{
+        @include border-radius(0);
+        @include box-shadow(none) ;
+        //background-color: transparent;
+    }
+}
+
 </style>

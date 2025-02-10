@@ -14,7 +14,6 @@
 
 
 
-
   // PROJECTS
   .card-projects{
     background-color: $dark-bg;
@@ -58,20 +57,6 @@
           color: $dark-text-title !important;
         }
       }
-    }
-  }
-
-  @media screen and (max-width: $width-sm) {
-    .container{
-      border: none;
-    }
-    .intro {
-      tr {
-        border-bottom-color: $dark-bg-body !important;
-      }
-    }
-    .project-item{
-      border-color: $dark-bg-body !important;
     }
   }
 
