@@ -182,13 +182,30 @@ function  changeAvatar(){
 
 @media (max-width: $width-md) {
     .profile-content{
-        padding: 25px;
+        padding: 20px;
         width: 100%;
         flex-flow: column nowrap;
     }
 
     .head-container{
         margin-bottom: 20px;
+        width: 500px;
+        text-align: right;
+        .head{
+            cursor: pointer;
+            margin: 0 auto;
+            height: 200px;
+            width: 200px;
+            border: 0.15rem solid $orange;
+            @include border-radius(200px);
+            overflow: hidden;
+            &:hover{
+                border-color: $blue;
+            }
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .intro{

@@ -1,5 +1,5 @@
 const ProfileData = [
-    {title: "资料", content: "邴新科，程序员(web前端)，山东济南。"},
+    {title: "资料", content: "邴新科，老家莒县，工作山东济南：web前端。"},
     {title: "音乐", content: `<a target='_blank' href='https://music.163.com/#/playlist?id=368268862'>网易云 - Fav 歌单。</a>`},
     {title: "电影", content: `<a target='_blank' href='https://movie.douban.com/subject/3808604/'>《危情三日》</a>
                                 <a target='_blank' href='https://movie.douban.com/subject/1889243/'>《星际穿越》</a>
