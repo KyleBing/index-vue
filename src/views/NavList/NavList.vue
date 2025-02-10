@@ -7,7 +7,7 @@
            v-for="item in routes" :key="item.path"
            @click="router.push(item.path)"
         >
-            <img class="icon" src="../Profile/icon/github.svg" :alt="item.meta.title">
+            <img class="icon" :src="iconGithub" :alt="item.meta.title">
             <span class="title">{{ item.meta.title }}</span>
         </a>
     </div>
@@ -17,6 +17,8 @@
 import {useRoute, useRouter} from "vue-router";
 const route = useRoute()
 const router = useRouter()
+
+import iconGithub from '../Profile/icon/github.svg?url'
 
 import {routes} from "@/router.ts";
 

@@ -8,7 +8,7 @@
                 </a>
                 <div class="thumb-up" @click="thumbsUp(item.keyword)">
                     <img :src="heart_inactive" alt="hear-inactive">
-                    <div class="count">{{thumbsUpMap.get(item.keyword) || 0}}</div>
+                    <div class="count" v-if="applePagesInfoList.length > 0">{{thumbsUpMap.get(item.keyword) || 0}}</div>
                 </div>
             </div>
         </div>
@@ -34,19 +34,21 @@ onMounted(()=>{
     websocketInit()
 })
 
+const applePagesInfoList = ref<Array<{
+    name: string,
+    count: number,
+    description: string,
+    link_address: string,
+    date_init: string
+}>>([])
+
 function getInitThumbsUpCount(){
     axios
         .get('../../portal/thumbs-up/all')
         .then(res => {
             if (res.data && res.data.data){
-                // console.log(res.data.data)
-                // {
-                //   "name": "airpods",
-                //     "count": 8,
-                //     "link_address": null,
-                //     "date_init": "2022-05-26T08:50:05.000Z"
-                // }
-                res.data.data.forEach(item => {
+                applePagesInfoList.value = res.data.data
+                applePagesInfoList.value.forEach(item => {
                     thumbsUpMap.set(item.name, item.count)
                 })
             }
