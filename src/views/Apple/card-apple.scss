@@ -1,16 +1,4 @@
 @import "../../scss/plugin";
-.card-image{
-  background-color: white;
-  @include border-radius($radius);
-  padding: 5px;
-  overflow: hidden;
-  @include box-shadow(1px 1px 3px rgba(0,0,0,0.1));
-  img {
-    width: 100%;
-    display: block;
-  }
-}
-
 .card-apple{
   margin-top: 10px;
   height: 180px;

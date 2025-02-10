@@ -55,7 +55,7 @@ function toRoute(){
 
 .section{
     position: relative;
-    @include border-radius(5px);
+    @include border-radius($radius);
     padding: $gap;
     overflow: hidden;
     //@include box-shadow(-8px -10px 0 transparentize(black, 0.8));

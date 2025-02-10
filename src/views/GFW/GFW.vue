@@ -1,11 +1,5 @@
 <template>
-    <div class="row">
-        <div class="col col-lg-16 col-sm-16 col-md-16 col-sm-24 col-xs-24">
-            <div class="col-md-24 col-sm-24 col-xs-24">
-                <DiaryContentCard keyword="外网访问套餐推荐"/>
-            </div>
-        </div>
-    </div>
+    <DiaryContentCard keyword="外网访问套餐推荐"/>
 </template>
 
 <script lang="ts" setup>

@@ -51,7 +51,7 @@ function  changeAvatar(){
 @import "../../scss/plugin";
 
 .profile{
-    //@include border-radius(30px)
+    border-radius: 15px !important;
 }
 
 .profile-content{
@@ -180,9 +180,9 @@ function  changeAvatar(){
     }
 }
 
-@media (max-width: 1280px) {
-
+@media (max-width: $width-md) {
     .profile-content{
+        padding: 25px;
         width: 100%;
         flex-flow: column nowrap;
     }

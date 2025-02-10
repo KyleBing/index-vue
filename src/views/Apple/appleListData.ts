@@ -16,7 +16,7 @@ const appleListData: Array<AppleItemEntity> = [
     {title: 'iPad'        , keyword: 'ipad',        icon: ipad_white                , isPublic: true , description: 'iPad 所有机型参数'    , path: 'http://kylebing.cn/tools/ipad'}       ,
     {title: 'iPhone'      , keyword: 'iphone',      icon: iphone_white              , isPublic: true , description: 'iPhone 所有机型参数'  , path: 'http://kylebing.cn/tools/iphone'}     ,
     {title: 'AirPods'     , keyword: 'airpods',     icon: airpods_white             , isPublic: true , description: 'AirPods 所有机型参数' , path: 'http://kylebing.cn/tools/airpods'}    ,
-    {title: 'Apple 处理器' , keyword: 'apple-chip',  icon: chip_white                , isPublic: true , description: 'Apple 历代处理器参数' , path: 'http://kylebing.cn/tools/apple-chip'} ,
+    {title: '处理器'       , keyword: 'apple-chip',  icon: chip_white                , isPublic: true , description: 'Apple 历代处理器参数' , path: 'http://kylebing.cn/tools/apple-chip'} ,
 ]
 
 export {

@@ -133,14 +133,15 @@ function backward(){
     padding: $gap;
     //border: 1px solid $color-border;
     @include box-shadow(8px 8px 5px transparentize(black, 0.95)) ;
-    background-color: transparentize(white, 0.3);
+    background-color: transparentize(white, 0);
 }
 
 
 @media (max-width: $width-sm){
     .page{
-        @include border-radius(0);
-        @include box-shadow(none) ;
+        padding-top: 25px;
+        @include border-radius(15px);
+        @include box-shadow(0 0 10px transparentize(black, 0.95)) ;
         //background-color: transparent;
     }
 }

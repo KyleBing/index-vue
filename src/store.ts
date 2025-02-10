@@ -18,9 +18,6 @@ export const useProjectStore = defineStore('projectStore', {
         }) {
             this.insets = payload
         },
-        SET_SCROLL_TOP(payload: number) {
-            this.scrollTop = payload
-        },
     },
 })
 

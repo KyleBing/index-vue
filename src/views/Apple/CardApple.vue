@@ -20,8 +20,6 @@ import axios from "axios";
 import {onMounted, ref} from 'vue'
 import Card from "@/components/Card.vue";
 
-
-
 import heart_inactive from './icons/heart_inactive@3x.png'
 import {appleListData} from "@/views/Apple/appleListData.ts";
 

@@ -7,7 +7,7 @@
            v-for="item in routes" :key="item.path"
            @click="router.push(item.path)"
         >
-            <img class="icon" src="../Profile/icon/bilibili.svg" alt="CSDN">
+            <img class="icon" src="../Profile/icon/github.svg" :alt="item.meta.title">
             <span class="title">{{ item.meta.title }}</span>
         </a>
     </div>
@@ -68,4 +68,18 @@ import {routes} from "@/router.ts";
     }
 }
 
+@media (max-width: $width-sm){
+    .nav-list{
+        margin-bottom: 10px;
+        z-index: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-left: 0;
+        .nav-item{
+            @include border-radius(10px);
+            justify-content: center;
+        }
+    }
+}
 </style>
