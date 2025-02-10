@@ -8,8 +8,7 @@
   }
 
   .container {
-    border-color: $dark-border;
-    background-color: $dark-bg-body;
+
   }
 
 
@@ -71,23 +70,6 @@
   .profile{
     background: linear-gradient(to top left, #333, #444);
   }
-
-  .projects{
-    background: linear-gradient(to top left, #333, #444);
-    .project-list-item{
-      border-color: $dark-border;
-
-      .detail{
-        .title{
-          color: $dark-text-title;
-        }
-        .description, .link{
-          color: $dark-text-desc;
-        }
-      }
-    }
-  }
-
 
   // Card icon
   .card-icon{

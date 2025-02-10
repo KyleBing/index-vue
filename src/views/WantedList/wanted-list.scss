@@ -20,6 +20,7 @@ $bg-footer      : #3B3B3B;
     padding: 20px 0;
   }
   .card-footer{
+    color: white;
     padding-top: 20px;
     border-top: 1px solid $color-border;
     display: flex;
@@ -87,4 +88,47 @@ p.date{
       }
     }
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card{
+    .card-header{
+      color: white;
+      border-bottom-color: $dark-border;
+    }
+    .card-body{
+    }
+    .card-footer{
+      color: white;
+      border-top-color: $dark-border;
+    }
+  }
+  .table{
+    color: $text-title;
+    td{
+      color: $dark-text-title;
+      &:first-child{
+      }
+      &:last-child{
+      }
+    }
+    tr{
+      position: relative;
+      td:first-child{
+      }
+      &:hover{
+        background: $dark-item-bg;
+      }
+    }
+  }
+  p.title{
+    color: $dark-text-title;
+  }
+  p.date{
+    color: $green;
+  }
+  .bought{
+    color: $dark-text-desc;
+  }
+
 }

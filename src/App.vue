@@ -146,4 +146,10 @@ function backward(){
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .page{
+        background-color: $dark-bg-body;
+    }
+}
+
 </style>

@@ -161,11 +161,11 @@ function toRoute(){
 @media (prefers-color-scheme: dark) {
     .section{
         border-color: $dark-border;
-        &:hover {
-            .section-header {
-                @include transition(color 0.5s);
-                color: $text-dark-title
-            }
+        .section-header{
+            color: $text-dark-title
+        }
+        &.show-bg{
+            border: 1px solid $dark-border;
         }
     }
 }

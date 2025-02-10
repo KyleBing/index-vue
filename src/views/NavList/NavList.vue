@@ -84,4 +84,24 @@ import {routes} from "@/router.ts";
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .nav-list{
+        .nav-item{
+            color: $dark-text-desc;
+            &.active{
+                background-color: darken(white, 80%);
+                .title{
+                    color: darken(white, 10%);
+                }
+            }
+            &:hover{
+                background-color: darken(white, 85%);
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+
 </style>

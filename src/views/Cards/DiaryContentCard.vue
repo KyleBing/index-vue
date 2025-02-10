@@ -1,5 +1,5 @@
 <template>
-    <Card class="projects mb-0" :title="keyword" :is-show-title="true" v-if="contentHtml">
+    <Card class="mb-0" :title="keyword" :is-show-title="true" v-if="contentHtml">
         <div class="recommend markdown" v-if="diary.is_markdown === 1" v-html="contentHtml"/>
         <div class="recommend" v-else v-html="contentHtml"/>
     </Card>
