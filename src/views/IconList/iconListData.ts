@@ -80,6 +80,7 @@ import logo_nude from '../../assets/icons/logo_nude.png'
 import logo_hifini from '../../assets/icons/logo_hifini.png'
 import logo_ascii from '../../assets/icons/logo_ascii.png'
 import logo_an2 from '../../assets/icons/logo_an2.png'
+import logo_analog_clock from '../../assets/icons/logo_analog_clock.png'
 
 
 
@@ -122,6 +123,8 @@ const iconList: Array<IconGroupEntity> = [
         icons: [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                        icon: icon_diary ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: logo_map ,          name: '路书' ,     } ,
+            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: logo_analog_clock ,  name: '时钟' ,     } ,
+            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: logo_analog_clock ,  name: '时钟-黑' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: logo_manager ,      name: '后台' ,       } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                        icon: logo_vitepress ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: logo_gif ,          name: '像素画' ,     },
@@ -140,7 +143,7 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/typepad' ,                 icon: logo_typepad ,            name: '跟打器' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/keyboard/' ,               icon: logo_keyboard ,           name: '键盘测试' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/calculator' ,              icon: logo_calculator ,         name: '计算器' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/words' ,                   icon: logo_symbol ,             name: '标点处理' ,     } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/words' ,                   icon: logo_symbol ,             name: '标点处理' ,     } ,
             // { noPadding: false , isNew: false, isBgBlack: false , pageLink: 'http://kylebing.cn/tools/vps' ,                     icon: logo_vps ,                name: 'VPS' ,      } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/drop-and-show' ,           icon: logo_image_viewer ,       name: '图片查看器' ,    } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/wubi-dict-editor-web' ,    icon: logo_wubi_editor ,        name: '五笔助手' ,     } ,
@@ -156,7 +159,7 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/useragent' ,            icon: logo_agent ,              name: 'UserAgent' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: logo_element_ui_icons ,   name: 'element图标' , } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: logo_base64 ,             name: 'Base64文本' , } ,
-            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
+            { noPadding: false ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
         ]
     },
     {
