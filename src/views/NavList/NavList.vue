@@ -38,6 +38,7 @@ import {routes} from "@/router.ts";
     justify-content: flex-start;
     flex-flow: column nowrap;
     .nav-item{
+        margin-bottom: 3px;
         width: 100%;
         cursor: pointer;
         flex-shrink: 0;
@@ -53,9 +54,8 @@ import {routes} from "@/router.ts";
             height: 25px;
         }
         .title{
+            text-align: right;
             color: $text-content;
-            padding-top: 1px;
-            padding-left: 15px;
         }
         &:hover{
             border-color: white;
@@ -73,13 +73,16 @@ import {routes} from "@/router.ts";
 
 @media (max-width: $width-sm){
     .nav-list{
+        width: 100%;
+        flex-flow: row wrap;
         margin-bottom: 10px;
         z-index: 0;
         position: relative;
         top: 0;
-        width: 100%;
         margin-left: 0;
         .nav-item{
+            margin-bottom: 0;
+            width: auto;
             @include border-radius(10px);
             justify-content: center;
         }
