@@ -7,7 +7,7 @@
            v-for="item in routes" :key="item.path"
            @click="router.push(item.path)"
         >
-            <img class="icon" :src="iconGithub" :alt="item.meta.title">
+<!--            <img class="icon" :src="iconGithub" :alt="item.meta.title">-->
             <span class="title">{{ item.meta.title }}</span>
         </a>
     </div>
@@ -29,15 +29,16 @@ import {routes} from "@/router.ts";
 .nav-list{
     position: fixed;
     top: 250px;
-    margin-left: -240px;
-    width: 200px;
+    margin-left: -200px;
+    width: 150px;
     padding: 5px;
     @include border-radius($radius);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
     .nav-item{
+        width: 100%;
         cursor: pointer;
         flex-shrink: 0;
         display: flex;
