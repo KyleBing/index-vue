@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import DiaryContentCard from "@/views/Cards/DiaryContentCard.vue";
+import DiaryContentCard from "@/components/DiaryContentCard.vue";
 </script>
 
 <style scoped>

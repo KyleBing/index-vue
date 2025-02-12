@@ -13,7 +13,7 @@
 
 <script lang="ts" setup>
 import {iconList} from "@/views/IconList/iconListData.ts";
-import CardIcon from "@/views/Cards/Others/CardIcon.vue";
+import CardIcon from "@/views/IconList/CardIcon.vue";
 </script>
 
 <style lang="scss">

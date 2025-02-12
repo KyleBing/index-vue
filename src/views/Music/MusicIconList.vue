@@ -19,7 +19,7 @@ import {CardIconEntity} from "@/views/Music/CardIcon.ts";
 const iconList = ref<Array<CardIconEntity>>([])
 const iconListString = ref('')
 import MusicIconBg from '../../assets/icons/logo_netease_music.png'
-import CardIcon from "@/views/Cards/Others/CardIcon.vue";
+import CardIcon from "@/views/IconList/CardIcon.vue";
 onMounted(()=>{
     getMusicShareIconList()
 })

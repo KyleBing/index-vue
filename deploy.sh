@@ -6,3 +6,6 @@ cd index &&
 unzip index-* &&
 rm -f index-*
 echo 'Index deploy finished.'
+
+
+## 仅供我自己个人使用，并不通用

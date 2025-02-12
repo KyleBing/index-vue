@@ -4,9 +4,8 @@
 </template>
 
 <script lang="ts" setup>
-import DiaryContentCard from "@/views/Cards/DiaryContentCard.vue";
+import DiaryContentCard from "@/components/DiaryContentCard.vue";
 import CardProfile from "@/views/Profile/CardProfile.vue";
-import ProfileEntrance from "@/views/Profile/ProfileEntrance.vue";
 </script>
 
 <style scoped>
