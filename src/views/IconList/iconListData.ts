@@ -159,7 +159,7 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/useragent' ,            icon: logo_agent ,              name: 'UserAgent' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: logo_element_ui_icons ,   name: 'element图标' , } ,
             { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: logo_base64 ,             name: 'Base64文本' , } ,
-            { noPadding: false ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
+            { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
         ]
     },
     {
