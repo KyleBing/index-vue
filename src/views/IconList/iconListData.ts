@@ -128,7 +128,7 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: logo_manager ,      name: '后台' ,       } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                        icon: logo_vitepress ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: logo_gif ,          name: '像素画' ,     },
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-hole-life?v=1' ,  icon: logo_all_my_life ,  name: '一生的时间' ,  },
+            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/canvas-my-whole-life?v=1' ,  icon: logo_all_my_life ,  name: '一生的时间' ,  },
             { noPadding: true ,  isNew: true,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/bb-keyboard' ,              icon: logo_bb_keyboard ,  name: '黑莓键盘' ,  },
         ]
     },
