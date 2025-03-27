@@ -97,7 +97,7 @@ $indicator-width: 20px;
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
         background-color: white;
-        //@include border-radius(13px);
+        @include border-radius(13px);
         overflow: hidden;
         height: 60px;
         width: 60px;
