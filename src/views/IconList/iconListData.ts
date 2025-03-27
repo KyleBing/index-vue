@@ -81,6 +81,7 @@ import logo_hifini from '../../assets/icons/logo_hifini.png'
 import logo_ascii from '../../assets/icons/logo_ascii.png'
 import logo_an2 from '../../assets/icons/logo_an2.png'
 import logo_analog_clock from '../../assets/icons/logo_analog_clock.png'
+import logo_analog_clock_black from '../../assets/icons/logo_analog_clock_black.png'
 
 
 
@@ -124,7 +125,7 @@ const iconList: Array<IconGroupEntity> = [
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/diary/' ,                        icon: icon_diary ,        name: '日记' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/map/' ,                    icon: logo_map ,          name: '路书' ,     } ,
             { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a/' ,                icon: logo_analog_clock ,  name: '时钟' ,     } ,
-            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: logo_analog_clock ,  name: '时钟-黑' ,     } ,
+            { noPadding: true ,  isNew: false,   isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/clock-a?theme=black' ,     icon: logo_analog_clock_black ,  name: '时钟-黑' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/manager' ,                       icon: logo_manager ,      name: '后台' ,       } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/readme' ,                        icon: logo_vitepress ,     name: 'README' ,   } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/me/#/gif' ,                      icon: logo_gif ,          name: '像素画' ,     },
@@ -137,28 +138,28 @@ const iconList: Array<IconGroupEntity> = [
         icons: [
             { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: logo_keyboard ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: logo_qr ,                 name: '挪车提醒' ,     } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/qr?hash=two&from=kylebing.cn' ,  icon: logo_qr ,                 name: '挪车提醒' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/name' ,                    icon: logo_name ,               name: '起名工具' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/typepad' ,                 icon: logo_typepad ,            name: '跟打器' ,      } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/typepad' ,                 icon: logo_typepad ,            name: '跟打器' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/keyboard/' ,               icon: logo_keyboard ,           name: '键盘测试' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/calculator' ,              icon: logo_calculator ,         name: '计算器' ,      } ,
             { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/words' ,                   icon: logo_symbol ,             name: '标点处理' ,     } ,
-            // { noPadding: false , isNew: false, isBgBlack: false , pageLink: 'http://kylebing.cn/tools/vps' ,                     icon: logo_vps ,                name: 'VPS' ,      } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/drop-and-show' ,           icon: logo_image_viewer ,       name: '图片查看器' ,    } ,
+            // { noPadding: true , isNew: false, isBgBlack: false , pageLink: 'http://kylebing.cn/tools/vps' ,                     icon: logo_vps ,                name: 'VPS' ,      } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/drop-and-show' ,           icon: logo_image_viewer ,       name: '图片查看器' ,    } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/wubi-dict-editor-web' ,    icon: logo_wubi_editor ,        name: '五笔助手' ,     } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/download' ,                      icon: logo_download ,           name: '常用下载' ,     } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/unlock-music' ,            icon: logo_unlock_music ,       name: '音乐解码' ,     } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/unlock-music' ,            icon: logo_unlock_music ,       name: '音乐解码' ,     } ,
 
         ]
     },
     {
         title: '开发工具',
         icons: [
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/json-table' ,           icon: logo_json_table ,         name: '表格 JSON' ,  } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/json-table' ,           icon: logo_json_table ,         name: '表格 JSON' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/useragent' ,            icon: logo_agent ,              name: 'UserAgent' ,  } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/icons' ,                icon: logo_element_ui_icons ,   name: 'element图标' , } ,
-            { noPadding: false , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: logo_base64 ,             name: 'Base64文本' , } ,
+            { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/base64-text' ,          icon: logo_base64 ,             name: 'Base64文本' , } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/e' ,                          icon: logo_ele ,                name: 'Vue 例子'} ,
         ]
     },

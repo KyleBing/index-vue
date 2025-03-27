@@ -62,6 +62,26 @@ $indicator-width: 20px;
     height: 100px;
     position: relative;
 
+    &:hover{
+        .icon{
+            filter: drop-shadow(12px 25px 1px transparentize(black, 0.9)) drop-shadow(-2px 20px 1px transparentize(black, 0.9));
+            @include transition(all 0.2s);
+            background-color: white;
+            //@include box-shadow(12px 25px 5px transparentize(black, 0.9), -2px 20px 5px transparentize(black, 0.9));
+            @include transform(translateY(-3px))
+        }
+        .name{
+            //color: white;
+        }
+    }
+    &:active{
+        .icon{
+            @include transition(all 0.1s);
+            @include box-shadow(2px 3px 3px transparentize(black, 0.8), -2px 10px 5px transparentize(black, 0.9));
+            @include transform(translateY(0))
+        }
+    }
+
 
     .indicator-new{
         position: absolute;
@@ -77,7 +97,7 @@ $indicator-width: 20px;
         @include transition(all 0.5s);
         @include box-shadow(0 0 0 transparentize(black, 1));
         background-color: white;
-        @include border-radius(13px);
+        //@include border-radius(13px);
         overflow: hidden;
         height: 60px;
         width: 60px;
@@ -101,24 +121,7 @@ $indicator-width: 20px;
         text-align: center;
         font-size: $fz-sm;
     }
-    &:hover{
-        .icon{
-            @include transition(all 0.2s);
-            background-color: white;
-            @include box-shadow(12px 25px 5px transparentize(black, 0.9), -2px 20px 5px transparentize(black, 0.9));
-            @include transform(translateY(-3px))
-        }
-        .name{
-            //color: white;
-        }
-    }
-    &:active{
-        .icon{
-            @include transition(all 0.1s);
-            @include box-shadow(2px 3px 3px transparentize(black, 0.8), -2px 10px 5px transparentize(black, 0.9));
-            @include transform(translateY(0))
-        }
-    }
+
 }
 
 @media (prefers-color-scheme: dark) {
