@@ -166,7 +166,7 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: 'Canvas',
         icons: [
-            { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/mine/' ,icon: logo_blank ,name: '我的所有' ,     } ,
+            // { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/mine/' ,icon: logo_blank ,name: '我的所有' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=+++' ,icon: logo_web_canvas_lost ,name: '迷离-+++' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=HelloWorld' ,icon: logo_web_canvas_lost ,name: '迷离-HW' ,     } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/test/animate-canvas-lost/?isShowLine=0&titleFontSize=50&lineWidth=10&isShowTitle=1&bgColor=black&title=%E6%88%91' ,icon: logo_web_canvas_lost ,name: '迷离-我' ,     } ,
