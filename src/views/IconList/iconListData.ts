@@ -1,4 +1,5 @@
 import icon_diary from '../../assets/icons/logo_diary.png'
+import logo_vocabulary from '../../assets/icons/logo_vocabulary.png'
 import logo_map from '../../assets/icons/logo_map.png'
 import logo_manager from '../../assets/icons/logo_manager.png'
 import logo_vitepress from '../../assets/icons/logo_vitepress.png'
@@ -63,6 +64,8 @@ import logo_web_game_avoid from '../../assets/icons/logo_web_game_avoid.png'
 import logo_keyboard from '../../assets/icons/logo_keyboard.png'
 
 import logo_art_ai from '../../assets/icons/logo_art_ai.png'
+import logo_web_band from '../../assets/icons/logo_web_band.png'
+import logo_web_thingiverse from '../../assets/icons/logo_web_thingiverse.png'
 import logo_handheld from '../../assets/icons/logo_handheld.png'
 import logo_wheel_his from '../../assets/icons/logo_wheel_his.png'
 import logo_panda from '../../assets/icons/logo_panda.png'
@@ -136,6 +139,7 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: '工具',
         icons: [
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.github.io/vocabulary/' ,            icon: logo_vocabulary ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: logo_keyboard ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
             { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
@@ -182,6 +186,8 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: '有趣的网站',
         icons: [
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://worldvectorlogo.com/',                                       icon:logo_web_band,        name: '品牌矢量Logo',      },
+            { noPadding: true, isNew: true, isBgBlack: false, pageLink: 'https://www.thingiverse.com/',                                       icon:logo_web_thingiverse,        name: '3D打印模型',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.senpian.com/aizw',                                       icon:logo_art_ai,                name: 'AI作图鉴赏',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://zhangjiquan.com/',                                           icon:logo_handheld,              name: '掌机圈',      },
             { noPadding: true, isNew: false, isBgBlack: false, pageLink: 'https://www.lishichelun.com/',                                      icon:logo_wheel_his,              name: '历史车轮',      },
