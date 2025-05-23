@@ -139,7 +139,7 @@ const iconList: Array<IconGroupEntity> = [
     {
         title: '工具',
         icons: [
-            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.github.io/vocabulary/' ,            icon: logo_vocabulary ,            name: '显示键名' ,      } ,
+            { noPadding: true ,  isNew: true,  isBgBlack: false,  pageLink: 'https://kylebing.github.io/vocabulary/' ,            icon: logo_vocabulary ,            name: '蚕食单词' ,      } ,
             { noPadding: true ,  isNew: false,  isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/show-keyname' ,            icon: logo_keyboard ,            name: '显示键名' ,      } ,
             { noPadding: true ,  isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/cbr650r' ,                 icon: logo_cbr650r ,            name: 'CBR650R' ,      } ,
             { noPadding: true , isNew: false, isBgBlack: false,  pageLink: 'http://kylebing.cn/tools/car-oil' ,                 icon: logo_car_oil ,            name: '汽车行程花费' ,      } ,
